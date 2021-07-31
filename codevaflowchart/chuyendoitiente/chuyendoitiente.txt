@@ -1,0 +1,7 @@
+begin
+ input 
+    n$ 
+ if 1$=23000vnd then n$=nx23000vnd
+ end if
+display vnd
+End

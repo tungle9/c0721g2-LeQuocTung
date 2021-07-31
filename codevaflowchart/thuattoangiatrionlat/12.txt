@@ -1,0 +1,18 @@
+begin
+ input
+  n day so
+  a1,a2,a3...an 
+ a1= max
+ i=2
+ while (i=<n)
+ if max < ai 
+do max = ai
+ max > ai
+ i = i+1
+end do
+display max
+end
+  
+
+ 
+  

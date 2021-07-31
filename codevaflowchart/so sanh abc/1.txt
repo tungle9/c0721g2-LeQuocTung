@@ -1,0 +1,15 @@
+begin 
+ input 
+   a,b,c
+   a largest
+  if 
+  a > b,c  a largest
+ else if
+  a < b,c so sanh b,c
+  if b > c 
+   then b largest
+  if b < c 
+ then c largest
+  end if
+end
+ 

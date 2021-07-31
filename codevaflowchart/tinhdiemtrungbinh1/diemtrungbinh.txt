@@ -1,0 +1,8 @@
+1 * mô tả thuật toán trung bình
+  begin 
+    input
+   điểm toán , điểm lý , điểm hóa
+   average = (điểm toán + điểm lý + điểm hóa)/3
+    display average
+  end
+

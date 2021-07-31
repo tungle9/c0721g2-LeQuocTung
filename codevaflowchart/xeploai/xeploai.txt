@@ -1,0 +1,10 @@
+begin
+ input n=100
+if >=75<=n then loại A
+ if else =>60<75 then loại B
+  if else =>45<60 then loại C
+  if else =>35<45 then loại D
+   if else <35 then loại E
+end if
+ display loại
+end
