@@ -4,7 +4,7 @@ begin
   a1,a2,a3...an 
  a1= max
  i=2
- while (i=<n)
+ while (n>i)
  if max < ai 
 do max = ai
  max > ai
