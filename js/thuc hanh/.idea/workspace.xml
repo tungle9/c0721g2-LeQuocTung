@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c10a7169-dc8d-4a37-aa2f-0b5b3649170f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hien thi dau ra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nhúng js.html" afterDir="false" />
-    </list>
+    <list default="true" id="c10a7169-dc8d-4a37-aa2f-0b5b3649170f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628086221791</updated>
-      <workItem from="1628086223047" duration="2394000" />
+      <workItem from="1628086223047" duration="2998000" />
     </task>
     <servers />
   </component>
