@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<a> Độ C sang độ F</a><input id="ab" type="text">
+<button onclick="a()">đổi</button>
+<input id="y" type="text">
+<br>
+<a>độ F sang độ C</a> <input id="ba" type="text">
+<button onclick="vl()"> đổi</button> <input id="mi" type="text">
+
+<body>
+<script>
+    function a() {
+        var aa = document.getElementById('ab').value ;
+        document.getElementById('y').value = (aa/5 - 32) / 9;
+    }
+    function vl() {
+        var a12 = document.getElementById('ba').value ;
+        document.getElementById('mi').value = ((a12 - 32)/9)/5 ;
+    }
+</script>
+</body>
+</html>

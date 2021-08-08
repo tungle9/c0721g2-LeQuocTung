@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="dai" name="chieu dai" type="text"> -- <input name="chieu rong" id="rong" type="text">
+<button onclick=f()>oke</button>
+<input id="ketqua" type="text">
+<script>
+    function f() {
+        var u = document.getElementById('dai').value;
+        var y = document.getElementById('rong').value;
+        document.getElementById('ketqua').value = (u * y);
+    }
+</script>
+
+</body>
+</html>
