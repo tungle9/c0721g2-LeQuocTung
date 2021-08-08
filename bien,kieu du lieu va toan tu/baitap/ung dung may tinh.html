@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+    <h1>Caculator</h1>
+</head>
+<body>
+    <input id='a1' type="text"> <input id='b2' type="text">
+    <br>
+    <button style="width: 100px" onclick="x()">addition(+)</button>
+    <button style="width: 100px" onclick="y()">subtraction(-)</button>
+    <button style="width: 100px" onclick="z()">multip(x)</button>
+    <button style="width: 100px" onclick="v()">division(/)</button>
+    <br>
+    <a>result : </a> <a id="result"></a>
+<script>
+    function x() {
+        var aa = parseInt(document.getElementById('a1').value);
+        var bb = parseInt(document.getElementById('b2').value);
+        document.getElementById('result').innerHTML = (aa + bb);
+    }
+
+    function y() {
+        var aa = parseInt(document.getElementById('a1').value);
+        var bb = parseInt(document.getElementById('b2').value);
+        document.getElementById('result').innerText = (aa - bb);
+    }
+
+    function z() {
+        var aa = parseInt(document.getElementById('a1').value);
+        var bb = parseInt(document.getElementById('b2').value);
+        document.getElementById('result').innerText = (aa * bb);
+    }
+
+    function v() {
+        var aa = parseInt(document.getElementById('a1').value);
+        var bb = parseInt(document.getElementById('b2').value);
+        document.getElementById('result').innerText = (aa / bb);
+    }
+</script>
+</body>
+</html>
