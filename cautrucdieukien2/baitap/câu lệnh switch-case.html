@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu lệnh switch case</title>
+</head>
+<body>
+<tr>
+    <td><input id="abc" type="text"></td>
+    <td>
+        <button onclick="a()">Tính số ngày</button>
+    </td>
+    <p></p>
+</tr>
+</body>
+<script>
+    function a() {
+        var number = parseInt(document.getElementById('abc').value);
+        switch (number) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 12 :
+                document.write('tháng này có 31');break;
+                case 2: document.write('tháng này có 29');break;
+                case 4  :
+                case 6  :
+                case 9  :
+                case 11 :
+                    document.write('tháng này có 30');break;
+        }
+
+    }
+
+
+</script>
+
+
+</html>

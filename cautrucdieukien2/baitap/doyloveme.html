@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me </title>
+    <h1 style="color: hotpink;margin-left: 400px ; font-size: 100px">do you love me ?</h1>
+</head>
+<body>
+ <button style="margin-left: 400px" ; onclick="b()">Yes</button>
+ <button id="b2" style="position: absolute;left: 0;top: 0"; onclick="b2()">No</button>
+<script>
+    function b() {
+        alert('<3 bắn tim <3') ;
+    }
+    function b2() {
+ var a = Math.random()*window.innerHeight;
+ var r = Math.random()*window.innerWidth;
+        document.getElementById('b2').style.top = a + 'px';
+        document.getElementById('b2').style.left = r + 'px';
+
+    }
+</script>
+</body>
+</html>

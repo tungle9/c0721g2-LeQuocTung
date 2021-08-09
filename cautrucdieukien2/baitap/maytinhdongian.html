@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" cellpadding="15" cellspacing="10px">
+    <tr>
+        <td colspan="4"><input id="cac"  style="font-size: 40px" tyle="text"> </td>
+    </tr>
+    <tr>
+        <td><button onclick="so('1')" style="font-size: 20px">1</button></td>
+        <td><button onclick="so('2')"  style="font-size: 20px">2</button></td>
+        <td><button onclick="so('3')" style="font-size: 20px">3</button></td>
+        <td><button onclick="so('+')"  style="font-size: 20px">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="so('4')"  style="font-size: 20px">4</button></td>
+        <td><button onclick="so('5')"  style="font-size: 20px">5</button></td>
+        <td><button onclick="so('6')" style="font-size: 20px">6</button></td>
+        <td><button onclick="so('-')"  style="font-size: 20px">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="so('7')"  style="font-size: 20px">7</button></td>
+        <td><button onclick="so('8')"  style="font-size: 20px">8</button></td>
+        <td><button onclick="so('9')"  style="font-size: 20px">9</button></td>
+        <td><button onclick="so('*')"  style="font-size: 20px">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick='xoa()'  style="font-size: 20px">C</button></td>
+        <td><button onclick="so('0')"  style="font-size: 20px">0</button></td>
+        <td><button onclick="ketqua()"  style="font-size: 20px">=</button></td>
+        <td><button onclick="so('/')"  style="font-size: 20px">/</button></td>
+    </tr>
+</table>
+<script>
+  function so(num) {
+      document.getElementById('cac').value += num;
+ }
+ 
+ function ketqua() {
+      document.getElementById('cac').value = (eval(document.getElementById('cac').value))
+ }
+function xoa() {
+   document.getElementById('cac').value = '';
+
+}
+
+</script>
+</body>
+</html>

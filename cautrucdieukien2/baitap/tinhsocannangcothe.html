@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số cân nặng cơ thể </title>
+</head>
+<body>
+<table border="1" cellpadding="15" ;>
+    <tr>
+        <td>BMI</td>
+        <td>Interpretation</td>
+    </tr>
+    <tr>
+        <td> BMI < 18.5</tD>
+        <td> Underweight</tD>
+    </tr>
+    <tr>
+        <td>18.5 ≤ BMI < 25</td>
+        <td>Normal</td>
+    </tr>
+    <tr>
+        <td>25 ≤ BMI < 30</td>
+        <td> Overweight</td>
+    </tr>
+    <tr>
+        <td>30 ≤ BMI</td>
+        <td> Obese</td>
+    </tr>
+</table>
+<script>
+    var hight = parseInt(prompt('hight'));
+    var weight = parseInt(prompt('weight'));
+    var BMI = (weight / (hight ^ 2));
+    if (BMI < 18.5) {
+        var BMI = weight / (hight ^ 2);
+        document.write('Underweight') }
+    else
+        if (18.5 < BMI < 25) {
+            document.write('Normal');
+        } else if (25 < BMI < 30) {
+            document.write('Overweight');
+        } else if (30 < BMI) {
+            document.write('Obse');
+        }
+
+
+</script>
+
+
+</body>
+</html>
