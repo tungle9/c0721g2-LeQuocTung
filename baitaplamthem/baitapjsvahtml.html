@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Thay đổi nội dung của thẻ html</h1>
+    <input id="change" type="text" placeholder="How is the weather today?" style="background: mediumpurple";>
+    <br>
+    <button onclick="a()">Trời nắng</button>
+    <button onclick="b()">Trời mưa</button>
+    <hr>
+    <h2>3.thêm thẻ html</h2>
+    <input id="abc" type="text"><button onclick="c()">Add</button>
+    <a id="ab"></a>
+    <hr>
+    <h1>4.xóa thẻ html</h1>
+    <table border="1" cellpadding="15px">
+        <tr id="tr1">
+            <td>1</td>
+            <td>tiêu đề thứ nhất</td>
+            <td><button onclick="m()">delete</button></td>
+        </tr>
+        <tr id="tr2">
+            <td>2</td>
+            <td>tiêu đề thứ hai</td>
+            <td><button onclick="n()">delete</button></td>
+        </tr>
+        <tr id="tr3">
+            <td>3</td>
+            <td>tiêu đề thứ ba</td>
+            <td><button onclick="bb()">delete</button></td>
+        </tr>
+        <tr id="tr4">
+            <td>4</td>
+            <td>tiêu đề thứ tư</td>
+            <td><button onclick="v()">delete</button></td>
+        </tr>
+
+    </table>
+</head>
+<body>
+<script>
+    var thongbao = "Xin chào các bạn lớp c0721g2";
+    alert(thongbao);
+    function a() {
+        document.getElementById('change').value = ('so hot');
+    }
+    function b() {
+        document.getElementById('change').value = ('rainy day');
+    }
+    ////
+    document.getElementById('abc').value =('are you oke ?');
+    function c() {
+        var ba =  'are you oke ?';
+       document.getElementById('ab').innerText = (ba);
+        }
+        function m() {
+        var abc = document.getElementById('tr1')
+            abc.parentNode.removeChild(abc);
+        }
+    function n() {
+        var abc1 = document.getElementById('tr2')
+        abc1.parentNode.removeChild(abc1);
+    }
+ function bb() {
+        var abc1 = document.getElementById('tr3')
+        abc1.parentNode.removeChild(abc1);
+    }
+    function v() {
+        var abc1 = document.getElementById('tr4')
+        abc1.parentNode.removeChild(abc1);
+    }
+
+</script>
+</body>
+</html>
