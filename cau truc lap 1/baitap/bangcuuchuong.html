@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bảng cửu chương</h1>
+<script>
+    var i , j , table ;
+ table = ("<table border='1' width='100' cellpadding='15'>");
+   for (i=1;i<=9;i++)
+ {
+     table = table + "<tr>";
+     for(j=2 ; j<=9 ; j++) {
+         table = (table + "<td>" + j + "x" +i+ "=" + (j*i) + "</td>");
+     }
+   table = table + "</tr>";
+ }
+    document.write(table);
+
+
+</script>
+
+</body>
+</html>
