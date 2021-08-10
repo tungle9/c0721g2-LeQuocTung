@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<a> Độ C sang độ F</a><input id="ab" type="text">
+<a> Độ C sang độ F</a><input id="a" type="text">
 <button onclick="a()">đổi</button>
-<input id="y" type="text">
+<input id="the1" type="text">
 <br>
-<a>độ F sang độ C</a> <input id="ba" type="text">
-<button onclick="vl()"> đổi</button> <input id="mi" type="text">
+<a>độ F sang độ C</a> <input id="b" type="text">
+<button onclick="vl()"> đổi</button> <input id="the2" type="text">
 
 <body>
 <script>
     function a() {
-        var aa = document.getElementById('ab').value ;
-        document.getElementById('y').value = (aa/5 - 32) / 9;
+        var cSangF = document.getElementById('a').value ;
+        document.getElementById('the1').value = (cSangF/5 - 32) / 9;
     }
     function vl() {
-        var a12 = document.getElementById('ba').value ;
-        document.getElementById('mi').value = ((a12 - 32)/9)/5 ;
+        var fSangC = document.getElementById('b').value ;
+        document.getElementById('the2').value = ((fSangC - 32)/9)/5 ;
     }
 </script>
 </body>

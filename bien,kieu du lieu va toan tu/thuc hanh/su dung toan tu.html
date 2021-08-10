@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <h1>tính diện tích hình chữ nhật</h1>
 </head>
 <body>
-<input id="dai" name="chieu dai" type="text"> -- <input name="chieu rong" id="rong" type="text">
-<button onclick=f()>oke</button>
-<input id="ketqua" type="text">
+<a>chiều dài : </a> <input id="dai" name="chieu dai" type="text"> -- <a>chiều rộng :</a><input name="chieu rong" id="rong" type="text">
+<br><button onclick=f()>oke</button>
+<a>kết quả :</a> <input id="ketqua" type="text">
 <script>
     function f() {
-        var u = document.getElementById('dai').value;
-        var y = document.getElementById('rong').value;
-        document.getElementById('ketqua').value = (u * y);
+        var chieuDai = document.getElementById('dai').value;
+        var chieuRong = document.getElementById('rong').value;
+        document.getElementById('ketqua').value = (chieuDai * chieuRong);
     }
 </script>
 

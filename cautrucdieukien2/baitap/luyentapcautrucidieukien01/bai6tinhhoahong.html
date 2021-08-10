@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   var danhSo
+   danhSo = parseInt(prompt('Số hàng bạn bán được trong 1 tháng '));
+// nếu đạt đủ 100 hàng trong 1 tháng thì tiền hoa hồng là 10%
+// nếu đạt dưới 100 hàng trong 1 tháng thì tiền hoa hồng là 8%
+   //1 hàng trị giá 500000
+if(danhSo > 100) {
+    document.write('Tiền hoa hồng của bạn là 10% =' + danhSo*500000*100*10/100 +"vnd" );
+}
+else if (danhSo < 100)
+{
+    document.write("Tiền hoa hồng là 8% =" + danhSo*500000*100*8/100 +"vnd")
+}
+
+
+</script>
+</body>
+</html>
