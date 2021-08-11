@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20bf0c99-0b00-4199-800a-bb648c465a20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/chuvihinhtron.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/chuvihinhtron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/doido.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/doido.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/ung dung may tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/baitap/ung dung may tinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/thuc hanh/su dung toan tu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bien,kieu du lieu va toan tu/thuc hanh/su dung toan tu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai4.html (1K).url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai5.html (1K).url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai6tinhhoahong.html (1K).url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baitapdk1.html (1K).url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinhchudien.html" beforeDir="false" afterPath="$PROJECT_DIR$/tinhchudien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tinhsocannangcothe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tinhsocannangcothe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -29,9 +27,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../cau truc lap 1" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,10 +43,17 @@
       <option name="presentableId" value="Default" />
       <updated>1628611973421</updated>
       <workItem from="1628611974721" duration="1113000" />
+      <workItem from="1628644876510" duration="903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1628645785887">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1628645785887" />
   </component>
 </project>

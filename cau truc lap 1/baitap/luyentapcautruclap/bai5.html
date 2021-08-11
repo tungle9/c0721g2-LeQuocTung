@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var a1,a2,c,i,tong ;
+  tong = 0 ;
+a1 = 0 ;
+a2 = 1 ;
+    for (i = 1; i <= 20; i++) {
+        c = a1 + a2;
+        document.write( "số"+i+ "trong fibonacci : " + c + "<br>")
+        tong = tong + c;
+        a1 = a2;
+        a2 = c;
+    }
+document.write(tong);
+
+
+
+
+</script>
+</body>
+</html>
