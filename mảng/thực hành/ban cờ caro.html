@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="gamecaro"/>
+<button onclick="changevalue()">giá trị</button>
+ <script>
+     var b = document.getElementById('gamecaro');
+         var mang = [];
+         var data = "";
+         for (let i = 0; i < 5; i++) {
+             mang[i] = [0, 0, 0, 0, 0];
+         }
+         for (let i = 0; i < 5; i++) {
+             data = data + '<br>';
+             for (let j = 0; j < 5; j++) {
+                 data = data + mang[i][j] + "&nbsp;&nbsp;";
+             }
+         } document.write(data);
+      function changevalue() {
+          let X = prompt("X: ");
+          let Y = prompt("Y: ");
+          data = "";
+          mang[X][Y] = "x";
+          for (let i = 0; i < 5; i++) {
+              data += "<br/>";
+              for (let j = 0; j < 5; j++) {
+                  data += mang[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+              }
+          }
+          data =data +  "<br/><br/><input type='button' value='giá trị' onclick='changevalue()'>"
+          b.innerHTML = "<hr/>" + data;
+      }
+ </script>
+</body>
+</html>

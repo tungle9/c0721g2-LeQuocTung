@@ -6,13 +6,21 @@
 </head>
 <body>
 <script>
- var a = prompt('message')  ;
-switch (a) {
-    case 'employee' : alert('hello');break;
-    case 'director' : alert('greetings');break;
-    case ('') : alert('no login');break;
-    default : alert('chuỗi rỗng');break;
-}
+ let message ;
+ message = prompt('login');
+ if (message =='Employee'){
+     alert('hello') ;
+ } else
+     if (message == 'Director'){
+         alert('Greetings')
+     }else
+         if (message == '')
+         {
+             alert('no login');
+         }
+         else {
+             alert('');
+         }
 </script>
 </body>
 </html>
