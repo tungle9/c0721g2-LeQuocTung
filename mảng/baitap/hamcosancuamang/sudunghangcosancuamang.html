@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var Color = ["Red", "Green", "White", "Black"];
+document.write(Color.toString()+'<br>');
+//document.write(Color.toString());
+"<br>===================<br>";
+var num,win,result ;
+num=  prompt('login');
+win = num.toString();
+result = [win[0]];
+
+for(let i = 1;i <win.length;i++  ) {
+    if((win[i-1]%2==0) && (win[i]%2==0)){
+        result.push('-',win[i]);
+    }
+    else{
+        result.push(win[i]);
+    }
+}
+document.write(result.join(''));
+
+</script>
+</body>
+
+</html>
