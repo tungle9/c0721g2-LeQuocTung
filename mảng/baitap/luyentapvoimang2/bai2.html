@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var num = [ 'c', 's', 'c', '2', '6', '1' ] ;
+ var first , last ;
+   first = 0 ;
+ last = num.length-1 ;
+   /*  for (first =  0;first < num.length;first ++){
+        let b = num[first]  ;
+         num[first] = num[last] ;
+         num[last] = b ;
+         last -- ;
+     }
+    document.write(num) ; */
+   while (last > first  ) {
+        let b = num[first] ;
+        num[first] = num[last];
+        num[last] = b ;
+        last -- ;
+        first ++ ;
+    }
+document.write(num) ;
+</script>
+</body>
+</html>

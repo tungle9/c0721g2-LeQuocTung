@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var firstnum = 10000000 ;
+var month = prompt('số tháng') ;
+for (var i = 0 ; i < month ;i++){
+    var money = firstnum*(5/100) ;      //tiền lãi 5%
+    firstnum = money+ firstnum
+}
+document.write('tiền lãi tháng ' + i + "&nbsp&nbsp" + money +'<br>')
+
+document.write('tiền nợ ban đầu + lãi : ' + firstnum )
+
+
+
+</script>
+</body>
+</html>

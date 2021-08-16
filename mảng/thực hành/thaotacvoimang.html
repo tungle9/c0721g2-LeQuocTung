@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="test1" type="test"> <button id="add" onclick="add()">Add</button> <button id="display" onclick="display()">Display</button>
+<hr>
+<p id="result"></p>
+<script>
+    var x  = 0 ;
+    var num = [] ;
+function add() {
+     num[x] = document.getElementById('test1').value ;
+alert('element :'+ num[x] + 'index'+x );
+     x++;
+}
+function display() {
+    var e ='<br>';
+    for (let i =0 ; i < num.length;i++ ){
+        e = e+'element' + i +  '=' + num[i] +'<br>' ;
+    }
+    document.getElementById('result').innerHTML = e ;
+}
+
+
+</script>
+</body>
+</html>
