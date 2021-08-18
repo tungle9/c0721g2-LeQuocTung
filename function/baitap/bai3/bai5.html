@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var name = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    //  var stars = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+var flag = false ;
+    function nameStars() {
+       var name = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+       var stars = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        for (var i = 0; i < name.length; i++) {
+            if (a == name[i]) {
+                document.write('Name  ' + name[i] + '<br>' + 'thuộc chòm sao : ' + stars[i]) ;
+                flag = true ;
+            }
+        }
+        if (flag == false) {
+            alert('không tìm thấy chòm sao') ;
+        }
+    }
+    var a = prompt('login a name');
+    nameStars() ;
+    //  document.getElementById('demo').innerHTML = nameB;
+
+</script>
+</body>
+</html>

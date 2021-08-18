@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function f() {
+        if (number2 < min) {
+            min = number2;
+        }
+        if (min > number3) {
+            min = number3;
+        }
+    }
+    var number1 = parseInt(prompt('number1:'));
+    var number2 = parseInt(prompt('number2:'));
+    var number3 = parseInt(prompt('number3:'));
+    min = number1;
+    f();
+    document.write(min);
+
+
+</script>
+</body>
+</html>

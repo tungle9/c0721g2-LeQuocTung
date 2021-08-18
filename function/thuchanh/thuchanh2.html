@@ -7,12 +7,11 @@
 <body>
 <h1><b>Temperature Converter</b></h1>
 <br>
-<b>Type a value in the Fahrenheit field to convert the value </b>
+<b>Type a value in the Fahrenheit field to convert the value </b>3
 <br>
-<b>Fahrenheit</b> <input id="number" type="number"
-       oninput="change(this.value)"
+<b>Fahrenheit</b> <input type="number"
        onchange="change(this.value)">
-<p>Celsius: <span id="result"></span></p>
+<p><b>Celsius : </b> <span id="result"></span></p>
 <script>
 function change(val) {
     val = parseFloat(val);
@@ -24,6 +23,5 @@ document.getElementById("result").innerHTML =( val-32 ) / 1.8;
 
 
 </script>
-
 </body>
 </html>
