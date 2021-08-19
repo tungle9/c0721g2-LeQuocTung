@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class soDo {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getday() {
+            return this.day;
+        }
+
+        getmonth() {
+            return this.month;
+        }
+
+        getyear() {
+            return this.year;
+        }
+        setday(newday) {
+            this.day = newday;
+        }
+
+        setmonth(newmonth) {
+            this.month = newmonth;
+        }
+
+        setyear(newyear) {
+            this.year = newyear;
+        }
+
+        setDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        toString() {
+            return (day + "/" + month + "/" + year);
+        }
+    }
+
+
+    var date3 = new soDo(19, 8, 2021);
+    day = date3.getday(); //thêm
+    month = date3.getmonth();
+    year = date3.getyear();
+    alert(day + "/" + month + "/" + year);
+    date3.setday(16); //sửa
+    date3.setmonth(10);
+    date3.setyear(1998);
+    day = date3.getday();
+    month = date3.getmonth();
+    year = date3.getyear();
+    alert(date3.toString())  //gọi hàm trực tiếp
+</script>
+</body>
+</html>
