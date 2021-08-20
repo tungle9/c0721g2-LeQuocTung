@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id='canvas1' width="200px" height="50px"></canvas>
+;
+<script>
+    class Rectangle {
+        constructor(chieudai, chieurong) {
+
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+        }
+
+        paint() {
+            var paint1;
+            paint1 = document.getElementById('canvas1').getContext('2d');
+            paint1.fillStyle = '#00FF00';
+            paint1.fillRect(1, 1, this.chieudai, this.chieurong);
+        }
+
+        dientich() {
+            return this.chieudai * this.chieurong ;
+        }
+
+        chuvi() {
+            return (this.chieudai + this.chieurong) * 2 ;
+        }
+
+        getchieudai() {
+            return this.chieudai;
+        }
+
+        setchieudai(value) {
+            this.chieudai = value;
+        }
+
+        getchieurong() {
+            return this.chieurong;
+        }
+
+        setchieurong(value) {
+            this.chieurong = value;
+        }
+    }
+
+    var result = new Rectangle(100, 50);
+    var dientich = result.dientich();
+    var chuvi = result.chuvi();
+    var chieudai = result.getchieudai();
+    var chieurong = result.getchieurong();
+    console.log(chieudai)
+    document.write('Chu vi :' + chuvi + '<br>' + 'diện tích:' + dientich + '<br>');
+    document.write('chiều dài :' + chieudai + '<br>' + 'chiều rộng' + chieurong);
+    document.write('<br>');
+    result.setchieudai(250);
+    result.setchieurong(70);
+    chieudai = result.getchieudai();
+    chieurong = result.getchieurong() ;
+    result.dientich();
+    result.paint();
+    document.write('diện tích mới:' + result.dientich()+'chiều dài mới:' +chieudai+ 'chiều rộng mới'+chieurong );
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight() {
+            this.weight = value;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight1 = weight;
+        }
+
+        ask() {
+            document.write(this.name + '  :   xin chào , bạn ăn cơm chưa  ?');
+        }
+
+        answer() {
+            document.write(this.name + ':Mình đang giảm béo !');
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        getWeight() {
+            return this.weight1;
+        }
+        eat(apple) {
+            if (apple.weight > 0) {
+                document.write(this.name + ': đã ăn táo ');
+                apple.weight--;
+                this.weight1++;
+            } else {
+                alert('hết táo')
+            }
+        }
+    }
+    var apple = new Apple(10);
+   // document.write('<br>');
+    document.write('số táo hiện tại'+apple.weight);
+    document.write('<br>');
+    var eva = new Human('Eva', 'female', 55);
+    var Adam = new Human('Adam', 'male', 70);
+    document.write(Adam.getName() + ('&nbsp') + Adam.getGender() + Adam.getWeight()+'kg<br>')
+    Adam.ask();
+    document.write('<br>');
+    document.write(eva.getName() + ('&nbsp') + eva.getGender() + '<br>');
+    eva.answer();
+    eva.eat(apple);
+    document.write(',số căng nặng của tôi sau khi ăn táo' + eva.getWeight());
+    document.write('<br>');
+    Adam.eat(apple) ;
+    document.write('số căng nặng của tôi sau khi ăn táo' + Adam.getWeight());
+    document.write('<br>')
+    document.write('số táo còn lại' + apple.weight)
+</script>
+</body>
+</html>

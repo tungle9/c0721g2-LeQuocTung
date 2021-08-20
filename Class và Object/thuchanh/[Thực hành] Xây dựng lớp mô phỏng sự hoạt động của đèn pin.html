@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class FlasLamp{
+        constructor(status,battery) {
+            this.status = status ;
+            this.battery = battery ;
+        }
+        turnOn(){
+            this.battery.check() ;
+            this.status = true  ;
+            document.write('đèn đang bật') ;
+        }
+        turnOff(){
+            this.status = true  ;
+            document.write('đèn đang tắt') ;
+        }
+    }
+    class Battery {
+        constructor(energy) {
+            this.energy = energy ;
+        }
+        getEnergy(){
+            return this.energy ;
+        }
+        check(){
+            if(this.energy > 0 ){
+                this.energy -- ;
+            } else{
+                document.write('hết pin') ;
+            }
+        }
+    }
+    var battery = Battery(10) ;
+</script>
+</body>
+</html>

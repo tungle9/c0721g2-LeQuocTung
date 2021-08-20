@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC){
+            this.doC = doC;
+        }
+        cSangf(){
+            return 9/5*this.doC+32 ;
+        }
+        cSangkevin(){
+            return this.doC*274.15
+        }
+        getdoC(){
+            return this.doC ;
+        }
+        setdoC (newdoC){
+            this.doC = newdoC ;
+        }
+    }
+var result = new Temperature(25) ;
+   // var doC = result.getdoC() ;
+    document.write(result.cSangf() + 'độ F') ;
+    document.write('<br>') ;
+    document.write(result.cSangkevin()+'Kevin') ;
+</script>
+</body>
+</html>

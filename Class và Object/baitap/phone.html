@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class phone{
+        constructor(pin,mess) {
+            this.pin = pin ;
+            this.mess = mess ;
+            this.thuDen = [];
+            this.daGui = [];
+            this.DangsoanThao =[];
+        }
+        messPhone(){
+            this.pin--;
+            return this.mess ;
+        }
+        trangThai(){
+            this.mess = true ;
+            this.pin--;
+        }
+        sacpin(){
+            while (this.pin<=100)
+            this.pin = this.pin+0.01 ;
+        }
+        soanTinnhan(){
+            let tinNhan = prompt('Nhập tin nhắn') ;
+            this.DangsoanThao.push(tinNhan);
+            this.pin-- ;
+        }
+        guiTinnhan(phone,mess){
+            this.thuDen.push(phone + ','+ mess);
+            this.pin--
+        }
+
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
