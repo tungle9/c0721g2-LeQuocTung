@@ -13,17 +13,18 @@
             this.year = year;
         }
 
-        getday() {
-            return this.day;
-        }
+        // getday() {
+        //     return this.day;
+        // }
+        //
+        // getmonth() {
+        //     return this.month;
+        // }
+        //
+        // getyear() {
+        //     return this.year;
+        // }
 
-        getmonth() {
-            return this.month;
-        }
-
-        getyear() {
-            return this.year;
-        }
         setday(newday) {
             this.day = newday;
         }
@@ -41,25 +42,30 @@
             this.month = month;
             this.year = year;
         }
+        getDate(day,month,year){
+            return this.day;
+            return this.month;
+            return this.year
 
-        toString() {
-            return (day + "/" + month + "/" + year);
+        }
+
+        newResult() {
+            return (this.day + "/" + this.month + "/" + this.year);
         }
     }
 
 
     var date3 = new soDo(19, 8, 2021);
-    day = date3.getday(); //thêm
-    month = date3.getmonth();
-    year = date3.getyear();
-    alert(day + "/" + month + "/" + year);
-    date3.setday(16); //sửa
-    date3.setmonth(10);
-    date3.setyear(1998);
-    day = date3.getday();
-    month = date3.getmonth();
-    year = date3.getyear();
-    alert(date3.toString())  //gọi hàm trực tiếp
+    // day = date3.getday(); //thêm
+    // month = date3.getmonth();
+    // year = date3.getyear();
+    alert(date3.day + "/" + date3.month + "/" + date3.year);
+    date3.setDate(16, 10, 1998);
+    date3.getDate(16,10,1998);
+    // day =    date3.getday(16);
+    // month=   date3.getmonth(10);
+    // year=  date3.getyear(1998);
+    alert(date3.newResult()); //gọi hàm trực tiếp
 </script>
 </body>
 </html>

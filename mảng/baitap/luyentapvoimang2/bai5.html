@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    var num1 = prompt('chuổi 1 ') ;
-    var num2 = prompt('chuổi 2 ') ;
+    var num1 = prompt('chuổi 1 ');
+    var num2 = prompt('chuổi 2 ');
     var numb1 = num1.split('');
     var numb2 = num2.split('');
-  if (  numb1.length == numb2.length) {
-      for ( var i = 0 ; i < num1.length;i++){
-          if (num[i]=num2[i]){
+    if (numb1.length == numb2.length) {
+        for (var i = 0; i < num1.length; i++) {
+            if (num1[i] = num2[i]) {
+                alert('hai chuổi giống nhau')
+            }
+        }
+    } else {
+        alert('hai chuổi khác nhau')
+    }
 
-              alert('hai chuổi giống nhau')
-          }
-          else   { alert('hai chuổi khác nhau')
-          }
-      }
-  }
 </script>
 </body>
 </html>

@@ -62,18 +62,19 @@
     document.write('<br>');
     var eva = new Human('Eva', 'female', 55);
     var Adam = new Human('Adam', 'male', 70);
-    document.write(Adam.getName() + ('&nbsp') + Adam.getGender() + Adam.getWeight()+'kg<br>')
+    console.log(eva.weight1) ;
+    document.write(Adam.name + ('&nbsp') + Adam.gender + Adam.weight1+'kg<br>')
     Adam.ask();
     document.write('<br>');
-    document.write(eva.getName() + ('&nbsp') + eva.getGender() + '<br>');
+    document.write(eva.name + ('&nbsp') + eva.gender + '<br>');
     eva.answer();
     eva.eat(apple);
     document.write(',số căng nặng của tôi sau khi ăn táo' + eva.getWeight());
     document.write('<br>');
     Adam.eat(apple) ;
     document.write('số căng nặng của tôi sau khi ăn táo' + Adam.getWeight());
-    document.write('<br>')
-    document.write('số táo còn lại' + apple.weight)
+    document.write('<br>');
+    document.write('số táo còn lại' + apple.weight);
 </script>
 </body>
 </html>
