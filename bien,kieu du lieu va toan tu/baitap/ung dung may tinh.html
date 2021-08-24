@@ -6,37 +6,37 @@
     <h1>Caculator</h1>
 </head>
 <body>
-    <input id='a1' type="text"> <input id='b2' type="text">
+    <input id='num' type="text"> <input id='num2' type="text">
     <br>
-    <button style="width: 100px" onclick="x()">addition(+)</button>
-    <button style="width: 100px" onclick="y()">subtraction(-)</button>
-    <button style="width: 100px" onclick="z()">multip(x)</button>
-    <button style="width: 100px" onclick="v()">division(/)</button>
+    <button style="width: 100px" onclick="cong()">addition(+)</button>
+    <button style="width: 100px" onclick="tru()">subtraction(-)</button>
+    <button style="width: 100px" onclick="nhan()">multip(x)</button>
+    <button style="width: 100px" onclick="chia()">division(/)</button>
     <br>
     <a>result : </a> <a id="result"></a>
 <script>
-    function x() {
-        var cong1 = parseInt(document.getElementById('a1').value);
-        var cong2 = parseInt(document.getElementById('b2').value);
+    function cong() {
+        var cong1 = parseInt(document.getElementById('num').value);
+        var cong2 = parseInt(document.getElementById('num2').value);
         document.getElementById('result').innerHTML = (cong1 + cong2);
     }
 
-    function y() {
-        var tru = parseInt(document.getElementById('a1').value);
-        var tru1 = parseInt(document.getElementById('b2').value);
+    function tru() {
+        var tru = parseInt(document.getElementById('num').value);
+        var tru1 = parseInt(document.getElementById('num2').value);
         document.getElementById('result').innerText = (tru - tru1);
     }
 
-    function z() {
-        var nhan = parseInt(document.getElementById('a1').value);
-        var nhan1 = parseInt(document.getElementById('b2').value);
+    function nhan() {
+        var nhan = parseInt(document.getElementById('num').value);
+        var nhan1 = parseInt(document.getElementById('num2').value);
         document.getElementById('result').innerText = (nhan * nhan1);
     }
 
-    function v() {
-        var chia = parseInt(document.getElementById('a1').value);
-        var chia1 = parseInt(document.getElementById('b2').value);
-        document.getElementById('result').innerText = (chia / chia1);
+    function chia() {
+        var chia = parseInt(document.getElementById('num').value);
+        var chia1 = parseInt(document.getElementById('num2').value);
+        document.getElementById('result').innerText = (chia/chia1);
     }
 </script>
 </body>

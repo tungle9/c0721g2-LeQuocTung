@@ -5,13 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-<img src="https://majido1989.files.wordpress.com/2012/01/maruko1.jpg" style="position: absolute;
+<img id="zr" src="http://images5.fanpop.com/image/photos/27900000/Sanji-one-piece-27978609-900-728.jpg" style="position: absolute;
           top:0 ; left: 0;" height="170" />
 <script>
+    function upArrowPressed() {
+        let element = document.getElementById("zr");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function downArrowPressed() {
+        var element = document.getElementById("zr");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function leftArrowPressed() {
+        var element = document.getElementById("zr");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element = document.getElementById("zr");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
 
-
-
-
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+    docReady()
 </script>
 </body>
 </html>
