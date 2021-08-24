@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="bat" onclick="bat()">bật</button>
+<button id='tat' onclick="tat()">tắt</button>
+<button id="trangthai">trạng thái</button>
+<script>
+    class Den {
+        constructor(trangThai) {
+            this.trangThai = trangThai;
+        }
+        batDen() {
+            return this.trangThai + ' đèn đang bật';
+        }
+        tatDen() {
+            return this.trangThai + 'đèn đang tắt';
+        }
+    }
+
+    class Congtac {
+        constructor(bat, tat) {
+            this.bat = bat;
+            this.tat = tat;
+        }
+
+        bat() {
+            alert('đèn đang bật')
+        }
+
+        tat() {
+            alert('đèn đang tắt');
+        }
+    }
+// chưa làm xong
+
+</script>
+</body>
+</html>

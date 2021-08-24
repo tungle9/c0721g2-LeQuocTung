@@ -8,16 +8,20 @@
 <script>
     var num1 = prompt('chuổi 1 ');
     var num2 = prompt('chuổi 2 ');
-    var numb1 = num1.split('');
-    var numb2 = num2.split('');
+    var numb1 = num1.split(" ");
+    var numb2 = num2.split(" ");
+    var flag = true ;
     if (numb1.length == numb2.length) {
         for (var i = 0; i < num1.length; i++) {
-            if (num1[i] = num2[i]) {
-                alert('hai chuổi giống nhau')
+            if (num1[i] == num2[i]) {
+                flag = false;
             }
         }
-    } else {
-        alert('hai chuổi khác nhau')
+        if (flag) {
+            alert('hai chuổi khác nhau')
+        } else {
+            alert('hai chuổi giống nhau')
+        }
     }
 
 </script>
