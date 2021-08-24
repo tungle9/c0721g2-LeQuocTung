@@ -6,30 +6,80 @@
 </head>
 <body>
 <script>
-    class Congtac{
-        constructor(congTac) {
-            this.congTac = congTac ;
-        }
-        getCongtac(){
-            return this.congTac ;
-        }
+    class ElectricLamp{
+    constructor(trangThai) {
+        this.trangthai = trangThai
+    }
+    //void là hàm k cần trả về
         bat(){
-            alert('đang bật')
+        this.trangThai = true ;
         }
         tat(){
-            alert('đã tắt')
+        this.trangThai = false ;
         }
     }
-    class Bongden{
-        constructor(Bongden,trangThai) {
-            this.Bongden = Bongden ;
-            this.trangThai = trangThai ;
+    class Bongden {
+        constructor(trangthai,bongden) {
+            this.trangthai = trangthai  ;
+            this.bongden = bongden ;
         }
-        // trangThai(){
-        //     if (this.congTac)
-        // }
+        ketNoivoiBongden(bongDen){
+            this.bongDen = bongDen ;
+        }
+        tatDen(){
+            alert('tắt đèn')
+            this.trangThai = false ;
+            this.bongden.tat() ;
+        }
+        batDen(){
+            alert('bật đèn')
+            this.trangThai = true ;
+            this.bongden.bat() ;
+        }
     }
-var congtac = new Congtac(10)  ;
+    var congTac = new ElectricLamp(false) ;
+    var bongDen = new Bongden(false,congTac)
+      bongDen.tatDen() ;
+    bongDen.batDen() ;
+
+
+
+    //     class ElectricLamp{
+    //     constructor(status) {
+    //         this.status = status;
+    //     }
+    //     //void là hàm không có trả về
+    //     turnOn() {
+    //         this.status = true;
+    //     }
+    //     turnOff() {
+    //         this.status = false;
+    //     }
+    // }
+    // class SwitchButton {
+    //     constructor(status, lamp) {
+    //         this.status = status;
+    //         this.lamp = lamp;
+    //     }
+    //     connectToLamp(lamp) {
+    //         this.lamp = lamp;
+    //     }
+    //     switchOff() {
+    //         alert("Đèn tắt")
+    //         this.status = false;
+    //         this.lamp.turnOff();
+    //     }
+    //
+    //     switchOn() {
+    //         alert("Đèn bật")
+    //         this.status = true;
+    //         this.lamp.turnOn();
+    //     }
+    // }
+    // let electricLamp = new ElectricLamp(false);
+    // let switchButton = new SwitchButton(false,electricLamp);
+    // switchButton.switchOn();
+    // switchButton.switchOff();
 
 
 

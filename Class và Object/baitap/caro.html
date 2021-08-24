@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Cell{
+        constructor(x,y,value) {
+            this.x = x;  //tọa độ hàng
+            this.y = y;  // cột
+            this.value = value; //giá trị ô
+        }
+        changeValue(newValue){
+            this.newValue = newValue ;
+        }
+    }
+    class Caro {
+        constructor(player1,player2,width,height) {
+          //  this.arrayCell = arrayCell ;
+            this.player1 = player1;
+            this.player2 = player2 ;
+            this.width = width ;
+            this.height = height ;
+        }
+        init(){
+            this.arrayCell = [];
+            for(let i = 0 ; i < this.height; i++){
+                this.arrayCell[i]=[];
+                for (let j = 0 ; j<this.width;j++){
+                    this.arrayCell[i][j] = new Cell(i,j,' ');
+                }
+            }
+        }
+    }
+    var caro = new Caro(tung,tha,10,10);
+    caro.init();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>1:cafe,đơn giá 20k</p>
+<p>2:cam vắt,15k</p>
+<p>3:cà rốt ,15k</p>
+<p>4:cà chua,15k </p>
+<p>5:nước lọc,5k</p>
+<p>6:dừa,30k</p>
+<p><button onclick='oder()'>Oder</button></p>
+<script>
+    // <!--<p>cafe<button onclick="f()">1</button></p>
+    // <!--<p>cam vắt<button onclick="f()">2</button></p>
+    // <!--<p>cà rốt <button onclick="f()">3</button></p>-->
+    // <!--<p>cà chua <button onclick="f()">4</button></p>-->
+    // <!--<p>nước lọc<button onclick="f()">5</button></p>-->
+    // <!--<p>dừa<button onclick="f()">6</button></p>-->
+    // <!--    var cf ,cv,cr,cc,nc,d ;-->
+    // <!--function f() {-->
+    // <!--var a = parseInt(prompt('nhập số lượng'));-->
+    // <!-- alert('của mày hết' + a*cf +'k')-->
+    // <!--}-->
+
+    function oder() {
+        do {
+            var a = parseInt(prompt('nhập đồ uống'))
+            switch (a) {
+                case 1:
+                    b = parseInt(prompt('bạn chọn cafe ,giá 20k,số lượng ?? '))
+                    alert('tiền của mày' + b*20 + 'k');
+                    break;
+                case 2:
+                    b = parseInt(prompt('số lượng'))
+                    alert('tiền của mày' + b*15 + 'k');
+                    break;
+                case 3:
+                    b = parseInt(prompt('số lượng'))
+                    alert('tiền của mày' + b*15 + 'k');
+                    break;
+                case 4:
+                    b = parseInt(prompt('số lượng'))
+                    alert('tiền của mày' + b*15 + 'k');
+                    break;
+                case 5:
+                    b = parseInt(prompt('số lượng'))
+                    alert('tiền của mày' + b*5 + 'k');
+                    break;
+                case 6:
+                    b = parseInt(prompt('số lượng'))
+                    alert('tiền của mày' + b*30 + 'k');
+                    break;
+                default  :
+                    alert('xong ');
+                    break;
+            }
+        } while (a < 1)
+    }
+</script>
+</body>
+</html>
