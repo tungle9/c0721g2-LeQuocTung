@@ -10,17 +10,17 @@
     var num2 = prompt('chuổi 2 ');
     var numb1 = num1.split(" ");
     var numb2 = num2.split(" ");
-    var flag = true ;
+    flag = true ;
     if (numb1.length == numb2.length) {
         for (var i = 0; i < num1.length; i++) {
-            if (num1[i] == num2[i]) {
-                flag = false;
+            if (num1[i] != num2[i]) {
+                flag = false ;
             }
         }
-        if (flag) {
-            alert('hai chuổi khác nhau')
-        } else {
+            if (flag){//true {
             alert('hai chuổi giống nhau')
+        } else {
+            alert('hai chuổi khác nhau')
         }
     }
 

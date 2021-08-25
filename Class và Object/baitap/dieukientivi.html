@@ -6,24 +6,46 @@
 </head>
 <body>
 <script>
-class Remote {
-    constructor(dieuKhien,amLuong,trangThai) {
-        this.trangThai = trangThai ;
-        this.dieuKhien = dieuKhien;
-        this.amLuong = amLuong ;
-    }
-    bat(){
-        alert('đã bật tivi');
-    }
-    tat(){
-        alert('đã tắt tivi');
-    }
-    amLuong(){
-        document.write(this.amLuong());
+    class Remote {
+        constructor(dieuKhien, amLuong, trangThai) {
+            this.trangThai = trangThai;
+            this.dieuKhien = dieuKhien;
+            this.amLuong = amLuong;
+        }
+
+        bat() {
+            this.trangThai = true;
+            alert('đã bật tivi');
+        }
+
+        tat() {
+            this.trangThai = false;
+            alert('đã tắt tivi');
+        }
+
+        volume() {
+            if (this.amLuong < 1) {
+                this.amLuong++;
+            }
+            if (this.amLuong > 50) {
+                this.amLuong--;
+            }
+        }
+        chuyenKenh() {
+        this.dieuKhien = prompt('nhập kênh')
+            alert('chuyển đến kênh'+ this.dieuKhien)
+        }
     }
 
-}
+    class Tivi{
+        constructor() {
 
+        }
+    }
+    var remote = new Remote(7,60,true);
+    remote.bat();
+    remote.chuyenKenh();
+    remote.tat()
 </script>
 </body>
 </html>
