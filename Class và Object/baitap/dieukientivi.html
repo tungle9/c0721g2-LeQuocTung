@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+<<<<<<< HEAD
     class Remote {
         constructor(dieuKhien, amLuong, trangThai) {
             this.trangThai = trangThai;
@@ -46,6 +47,27 @@
     remote.bat();
     remote.chuyenKenh();
     remote.tat()
+=======
+class Remote {
+    constructor(dieuKhien, amLuong, trangThai) {
+        this.trangThai = trangThai;
+        this.dieuKhien = dieuKhien;
+        this.amLuong = amLuong;
+    }
+
+    bat() {
+        alert('đã bật tivi');
+    }
+
+    tat() {
+        alert('đã tắt tivi');
+    }
+
+    amLuong() {
+        document.write(this.amLuong());
+    }
+}
+>>>>>>> 61a542ea704aa5714a939c519b60c8fe0dd2f5b0
 </script>
 </body>
 </html>
