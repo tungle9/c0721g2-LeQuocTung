@@ -6,68 +6,50 @@
 </head>
 <body>
 <script>
-<<<<<<< HEAD
     class Remote {
         constructor(dieuKhien, amLuong, trangThai) {
             this.trangThai = trangThai;
             this.dieuKhien = dieuKhien;
             this.amLuong = amLuong;
         }
-
         bat() {
             this.trangThai = true;
-            alert('đã bật tivi');
+            //  alert('đã bật tivi');
         }
-
         tat() {
             this.trangThai = false;
-            alert('đã tắt tivi');
+            //  alert('đã tắt tivi');
         }
-
         volume() {
-            if (this.amLuong < 1) {
+            if (this.amLuong == 1) {
                 this.amLuong++;
+                alert('volume+1')
             }
-            if (this.amLuong > 50) {
+            if (this.amLuong == -1) {
                 this.amLuong--;
             }
         }
         chuyenKenh() {
-        this.dieuKhien = prompt('nhập kênh')
-            alert('chuyển đến kênh'+ this.dieuKhien)
+            this.dieuKhien = prompt('nhập kênh') ;
+            alert('chuyển đến kênh' + this.dieuKhien) ;
         }
     }
-
-    class Tivi{
-        constructor() {
-
+    class Tivi {
+        constructor(display) {
+            this.display = display;
+        }
+        app(remote) {
+            if ( this.display == true && this.display == remote.trangThai) {
+                alert('đã bật tivi');
+            }
+            if (   this.display == false && this.display == remote.trangThai) {
+                alert('đã tắt tivi');
+            }
         }
     }
-    var remote = new Remote(7,60,true);
-    remote.bat();
-    remote.chuyenKenh();
-    remote.tat()
-=======
-class Remote {
-    constructor(dieuKhien, amLuong, trangThai) {
-        this.trangThai = trangThai;
-        this.dieuKhien = dieuKhien;
-        this.amLuong = amLuong;
-    }
-
-    bat() {
-        alert('đã bật tivi');
-    }
-
-    tat() {
-        alert('đã tắt tivi');
-    }
-
-    amLuong() {
-        document.write(this.amLuong());
-    }
-}
->>>>>>> 61a542ea704aa5714a939c519b60c8fe0dd2f5b0
+    var remo = new Remote(7, 1, true);
+    var tivi = new Tivi(true);
+    tivi.app(remo) ;
 </script>
 </body>
 </html>

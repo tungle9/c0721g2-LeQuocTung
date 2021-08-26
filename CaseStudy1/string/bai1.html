@@ -7,12 +7,18 @@
 <body>
 <script>
     var arr = ['tRuong','TaN','HAI'] ;
-  arr = arr.toString() ;
- // var b
- for(var i = 0 ; i < arr.length ; i ++){
-     arr = arr.charAt(i).toUpperCase()+ arr.slice(i+1)
+ arr =  arr.toString();
+ //arr = arr.split(" ");
+ var newArr = (' ');
+ var array = arr.toLowerCase().split(' ');// là 1 mảng
+ for(var i = 0 ; i < array.length ; i ++){
+    if (array[i] != ' '){
+      var  first = array[i].substr(0,1);
+      var  result = first.toUpperCase()+array[i].substr(1,array[i].length);
+  newArr = newArr + result + " " ;
+    }
  }
-document.write(arr)
+document.write(newArr)
 
 
 </script>

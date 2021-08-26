@@ -46,10 +46,10 @@
         getWeight() {
             return this.weight1;
         }
-        eat(apple) {
-            if (apple.weight > 0) {
+        eat(Apple) {
+            if (Apple.weight > 0) {
                 document.write(this.name + ': đã ăn táo ');
-                apple.weight--;
+                Apple.weight--;
                 this.weight1++;
             } else {
                 alert('hết táo')
@@ -57,7 +57,7 @@
         }
     }
     var apple = new Apple(10);
-   // document.write('<br>');
+    document.write('<br>');
     document.write('số táo hiện tại'+apple.weight);
     document.write('<br>');
     var eva = new Human('Eva', 'female', 55);
