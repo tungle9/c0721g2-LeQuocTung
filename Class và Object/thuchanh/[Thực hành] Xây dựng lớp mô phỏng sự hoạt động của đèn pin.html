@@ -11,10 +11,10 @@
             this.status = status ;
             this.battery = battery ;
         }
-        turnOn(){
-            this.battery.check() ;
+        turnOn(enegry){
+            if( this.battery > 0 && enegry > 0){
             this.status = true  ;
-            document.write('đèn đang bật') ;
+             document.write('đèn đang bật') ;}
         }
         turnOff(){
             this.status = true  ;
@@ -30,13 +30,17 @@
         }
         check(){
             if(this.energy > 0 ){
+                alert('pin'+this.energy)
                 this.energy -- ;
             } else{
                 document.write('hết pin') ;
             }
         }
     }
-    var battery = Battery(10) ;
+    var flasLamp = new FlasLamp(true ,5);
+    var pin = new Battery(70);
+    flasLamp.turnOn(pin.energy)
+
 </script>
 </body>
 </html>

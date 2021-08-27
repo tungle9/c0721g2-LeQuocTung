@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    class phone{
+    class Phone{
         constructor(pin,mess) {
             this.pin = pin ;
             this.mess = mess ;
@@ -23,8 +23,8 @@
             this.pin--;
         }
         sacpin(){
-            while (this.pin++)
-            this.pin = this.pin+0.01 ;
+          this.pin = this.pin+0.01 ;
+          alert(this.pin)
         }
         soanTinnhan(){
             let tinNhan = prompt('Nhập tin nhắn') ;
@@ -32,10 +32,15 @@
             this.pin-- ;
         }
         guiTinnhan(phone,mess){
-            this.thuDen.push(phone + ','+ mess);
+         return    this.thuDen.push(phone + ','+ mess);
             this.pin--
+             alert(this.thuDen)
         }
     }
+var phone = new Phone(90,'hello')
+  phone.sacpin()
+    var bphone = new Phone(30,'hi')
+    bphone.guiTinnhan(55,'alo')
 
 
 </script>
