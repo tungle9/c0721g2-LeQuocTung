@@ -1,4 +1,4 @@
-package _01_introductionn_java.exercise;
+package _01_introductionn_java.practice;
 public class UseVariable {
     public static void main(String[] args) {
         int a = 10 ; // kiểu int số thực

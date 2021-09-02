@@ -1,4 +1,4 @@
-package _01_introductionn_java.pratice;
+package _01_introductionn_java.excercise;
 
 import java.util.Scanner;
 
@@ -40,13 +40,69 @@ public class NumToWords {
             }
             num = num % 100;
         }
-//        if(num < 100){
-        switch (num / 10) {
-            case 0:
-                System.out.println("zero");
-                break;
+        switch (num / 10) {// hàng chục
             case 1:
-                System.out.println("one ");
+                switch (num % 10) {
+                    case 0:
+                        System.out.println("ten");
+                        break;
+                    case 1:
+                        System.out.println("eleven");
+                        break;
+                    case 2:
+                        System.out.println("twelve");
+                        break;
+                    case 3:
+                        System.out.println("thirteen");
+                        break;
+                    case 4:
+                        System.out.println("fourteen");
+                        break;
+                    case 5:
+                        System.out.println("fifteen");
+                        break;
+                    case 6:
+                        System.out.println("sixteen");
+                        break;
+                    case 7:
+                        System.out.println("seventeen");
+                        break;
+                    case 8:
+                        System.out.println("eightteen");
+                        break;
+                    case 9:
+                        System.out.println("nineteen");
+                        break;
+                }
+                break;
+            case 2:
+                System.out.println("twenty");
+                break;
+            case 3:
+                System.out.println("thirty");
+                break;
+            case 4:
+                System.out.println("fourty");
+                break;
+            case 5:
+                System.out.println("fifty");
+                break;
+            case 6:
+                System.out.println("sixty");
+                break;
+            case 7:
+                System.out.println("seventy");
+                break;
+            case 8:
+                System.out.println("eighty");
+                break;
+            case 9:
+                System.out.println("ninety");
+                break;
+        }
+        switch (num % 10 ) {  //đơn vị
+            case 1:
+                System.out.println("one");
                 break;
             case 2:
                 System.out.println("two");
@@ -64,7 +120,7 @@ public class NumToWords {
                 System.out.println("six");
                 break;
             case 7:
-                System.out.println("seven ");
+                System.out.println("seven");
                 break;
             case 8:
                 System.out.println("eight");
@@ -72,40 +128,13 @@ public class NumToWords {
             case 9:
                 System.out.println("nine");
                 break;
+            case 10:
+                System.out.println("ten");
+                break;
         }
-//    num = num * 10 ;
 
-        switch (num % 10) {
-            case 0:
-                System.out.println("zero");
-                break;
-            case 1:
-                System.out.println("one ");
-                break;
-            case 2:
-                System.out.println("two");
-                break;
-            case 3:
-                System.out.println("three");
-                break;
-            case 4:
-                System.out.println("four");
-                break;
-            case 5:
-                System.out.println("five");
-                break;
-            case 6:
-                System.out.println("six");
-                break;
-            case 7:
-                System.out.println("seven ");
-                break;
-            case 8:
-                System.out.println("eight");
-                break;
-            case 9:
-                System.out.println("nine");
-                break;
-        }
     }
 }
+
+
+

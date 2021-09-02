@@ -1,4 +1,4 @@
-package _01_introductionn_java.pratice;
+package _01_introductionn_java.excercise;
 import java.util.Scanner;
 public class ChangeMoney {
     public static void main(String[] args) {

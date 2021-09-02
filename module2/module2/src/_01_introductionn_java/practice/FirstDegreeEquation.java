@@ -1,4 +1,4 @@
-package _01_introductionn_java.exercise;
+package _01_introductionn_java.practice;
 
 import java.util.Scanner;
 public class FirstDegreeEquation {
