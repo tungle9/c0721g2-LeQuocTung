@@ -9,15 +9,13 @@ public class AddValueArray {
         int login = scanner.nextInt(); // vị trí cần chèn
         System.out.println("số muốn điền vào");
         int index = scanner.nextInt();//số chèn vào;
-       // int abc= 3;
         int []array = {1,3, 4, 5, 6, 7};
-        int n = array.length-1; //số lượng phần tử
-//int temp = array.length;
-         for(int i = n; i > login;i--){
+        int n = array.length-1; //số lượng phần tử //5
+         for(int i = n; i > login;i--){ //duyệt ngược đến vị trí chèn
              array[i] = array[i-1] ;
          }
          array[login] = index;
-        System.out.println(array);
+//        System.out.println(array);
         for(int i = 0 ;i < array.length;i++){
             System.out.println(array[i]+",");
         }
