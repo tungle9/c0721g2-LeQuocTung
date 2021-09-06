@@ -6,18 +6,26 @@ public class AddValueArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("vị trí chèn");
-        int login = scanner.nextInt(); // vị trí cần chèn
+        int index = scanner.nextInt(); // vị trí cần chèn
         System.out.println("số muốn điền vào");
-        int index = scanner.nextInt();//số chèn vào;
-        int []array = {1,3, 4, 5, 6, 7};
-        int n = array.length-1; //số lượng phần tử //5
-         for(int i = n; i > login;i--){ //duyệt ngược đến vị trí chèn
-             array[i] = array[i-1] ;
-         }
-         array[login] = index;
-//        System.out.println(array);
-        for(int i = 0 ;i < array.length;i++){
-            System.out.println(array[i]+",");
+        int num = scanner.nextInt();//số chèn vào;
+        int[] array = {1, 3, 4, 5, 6, 7};
+        int[] arrayA = new int[array.length + 1]; //mảng mới
+        int n = array.length; //số lượng phần tử //6
+        for (int i = 0; i < arrayA.length; i++) { //duyệt ngược đến vị trí chèn
+            if (index == i) {
+                arrayA[i] = num;
+            } else if (i < index) { // i = 0 ; index = 1 chèn
+                arrayA[i] = array[i];
+            }else {
+                arrayA[i] = array[i-1] ;
+            }
         }
+        array[index] = num;
+//        System.out.println(array);
+        for (int j = 0; j < arrayA.length; j++) {
+            System.out.print(arrayA[j] + ",");
+        }
+
     }
 }
