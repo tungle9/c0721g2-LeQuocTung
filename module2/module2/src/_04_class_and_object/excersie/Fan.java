@@ -5,11 +5,12 @@ public class Fan {
     int speed;
     boolean status;
     int radius;
-int SLOW = 1 ;
-int MEDIUM = 2 ;
-int FAST = 3 ;
-    public void speed() {
-        System.out.println("speed of fan : " + SLOW);
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
+
+    public void speed(int a  ) {
+        System.out.println("speed of fan : " + a );
     }
 
     public void status() {
@@ -28,24 +29,20 @@ int FAST = 3 ;
         System.out.println("color " + color);
     }
 
-    public void ToString() {
-        System.out.printf("fan have color : %s ,speed :  %d", color, speed);
+    public  String toString() {
+        if (status == true) {
+            System.out.print("fan have color "+color+"speed : "+ speed+ "radius :"+ radius +"fan is on speed: "+speed );
+        }   if (status == false) {
+            System.out.print("fan have color :"+color+  "radius :"+ radius +"fan is off" );
+        }
+   return "" ;
     }
-
     public static void main(String[] args) {
-        Fan fan = new Fan();
-        fan.status = true;
-        fan.status();
-        fan.color = "blue";
-        fan.speed();
-        fan.ToString();
-        System.out.println("");
         Fan fan1 = new Fan();
-        fan1.status = false;
-        fan1.status();
+        fan1.status = true;
         fan1.color = "red";
-        fan1.speed = 3;
-        fan1.ToString();
-
+       fan1.speed(FAST);
+        fan1.radius = 5;
+       fan1.toString();
     }
 }

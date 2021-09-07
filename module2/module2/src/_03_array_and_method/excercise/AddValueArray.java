@@ -11,8 +11,7 @@ public class AddValueArray {
         int num = scanner.nextInt();//số chèn vào;
         int[] array = {1, 3, 4, 5, 6, 7};
         int[] arrayA = new int[array.length + 1]; //mảng mới
-        int n = array.length; //số lượng phần tử //6
-        for (int i = 0; i < arrayA.length; i++) { //duyệt ngược đến vị trí chèn
+        for (int i = 0; i < arrayA.length; i++) { //
             if (index == i) {
                 arrayA[i] = num;
             } else if (i < index) { // i = 0 ; index = 1 chèn
