@@ -8,11 +8,6 @@ public class Fan {
     public static final int SLOW = 1;
     public static final int MEDIUM = 2;
     public static final int FAST = 3;
-
-    public void speed(int a  ) {
-        System.out.println("speed of fan : " + a );
-    }
-
     public void status() {
         if (status == false) {
             System.out.println("fan turn off");
@@ -21,28 +16,36 @@ public class Fan {
         }
     }
 
-    public void radius() {
-        System.out.println("radius = " + radius);
+    public int radius() {
+       return radius ;
     }
 
-    public void color() {
-        System.out.println("color " + color);
+    public String color() {
+      return color ;
     }
 
-    public  String toString() {
+    public String toString() {
         if (status == true) {
-            System.out.print("fan have color "+color+"speed : "+ speed+ "radius :"+ radius +"fan is on speed: "+speed );
-        }   if (status == false) {
-            System.out.print("fan have color :"+color+  "radius :"+ radius +"fan is off" );
+            System.out.print("fan have color " + color + "speed : " + speed + "radius :" + radius + "fan is on speed: " + speed);
         }
-   return "" ;
+        if (status == false) {
+            System.out.print("fan have color :" + color + ",radius :" + radius + ",fan is off");
+        }
+        return "";
     }
     public static void main(String[] args) {
         Fan fan1 = new Fan();
         fan1.status = true;
         fan1.color = "red";
-       fan1.speed(FAST);
+        fan1.speed = FAST ;
         fan1.radius = 5;
-       fan1.toString();
+        fan1.toString();
+        System.out.println("");
+        Fan fan2 = new Fan();
+        fan2.status = false;
+        fan2.color = "blue";
+        fan2.speed= SLOW ;
+        fan2.radius = 5;
+        fan2.toString();
     }
 }
