@@ -1,24 +1,19 @@
 package _05_modifier_static_method_static.excersie;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+//truyền dùng set , lấy dùng get
 public class Student {
-    private int rollno;
-    private String name;
-    private static String college = "BBDIT";
-     int old ;
-    //constructor to initialize the variable
-    Student(int r, String n,int b) {
-        rollno = r;
-        name = n;
-        old = b;
+    private String name = "John";
+    private String classes = "C02";
+    public Student(){
     }
-
-    //static method to change the value of static variable
-    static void change() {
-        college = "CODEGYM";
+    public void setName(String name) {
+        this.name = name;
     }
-
-    //method to display values
-    void display() {
-        System.out.println(rollno + " " + name + " " + college + " "+old );
+    public void setClasses(String classes) {
+        this.classes = classes;
     }
+   public void display(){
+       System.out.println("name :" + name +",classes :"+classes);
+   }
 }
