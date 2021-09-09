@@ -9,5 +9,6 @@ public class TestCircle {
         double b = circle1.getArea();
         System.out.println(b);
         System.out.println(a);
+        circle1.display();
     }
 }

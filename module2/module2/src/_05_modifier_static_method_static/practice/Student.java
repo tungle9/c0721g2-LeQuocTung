@@ -5,7 +5,9 @@ public class Student {
     private String name;
     private static String college = "BBDIT";
     int old;
+public Student(){
 
+    }
     //constructor to initialize the variable
     Student(int r, String n, int b) {
         rollno = r;

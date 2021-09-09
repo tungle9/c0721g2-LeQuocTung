@@ -17,7 +17,7 @@ public class Circle {
 
     }
 
-    void display() {
+     public void display() {
         System.out.println("radius:" + radius + ",color :" + color+ ",Area : " +area);
     }
 }

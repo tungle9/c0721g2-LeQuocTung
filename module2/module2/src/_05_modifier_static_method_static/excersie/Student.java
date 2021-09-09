@@ -1,6 +1,5 @@
 package _05_modifier_static_method_static.excersie;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 //truyền dùng set , lấy dùng get
 public class Student {
     private String name = "John";
