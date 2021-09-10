@@ -1,10 +1,10 @@
-package _6_inheritance.excersie.Point_and_MoveablePoint;
+package _6_inheritance.excersie.point_and_moveablepoint;
 
 import java.util.Arrays;
 
 public class MoveablePoint extends Point {
-    float xSpeed = 0.0f;
-    float ySpeed = 0.0f;
+    private float xSpeed = 0.0f;
+    private float ySpeed = 0.0f;
 
     public MoveablePoint(float xSpeed, float ySpeed) {
         this.xSpeed = xSpeed;
@@ -40,16 +40,7 @@ public class MoveablePoint extends Point {
 
     public float[] getSpeed() {
         float[] speed = {xSpeed, ySpeed};
-        System.out.println(Arrays.toString(speed));
         return speed;
-    }
-
-    @Override
-    public String toString() {
-        return "MoveablePoint{" +
-                "xSpeed=" + xSpeed +
-                ", ySpeed=" + ySpeed +
-                '}';
     }
 
     public MoveablePoint move() {  //+ đối tượng cha và con
@@ -59,4 +50,14 @@ public class MoveablePoint extends Point {
         this.setY(this.getY() + ySpeed);
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "MoveablePoint{" +
+                "xSpeed=" + xSpeed +
+                ", ySpeed=" + ySpeed +
+                ",MoveablePoint=" + Arrays.toString(getXY()) +
+                '}';
+    }
+
 }

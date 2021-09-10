@@ -1,10 +1,14 @@
-package _6_inheritance.excersie.Point_and_MoveablePoint;
+package _6_inheritance.excersie.point_and_moveablepoint;
+
+import java.util.Arrays;
 
 public class Point {
-   private float x = 1f;
-    private float y = 2f;
-        public Point() {
+    private float x;
+    private float y;
+
+    public Point() {
     }
+
     public Point(float x, float y) {
         this.x = x;
         this.y = y;
@@ -26,14 +30,16 @@ public class Point {
         this.y = y;
     }
 
-    public void SetXY(float x, float y) {
-        this.x = x ;
-        this.y = y ;
+    public void setXY(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
-    public float[] getXY(){
-        float []XY = {x,y};
+
+    public float[] getXY() {
+        float[] XY = {x, y};
         return XY;
     }
+
     @Override
     public String toString() {
         return "Point{" +
@@ -42,9 +48,9 @@ public class Point {
                 '}';
     }
 
-    public static void main(String[] args) {
-       Point point = new Point();
-//        System.out.println(point.x);
-        System.out.println(point.toString());
-    }
+//    public static void main(String[] args) {
+//        Point point = new Point();
+//        point.setXY(10, 20);
+//        System.out.println(Arrays.toString(point.getXY()));
+//    }
 }

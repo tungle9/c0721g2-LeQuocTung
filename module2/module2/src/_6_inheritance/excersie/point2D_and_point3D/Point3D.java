@@ -1,10 +1,9 @@
-package _6_inheritance.excersie.Point2D_and_Point3D;
+package _6_inheritance.excersie.point2D_and_point3D;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Point3D extends Point2D {
-    float z = 0.0f;
+   private float z = 0.0f;
     public Point3D() {
 
     }
@@ -26,14 +25,11 @@ public class Point3D extends Point2D {
         this.z = z;
     }
     public void setXyz(float x, float y, float z) {
-        this.x = x;
-        this.y = y;
         this.z = z;
     }
 
     public float[] getXyz() {
-        float[] xyz = {x, y, z};
-        System.out.println(Arrays.toString(xyz));
+        float[] xyz = {getX(), getY(), z};
         return xyz;
     }
 
@@ -41,8 +37,8 @@ public class Point3D extends Point2D {
     public String toString() {
         return "Point3D{" +
                 "z=" + z +
-                ", x=" + x +
-                ", y=" + y +
+                ", x=" + getX() +
+                ", y=" + getY() +
                 '}';
     }
 

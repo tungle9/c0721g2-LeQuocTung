@@ -1,11 +1,17 @@
-package _6_inheritance.excersie.Circle_and_Cylinder;
+package _6_inheritance.excersie.circle_and_cylinder;
 
 public class Circle {
-    String color ;
-    double radius ;
-    public Circle(){
+   private  String color = "black";
+   private  double radius;
+   private double area ;
+
+    public Circle() {
 
     }
+    public double getArea(){
+        return area;
+    }
+
     public Circle(String color, double radius) {
         this.color = color;
         this.radius = radius;
@@ -25,9 +31,7 @@ public class Circle {
 
     public void setRadius(double radius) {
         this.radius = radius;
-    }
-     void alo(){
-        System.out.println("abc");
+        this.area = Math.PI*this.radius*this.radius;
     }
 
 
@@ -36,11 +40,12 @@ public class Circle {
         return "Circle{" +
                 "color='" + color + '\'' +
                 ", radius=" + radius +
+                ",area= "+area+
                 '}';
     }
 
     public static void main(String[] args) {
-        Circle circle = new Circle("Red",12);
+        Circle circle = new Circle("Red", 12);
         System.out.println(circle.toString());
     }
 }
