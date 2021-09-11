@@ -1,4 +1,4 @@
-package _07_abstract_class_and_interface.practice;
+package _07_abstract_class_and_interface.practice.animal_edible;
 
 public class Chicken extends Animal implements Edible {
     @Override

@@ -1,24 +1,19 @@
 package _6_inheritance.practice;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape   {
     private double width = 1;
     private double length = 1;
     private String string = "Cry";
-public Rectangle(){
-
-}
     public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
     }
-
     public Rectangle(String color, boolean filled, double width, double length,String string) {
         super(color, filled);
         this.width = width;
         this.length = length;
         this.string = string ;
     }
-
     @Override
     public String toString() {
         return "Rectangle{" +

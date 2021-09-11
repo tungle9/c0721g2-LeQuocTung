@@ -1,6 +1,7 @@
 package _6_inheritance.practice;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle   {
+
     public Square(double side) {
         super(side, side);
     }
@@ -10,14 +11,12 @@ public class Square extends Rectangle {
     public Square(String color, boolean filled, double width, double length,String string ) {
         super(color, filled, width, length,string);
     }
-
     @Override
     public String toString() {
         return "A Square with side="
                 + ", which is a subclass of "
                 + super.toString();
     }
-
     public static void main(String[] args) {
         Square square = new Square(23123);
         System.out.println(square);

@@ -1,6 +1,7 @@
-package _6_inheritance.practice;
+package _07_abstract_class_and_interface.practice.interface_comparator;
 
 import _07_abstract_class_and_interface.excersice.colorable.Corlorable;
+import _6_inheritance.practice.Shape;
 
 public class Circle extends Shape implements Corlorable {
     @Override
@@ -14,7 +15,7 @@ public class Circle extends Shape implements Corlorable {
     public Circle(){
 
     }
-    public Circle(double radius,String color , boolean filled){
+    public Circle(double radius, String color , boolean filled){
         super(color, filled);
         this.radius = radius;
     }
@@ -32,10 +33,12 @@ public class Circle extends Shape implements Corlorable {
     }
     @Override
     public String toString() {
+
+
         return "Circle{" +
                 "radius=" + radius +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
+                ", color='" + getColor() + '\'' +
+                ", filled=" + isFilled() +
                 '}';
     }
 
