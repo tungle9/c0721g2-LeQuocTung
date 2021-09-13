@@ -5,16 +5,16 @@ public class Test {
         Shapee[] shapees = new Shapee[3];
         shapees[0] = new Circlee(2);
         shapees[1] = new Rectanglee(5, 10);
-        shapees[2] = new Squaree(10);
+        shapees[2] = new Squaree(7);
         System.out.println("Ban đầu");
         for (Shapee shapee : shapees) {
             if (shapee instanceof Circlee) {
                 System.out.println((((Circlee) shapee).getArea()));
-            } else if (shapee instanceof Rectanglee) {
-                System.out.println((((Rectanglee) shapee).getArea()));
-            } else //(shapee instanceof Squaree)
-            {
+            }  if (shapee instanceof Squaree ) {
                 System.out.println((((Squaree) shapee).getArea()));
+            } else if (shapee instanceof Rectanglee)
+            {
+                System.out.println((((Rectanglee) shapee).getArea()));
             }
         }
         System.out.println("/////////////Sau///////////////");
@@ -24,7 +24,7 @@ public class Test {
                 System.out.println(shapee.resize(per));
             } else if (shapee instanceof Rectanglee) {
                 System.out.println(shapee.resize(per));
-            } else //(shapee instanceof Squaree)
+            } else if (shapee instanceof Squaree)
             {
                 System.out.println(shapee.resize(per));
             }

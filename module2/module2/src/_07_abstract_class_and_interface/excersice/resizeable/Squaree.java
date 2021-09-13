@@ -1,9 +1,7 @@
 package _07_abstract_class_and_interface.excersice.resizeable;
 
-
 public class Squaree extends Rectanglee implements Resizeable {
     private double side;
-
     public double getSide() {
         return side;
     }
@@ -19,15 +17,9 @@ public class Squaree extends Rectanglee implements Resizeable {
     public double getArea() {
         return side * side;
     }
-
-    public Squaree(double width, double length, double side) {
+    public Squaree(double width, double length) {
         super(width, length);
     }
-
-    public Squaree(String color, boolean filled, double width, double length, String string) {
-        super(color, filled, width, length, string);
-    }
-
     @Override
     public double resize(double percent) {
         double a = getArea() * percent + getArea();

@@ -1,13 +1,6 @@
 package _07_abstract_class_and_interface.practice.interface_comparator;
-
-import _07_abstract_class_and_interface.excersice.colorable.Corlorable;
 import _6_inheritance.practice.Shape;
-
-public class Circle extends Shape implements Corlorable {
-    @Override
-    public String howtoColor() {
-        return "leg";
-    }
+public class Circle extends Shape   {
     private double radius = 1;
     public Circle(double radius){
         this.radius = radius ;

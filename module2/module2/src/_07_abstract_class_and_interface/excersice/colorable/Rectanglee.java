@@ -1,10 +1,10 @@
 package _07_abstract_class_and_interface.excersice.colorable;
 
-public class Rectanglee extends Shapee implements Corlorable {
-    @Override
-    public String howtoColor() {
-        return "Color all four sides";
-    }
+public class Rectanglee extends Shapee  {
+//    @Override
+//    public String howtoColor() {
+//        return "Color all four sides";
+//    }
 
     private double width = 1.0;
     private double length = 1.0;

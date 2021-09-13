@@ -1,6 +1,10 @@
 package _07_abstract_class_and_interface.excersice.colorable;
 
 public class Squaree extends Rectanglee implements Corlorable {
+    @Override
+    public String howtoColor() {
+        return "Color all four sides";
+    }
 
     public double side;
 
@@ -16,18 +20,19 @@ public class Squaree extends Rectanglee implements Corlorable {
         return this.side * this.side;
     }
 
-    //    public Squaree(double width, double length) {
-//        super(width, length);
-//    }
+    public Squaree(double width, double length) {
+        super(width, length);
+    }
+
     public Squaree(String color, boolean filled, double width, double length, String string) {
         super(color, filled, width, length, string);
     }
 
     @Override
     public String toString() {
-        return "A Square with side="
-                + ", which is a subclass of "
-                + super.toString();
+        return "Squaree{" +
+                "side=" + side +
+                '}';
     }
 
     public static void main(String[] args) {
@@ -37,8 +42,4 @@ public class Squaree extends Rectanglee implements Corlorable {
         System.out.println(square);
     }
 
-    @Override
-    public String howtoColor() {
-        return "Color all four sides";
-    }
 }

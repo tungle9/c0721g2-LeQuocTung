@@ -1,9 +1,8 @@
 package _07_abstract_class_and_interface.excersice.resizeable;
 
 public class Rectanglee extends Shapee implements Resizeable {
-    private double width = 1.0;
-    private double length = 1.0;
-
+    private double width ;
+    private double length ;
     public Rectanglee(String color, boolean filled, double width, double length, String string) {
     }
 
@@ -20,11 +19,11 @@ public class Rectanglee extends Shapee implements Resizeable {
         this.length = length;
     }
 
-    public Rectanglee(double width, double length, String color, boolean filled) {
-        super(color, filled);
-        this.width = width;
-        this.length = length;
-    }
+//    public Rectanglee(double width, double length, String color, boolean filled) {
+//        super(color, filled);
+//        this.width = width;
+//        this.length = length;
+//    }
 
     public double getWidth() {
         return width;
@@ -56,8 +55,7 @@ public class Rectanglee extends Shapee implements Resizeable {
                 + getWidth()
                 + " and length="
                 + getLength()
-                + ", which is a subclass of "
-                + super.toString();
+                + ", which is a subclass of ";
     }
 
 //    @Override

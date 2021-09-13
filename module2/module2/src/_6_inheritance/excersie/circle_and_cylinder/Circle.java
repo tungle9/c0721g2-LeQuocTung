@@ -9,7 +9,6 @@ public class Circle {
 //  return s;
 //}
     public Circle() {
-
     }
     public double getArea(){
         return area = Math.PI * radius*radius;

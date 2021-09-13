@@ -10,20 +10,20 @@ public class Test {
         for (Shapee shapee : shapees) {
             if (shapee instanceof Circlee) {
                 System.out.println(((Circlee) shapee).getArea());
-            } else if (shapee instanceof Rectanglee) {
-                System.out.println(((Rectanglee) shapee).getArea());
-            } else {
+            } else if (shapee instanceof Squaree) {
                 System.out.println(((Squaree) shapee).getArea());
+            } else {
+                System.out.println(((Rectanglee) shapee).getArea());
             }
         }
         System.out.println("/////////////Sau///////////////");
         for (Shapee shapee : shapees) {
             if (shapee instanceof Circlee) {
-                System.out.println(((Circlee) shapee).howtoColor() + ((Circlee) shapee).getArea());
+                System.out.println(((Circlee) shapee).getArea());
+            } else if (shapee instanceof Squaree) {
+                System.out.println(((Squaree) shapee).howtoColor()+((Squaree) shapee).getArea());
             } else if (shapee instanceof Rectanglee) {
-                System.out.println(((Rectanglee) shapee).howtoColor() + ((Rectanglee) shapee).getArea());
-            } else {
-                System.out.println(((Squaree) shapee).howtoColor() + ((Squaree) shapee).getArea());
+                System.out.println(((Rectanglee) shapee).getArea());
             }
         }
     }

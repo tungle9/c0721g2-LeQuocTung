@@ -1,7 +1,4 @@
 package _07_abstract_class_and_interface.practice.interface_comparator;
-
-import _6_inheritance.practice.Circle;
-
 import java.util.Arrays;
 
 public class Test {

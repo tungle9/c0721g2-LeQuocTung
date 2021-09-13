@@ -1,7 +1,4 @@
 package _07_abstract_class_and_interface.practice.interface_comparator;
-
-import _6_inheritance.practice.Circle;
-
 import java.util.Comparator;
 
 public class CircleComparator implements Comparator<Circle> { /// Circle từ bài 6

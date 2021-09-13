@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class ReverseArray {
     public static void main(String[] args) {
+
         int[] array = {1,2,3,4};
+//     IntegerBuilder s =
       int first = 0;
       int last = array.length-1;
    int temp ;
