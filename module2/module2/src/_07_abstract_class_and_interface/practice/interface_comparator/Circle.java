@@ -1,5 +1,5 @@
 package _07_abstract_class_and_interface.practice.interface_comparator;
-import _6_inheritance.practice.Shape;
+import _06_inheritance.practice.Shape;
 public class Circle extends Shape   {
     private double radius = 1;
     public Circle(double radius){

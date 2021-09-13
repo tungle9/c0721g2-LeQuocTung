@@ -1,4 +1,4 @@
-package _6_inheritance.excersie.point2D_and_point3D;
+package _06_inheritance.excersie.point2D_and_point3D;
 
 public class Point2D {
     private  float x = 1f;

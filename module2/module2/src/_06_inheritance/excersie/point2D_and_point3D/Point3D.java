@@ -1,6 +1,4 @@
-package _6_inheritance.excersie.point2D_and_point3D;
-
-import java.util.Arrays;
+package _06_inheritance.excersie.point2D_and_point3D;
 
 public class Point3D extends Point2D {
    private float z = 0.0f;

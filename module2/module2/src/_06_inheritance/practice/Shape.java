@@ -1,4 +1,4 @@
-package _6_inheritance.practice;
+package _06_inheritance.practice;
 
 public class Shape   {
     String color = "green";

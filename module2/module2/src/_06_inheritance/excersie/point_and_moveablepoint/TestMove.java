@@ -1,6 +1,4 @@
-package _6_inheritance.excersie.point_and_moveablepoint;
-
-import java.util.Arrays;
+package _06_inheritance.excersie.point_and_moveablepoint;
 
 public class TestMove {
     public static void main(String[] args) {

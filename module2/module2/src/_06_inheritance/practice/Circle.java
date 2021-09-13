@@ -1,4 +1,4 @@
-package _6_inheritance.practice;
+package _06_inheritance.practice;
 
 import _07_abstract_class_and_interface.excersice.colorable.Corlorable;
 

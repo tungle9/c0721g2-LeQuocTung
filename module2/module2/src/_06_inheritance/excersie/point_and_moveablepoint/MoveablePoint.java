@@ -1,4 +1,4 @@
-package _6_inheritance.excersie.point_and_moveablepoint;
+package _06_inheritance.excersie.point_and_moveablepoint;
 
 import java.util.Arrays;
 
