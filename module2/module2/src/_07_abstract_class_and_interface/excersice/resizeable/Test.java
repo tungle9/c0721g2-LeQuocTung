@@ -10,10 +10,10 @@ public class Test {
         for (Shapee shapee : shapees) {
             if (shapee instanceof Circlee) {
                 System.out.println((((Circlee) shapee).getArea()));
-            }  if (shapee instanceof Squaree ) {
+            }
+            if (shapee instanceof Squaree) {
                 System.out.println((((Squaree) shapee).getArea()));
-            } else if (shapee instanceof Rectanglee)
-            {
+            } else if (shapee instanceof Rectanglee) {
                 System.out.println((((Rectanglee) shapee).getArea()));
             }
         }
@@ -22,10 +22,9 @@ public class Test {
         for (Shapee shapee : shapees) {
             if (shapee instanceof Circlee) {
                 System.out.println(shapee.resize(per));
-            } else if (shapee instanceof Rectanglee) {
+            } else if (shapee instanceof Squaree) {
                 System.out.println(shapee.resize(per));
-            } else if (shapee instanceof Squaree)
-            {
+            } else if (shapee instanceof Rectanglee) {
                 System.out.println(shapee.resize(per));
             }
         }

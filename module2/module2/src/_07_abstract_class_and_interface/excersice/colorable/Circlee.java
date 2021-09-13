@@ -1,11 +1,6 @@
 package _07_abstract_class_and_interface.excersice.colorable;
 
-public class Circlee extends Shapee implements Corlorable  {
-    @Override
-    public String howtoColor() {
-        return "Color all four sides";
-    }
-
+public class Circlee extends Shapee {
     private double radius = 1.0;
 
     public Circlee() {

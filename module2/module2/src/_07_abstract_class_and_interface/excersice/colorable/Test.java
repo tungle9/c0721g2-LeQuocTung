@@ -21,7 +21,7 @@ public class Test {
             if (shapee instanceof Circlee) {
                 System.out.println(((Circlee) shapee).getArea());
             } else if (shapee instanceof Squaree) {
-                System.out.println(((Squaree) shapee).howtoColor()+((Squaree) shapee).getArea());
+                System.out.println(((Squaree) shapee).howtoColor() + ((Squaree) shapee).getArea());
             } else if (shapee instanceof Rectanglee) {
                 System.out.println(((Rectanglee) shapee).getArea());
             }

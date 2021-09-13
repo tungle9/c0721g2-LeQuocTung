@@ -3,7 +3,7 @@ package _6_inheritance.excersie.circle_and_cylinder;
 public class Circle {
    private  String color = "black";
    private  double radius;
-   private double area;
+   private double area= Math.PI * radius*radius; ;
 //public double area(){
 //  double s = Math.PI * radius*radius;
 //  return s;
@@ -11,7 +11,7 @@ public class Circle {
     public Circle() {
     }
     public double getArea(){
-        return area = Math.PI * radius*radius;
+        return area ;
     }
     public Circle(String color, double radius) {
         this.color = color;
