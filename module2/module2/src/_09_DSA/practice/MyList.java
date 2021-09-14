@@ -7,6 +7,11 @@ public class MyList<E> {
     private static final int DEFAULT = 10;
     private Object elements[];
 
+    public MyList(int size, Object[] elements) {
+        this.size = size;
+        this.elements = elements;
+    }
+
     public MyList() {
         elements = new Object[DEFAULT];
     }
@@ -28,4 +33,12 @@ public class MyList<E> {
         }
         return (E) elements[i];
     }
+
+//    @Override
+//    public String toString() {
+//        return "MyList{" +
+//                "size=" + size +
+//                ", elements=" + Arrays.toString(elements) +
+//                '}';
+//    }
 }
