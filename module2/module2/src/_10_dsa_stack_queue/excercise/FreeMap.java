@@ -1,27 +1,33 @@
 package _10_dsa_stack_queue.excercise;
 
+import java.util.Iterator;
 import java.util.Map;
-import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeMap;
-
 public class FreeMap {
     public static void main(String[] args) {
-        Map<Integer, String> map = new TreeMap<>();
-        map.put(1, "meo");
-        map.put(2, "ga");
-        map.put(3, "vit");
-        System.out.println("chọn key muốn chuyển thành chữ HOA");
-        Scanner scanner = new Scanner(System.in);
-        int index = scanner.nextInt();
-        if (map.containsKey(index) == true) {
-
-            System.out.println(map.get(index).toUpperCase());
-
-        } else {
-            System.out.println("key bạn tìm k có trong list");
+        String str = "anh YEU yeu em EM";
+        str = str.toLowerCase();
+        String[] arr = str.split(" ");
+        String key;
+        Integer value;
+        Map<String, Integer> map = new TreeMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            key = arr[i];
+            if (map.containsKey(key)) {
+                value = map.get(key);
+                map.remove(key);
+                map.put(key, value + 1);
+            } else {
+                map.put(key, 1);
+            }
         }
-//      for(Map.Entry<Integer,String> entry:map.entrySet()){
-//            System.out.println(entry.getKey() +entry.getValue().toUpperCase());
-//      }
+        Set set = map.keySet();
+        Iterator i = set.iterator();
+        while (i.hasNext()) { //duyệt phần tử
+            key = (String) i.next();//pt hiện tại và di chuyển đến pt tiếp theo
+            System.out.println("Từ '" + key + "' xuất hiện " + map.get(key) + " lần");
+        }
     }
 }
+
