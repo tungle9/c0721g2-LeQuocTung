@@ -16,21 +16,36 @@ public class Students {
     public void add(ManangerStudents students) {
         this.list.add(students);
     }
+
     public void show() {
-      for(ManangerStudents students : list){
-          System.out.println(students);
-      }
+        for (ManangerStudents students : list) {
+            System.out.println("tổng các sinh viên là " + students);
+        }
     }
+
     public boolean check() {
         return this.list.isEmpty();
     }
+
+    //tổng sinh viên
     public int result() {
         return this.list.size();
     }
-//    public static void main(String[] args) {
-//        Students  students = new Students();
-//
-//
-//
-//    }
+
+    public void clear() {
+        this.list.removeAll(list);
+    }
+    // tìm kiếm sinh viên bằng tên
+    public void serach(String name) {
+        for (ManangerStudents students : list) {
+            if (students.getName().indexOf(name) >= 0) {
+                System.out.println("sinh viên bạn tìm kiếm là : " + students);
+            } else {
+                System.out.println("tên không có");
+            }
+        }
+    }
+    public boolean delete(ManangerStudents id) {
+        return this.list.remove(id);
+    }
 }

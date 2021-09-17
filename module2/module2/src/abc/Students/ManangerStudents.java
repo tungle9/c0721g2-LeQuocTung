@@ -1,6 +1,8 @@
 package abc.Students;
 
-public class ManangerStudents {
+import java.util.Objects;
+
+public class ManangerStudents implements Comparable<ManangerStudents>{
     private String name;
     private int msv;
     private int born;
@@ -12,11 +14,15 @@ public class ManangerStudents {
         this.born = born;
         this.point = point;
     }
+    public ManangerStudents(String name ){
+        this.name = name ;
+    }  public ManangerStudents(int msv ){
+        this.msv = msv ;
+    }
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -53,5 +59,24 @@ public class ManangerStudents {
                 ", born=" + born +
                 ", point=" + point +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ManangerStudents students = (ManangerStudents) o;
+        return msv == students.msv &&
+                Objects.equals(msv, students.msv);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, msv, born, point);
+    }
+
+    @Override  // hàm so sánh
+    public int compareTo(ManangerStudents o) {
+        return this.name.compareTo(o.name);
     }
 }
