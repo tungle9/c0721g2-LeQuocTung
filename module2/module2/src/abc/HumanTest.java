@@ -1,27 +1,25 @@
 package abc;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class HumanTest {
-    private static List<Human> humanList = new ArrayList<>();
-
-    static {
+    public static Integer a = 0  ;
+    public static void main(String[] args) {
+        List<Human> humanList = new ArrayList<>();
+        HashMap<Object,String> abc = new HashMap<>();
         humanList.add(new Human("teo", 18, "game"));
         humanList.add(new Human("te213o", 18, "game"));
         humanList.add(new Human("teo", 18, "game"));
-    }
+        Human human = new Human("bam",18,"game");
+        Human human1 = new Human("ba",18,"game");
+        Human human3 = new Human("abc",18,"game");
+        abc.put(human,"a");
+        abc.put(human,"b");
+        System.out.println("Các entry có trong hashMap là: ");
+        abc.forEach((a,b) -> System.out.println(a+ "value " + b ));
 
-    public  void show() {
-        for (int i = 0; i < humanList.size(); i++) {
-            System.out.println(i + 1 + ":" + humanList.get(i));
+        for(Human human2 : humanList){
+            System.out.println(human2);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(humanList);
-
     }
 }

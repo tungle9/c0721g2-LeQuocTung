@@ -7,7 +7,6 @@ public class ManangerStudents implements Comparable<ManangerStudents>{
     private int msv;
     private int born;
     private double point;
-
     public ManangerStudents(String name, int msv, int born, double point) {
         this.name = name;
         this.msv = msv;

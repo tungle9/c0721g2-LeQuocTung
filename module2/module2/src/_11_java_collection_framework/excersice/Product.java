@@ -1,6 +1,7 @@
 package _11_java_collection_framework.excersice;
 
 public class Product {
+    public static int ab = 1 ;
     private String name;
     private int id;
     private double price;
@@ -35,11 +36,11 @@ public class Product {
     }
     @Override
     public String toString() {
-        return "Product{" +
+        return "Product : " +
+                "Student" + ab++ +  '\n' +
                 "name='" + name + '\'' +
                 ", id=" + id +
-                ", price=" + price +
-                '}';
+                ", price=" + price ;
     }
 //    @Override
 //    public int compareTo(Product o) {

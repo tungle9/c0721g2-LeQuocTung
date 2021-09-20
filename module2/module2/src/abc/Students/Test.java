@@ -1,11 +1,22 @@
 package abc.Students;
 
+import _11_java_collection_framework.practice.Student;
+
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Students students = new Students();
+        ManangerStudents student = new ManangerStudents("Tung",1,1998,123);
+        ManangerStudents student1 = new ManangerStudents("teo",1,1998,123);
+        ManangerStudents student2 = new ManangerStudents("phuc",1,1998,123);
+        ManangerStudents student3 = new ManangerStudents("VAn",1,1998,123);
+        students.add(student);
+        students.add(student1);
+        students.add(student2);
+        students.add(student3);
+        students.add(student3);
         int choice = 1;
         while (choice != 0) {
             System.out.println("MENU");
@@ -47,13 +58,12 @@ public class Test {
                 case 6: // tìm kiếm
                     System.out.println("Tên");
                      name = scanner.nextLine();
-                    students.serach(name);
+                    students.find(name);
                     break;
                 case 7 :
                     System.out.println("Nhập mã sinh viên bạn muốn xóa ");
                     msv  = scanner.nextInt();
-                    ManangerStudents sv = new ManangerStudents(msv);
-                    students.delete(sv);
+                    students.delete(msv);
                     break;
                 case 0:
                     System.out.println("exit");

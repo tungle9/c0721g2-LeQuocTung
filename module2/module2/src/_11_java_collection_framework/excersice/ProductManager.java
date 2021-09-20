@@ -13,9 +13,9 @@ public class ProductManager {
         function.add(product1);
         function.add(product2);
         function.add(product3);
+        int login;
         Scanner scanner = new Scanner(System.in);
-        int login = 1;
-        while (login != 0) {
+        do {
             System.out.println("MENU");
             System.out.println("1 : THÊM SẢN PHẨM ");
             System.out.println("2 : HIỂN THỊ DANH SÁCH");
@@ -24,9 +24,10 @@ public class ProductManager {
             System.out.println("5 : SẮP XẾP SẢN PHẨM TĂNG DẦN");
             System.out.println("6 : SẮP XẾP SẢN PHẨM GIẢM DẦN");
             System.out.println("7 : SỬA SẢN PHẨM");
-            int choice = scanner.nextInt();
+            System.out.println("0 : Exit");
+            login = scanner.nextInt();
             scanner.nextLine();
-            switch (choice) {
+            switch (login) {
                 case 1: // nhập
                     System.out.println("Tên");
                     String name = scanner.nextLine();
@@ -37,13 +38,13 @@ public class ProductManager {
                     Product product = new Product(name, id, gia);
                     function.add(product);
                     break;
-                    // hiển thị
+                // hiển thị
                 case 2:
                     function.show();
                     break;
                 case 3: // xóa
                     System.out.println("nhập id ");
-                     int id1 = scanner.nextInt();
+                    int id1 = scanner.nextInt();
                     function.delete(id1);
                     break;
                 case 4:// tìm kiếm sản phẩm theo tên
@@ -62,9 +63,10 @@ public class ProductManager {
                     id = scanner.nextInt();
                     function.edit(id);
                     break;
-                case 0 :
-                    System.out.println("exit"); break ;
+                case 0:
+                    System.out.println("exit");
+                    break;
             }
-        }
+        } while (login != 0);
     }
 }

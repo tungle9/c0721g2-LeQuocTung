@@ -29,7 +29,6 @@ public class NameComparator implements Comparator<Student> {
             System.out.println(st.toString());
             // sắp xếp name theo thứ tự
         }
-
         NameComparator nameComparator = new NameComparator();
         Collections.sort(lists,nameComparator);
         System.out.println("So sanh theo tuoi:");

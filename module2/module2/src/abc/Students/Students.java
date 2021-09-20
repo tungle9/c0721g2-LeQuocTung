@@ -10,42 +10,46 @@ public class Students {
     }
 
     public Students() {
-        this.list = new ArrayList<ManangerStudents>();
-    }
+        this.list = new ArrayList<>();
+    } // thêm đối tượng
 
-    public void add(ManangerStudents students) {
-        this.list.add(students);
-    }
-
-    public void show() {
-        for (ManangerStudents students : list) {
-            System.out.println("tổng các sinh viên là " + students);
-        }
-    }
-
-    public boolean check() {
-        return this.list.isEmpty();
-    }
-
-    //tổng sinh viên
-    public int result() {
-        return this.list.size();
+    public void add(ManangerStudents manangerStudents) {
+        list.add(manangerStudents);
     }
 
     public void clear() {
-        this.list.removeAll(list);
+        list.removeAll(list);
+    } // tìm theo tên
+
+    public void find(String name) {
+        boolean check = true;
+        for (ManangerStudents manangerStudents : list) {
+            if (manangerStudents.getName().equals(name)) {
+                System.out.println(manangerStudents);
+                check = false;
+            }
+        }
+        if (check) {
+            System.out.println("không tìm thấy");
+        }
     }
-    // tìm kiếm sinh viên bằng tên
-    public void serach(String name) {
-        for (ManangerStudents students : list) {
-            if (students.getName().indexOf(name) >= 0) {
-                System.out.println("sinh viên bạn tìm kiếm là : " + students);
-            } else {
-                System.out.println("tên không có");
+    public int result() {
+        return list.size();
+    } // xóa theo vị trí index
+
+    public void delete(int a) {
+        for (int i = 0; i < list.size(); i++) {
+            if (i == 0) {
+                list.remove(i);
             }
         }
     }
-    public boolean delete(ManangerStudents id) {
-        return this.list.remove(id);
+
+    public void show() {
+        System.out.println(list);
+    }
+
+    public boolean check() {
+        return list.isEmpty();
     }
 }
