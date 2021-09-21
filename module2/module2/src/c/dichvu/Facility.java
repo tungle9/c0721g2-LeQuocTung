@@ -1,24 +1,19 @@
 package c.dichvu;
 
-import java.util.Scanner;
 
-public class Service {
+public abstract class Facility {
     private String dichVu;
     private double dienTichsuDung;
     private double chiPhi;
     private int soLuong;
     private String kieuThue;
-    Scanner scanner = new Scanner(System.in);
 
-    public Service(String dichVu, double dienTichsuDung, double chiPhi, int soLuong, String kieuThue) {
+    public Facility(String dichVu, double dienTichsuDung, double chiPhi, int soLuong, String kieuThue) {
         this.dichVu = dichVu;
         this.dienTichsuDung = dienTichsuDung;
         this.chiPhi = chiPhi;
         this.soLuong = soLuong;
         this.kieuThue = kieuThue;
-    }
-    public Service(){
-
     }
 
     public String getDichVu() {
@@ -63,7 +58,7 @@ public class Service {
 
     @Override
     public String toString() {
-        return "Service{" +
+        return "Facility{" +
                 "dichVu='" + dichVu + '\'' +
                 ", dienTichsuDung=" + dienTichsuDung +
                 ", chiPhi=" + chiPhi +
@@ -71,16 +66,17 @@ public class Service {
                 ", kieuThue='" + kieuThue + '\'' +
                 '}';
     }
-    public void nhap(){
-        System.out.println("dịch vụ");
-        dichVu = scanner.nextLine();
-        System.out.println("diện tích sử dụng ");
-        dienTichsuDung = scanner.nextInt();
-        System.out.println("chi phí ");
-        chiPhi = scanner.nextInt();
-        System.out.println("số lượng");
-        soLuong =scanner.nextInt();
-        System.out.println("kiểu thuê");
-        kieuThue = scanner.nextLine();
-    }
+    //    }
+//    public void nhap(){
+//        System.out.println("dịch vụ");
+//        dichVu = scanner.nextLine();
+//        System.out.println("diện tích sử dụng ");
+//        dienTichsuDung = scanner.nextInt();
+//        System.out.println("chi phí ");
+//        chiPhi = scanner.nextInt();
+//        System.out.println("số lượng");
+//        soLuong =scanner.nextInt();
+//        System.out.println("kiểu thuê");
+//        kieuThue = scanner.nextLine();
+//    }
 }
