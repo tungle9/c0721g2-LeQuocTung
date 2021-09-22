@@ -3,8 +3,8 @@ package _13_sort_algorithm.excercise;
 import java.util.Arrays;
 
 public class InsertionSortByStep {
-    static int []list = {123,12,3,123,123,4,1,2} ;
-    public static void insert(int []list){
+    static int []list2 = {123,12,3,55,44,4,1,2} ;
+    public static void insertionSort(int []list){
         int i ,value ,position;
         for(i = 1 ; i < list.length;i++){
             value = list[i] ;
@@ -12,18 +12,19 @@ public class InsertionSortByStep {
             while(position > 0 && list[position-1] > value){
                 list[position] = list[position-1];
                 position--;
-                System.out.println("di chuyển phần tử" + list[position]);
+                System.out.println("di chuyển phần tử :" + list[position]);
             }
             if(position != i ){
-                System.out.println("chèn phần tử" + value
-                + " ví trí" + position);
+                System.out.println("chèn phần tử : " + value
+                + " ví trí :" + position);
                 list[position] = value ;
             }
-            System.out.println("vòng lặp" + i );
+            System.out.println("vòng lặp :" + i );
+            System.out.println(Arrays.toString(list));
+
         }
     }
     public static void main(String[] args) {
-        insert(list);
-        System.out.println(Arrays.toString(list));
+        insertionSort(list2);
     }
 }
