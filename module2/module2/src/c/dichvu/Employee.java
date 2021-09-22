@@ -14,7 +14,9 @@ public class Employee extends Person {
         this.trinhDo = trinhDo;
         this.salary = salary;
     }
+    public Employee(){
 
+    }
     public String getTrinhDo() {
         return trinhDo;
     }

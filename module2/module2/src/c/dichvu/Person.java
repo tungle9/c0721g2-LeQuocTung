@@ -16,7 +16,9 @@ public abstract class Person {
         this.sdt = sdt;
         this.email = email;
     }
+    public Person() {
 
+    }
     public String getName() {
         return name;
     }

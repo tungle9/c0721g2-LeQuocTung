@@ -14,6 +14,10 @@ public class FuramaController {
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         int login = 0;
         int login1;
+//        boolean check= true ;
+//        while(check);
+//        check = false;
+//        try {
         do {
             System.out.println("1.\tEmployee Management");
             System.out.println("2.\tCustomer Management");

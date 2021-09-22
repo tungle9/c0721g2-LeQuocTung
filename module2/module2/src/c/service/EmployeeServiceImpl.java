@@ -16,18 +16,24 @@ public class EmployeeServiceImpl implements EmployeeService {
         list.add(new Employee("Ngân", 1997, "nữ", 321, 07661221, "thao@97",
                 4445577, Employee.CAODANG, 64654654));
     }
+
+    Scanner scanner = new Scanner(System.in);
+
     public static void add(Employee employee) {
         list.add(employee);
     }
+
     public static void show() {
         for (Employee employee : list) {
             System.out.println(employee);
         }
     }
-    Scanner scanner = new Scanner(System.in);
+
     public void edit(String name) {  // sửa theo tên
         for (Employee employee : list) {
             if (employee.getName() == name) {
+                System.out.println("họ và tên");
+                String ten = scanner.nextLine();
                 System.out.println("Trình độ");
                 String trinhDo = scanner.nextLine();
                 System.out.println("lương");
@@ -44,6 +50,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 int sdt = scanner.nextInt();
                 System.out.println("email");
                 String email = scanner.nextLine();
+                employee.setName(ten);
                 employee.setTrinhDo(trinhDo);
                 employee.setSalary(luong);
                 employee.setMnv(mnv);
