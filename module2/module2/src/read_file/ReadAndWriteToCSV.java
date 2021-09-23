@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.List;
 
 public class ReadAndWriteToCSV {
-    public static void write(List<Employee> employeeList, String pathFile, boolean append) {
+    public static void write(List<Employee> employeeList, String pathFile ) {
         File file = new File(pathFile);
         try {
             FileWriter fileWriter = new FileWriter(file, true); //append true : cho phép ghi tiếp, false thì ghi đè
@@ -21,14 +21,13 @@ public class ReadAndWriteToCSV {
             e.printStackTrace();
         }
     }
-
     public static void main(String[] args) {
 
         File file = new File("src\\read_file\\file.txt");
         try {
             FileWriter fileWriter = new FileWriter(file, true); //append true : cho phép ghi tiếp, false thì ghi đè
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write("hello");
+            bufferedWriter.write("anh yêu em");
             bufferedWriter.newLine();
             bufferedWriter.close();
         } catch (IOException e) {
@@ -45,7 +44,5 @@ public class ReadAndWriteToCSV {
             e.printStackTrace();
             System.out.println("lỗi đọc file");
         }
-
-
     }
 }

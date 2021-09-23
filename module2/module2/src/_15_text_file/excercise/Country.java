@@ -1,6 +1,5 @@
 package _15_text_file.excercise;
-
-public class Country {
+public class Country   {
     private int id;
     private String code;
     private String name;
@@ -46,4 +45,5 @@ public class Country {
                 ", name='" + name + '\'' +
                 '}';
     }
-}
+
+    }
