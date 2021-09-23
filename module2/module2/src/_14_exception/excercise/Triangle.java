@@ -16,12 +16,6 @@ public class Triangle {
         }
     }
 
-    static class IllegalTriangleException extends Exception {
-        IllegalTriangleException(String s) {
-            super(s);
-        }
-    }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
