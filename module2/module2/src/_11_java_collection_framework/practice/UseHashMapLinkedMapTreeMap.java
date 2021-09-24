@@ -21,8 +21,8 @@ public class UseHashMapLinkedMapTreeMap {
         //////
         Map<String,Integer> treeMap = new TreeMap<>(hashMap);
         System.out.println(treeMap);
-        treeMap.put("a",12);
-        System.out.println(treeMap.get("a"));
+        treeMap.put("a.txt",12);
+        System.out.println(treeMap.get("a.txt"));
         System.out.println(treeMap.get("Lewis"));
         ////////
         Map<String,Integer> linkedHashmap = new LinkedHashMap<>(29,1000,false);

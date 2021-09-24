@@ -1,5 +1,6 @@
-package _15_text_file.excercise;
-public class Country   {
+package _15_text_file.excercise.Country;
+
+public class Country {
     private int id;
     private String code;
     private String name;
@@ -46,4 +47,4 @@ public class Country   {
                 '}';
     }
 
-    }
+}

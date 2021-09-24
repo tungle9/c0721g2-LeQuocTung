@@ -13,8 +13,8 @@ public class HumanTest {
         Human human = new Human("bam",18,"game");
         Human human1 = new Human("ba",18,"game");
         Human human3 = new Human("abc",18,"game");
-        abc.put(human,"a");
-        abc.put(human,"b");
+        abc.put(human,"a.txt");
+        abc.put(human,"b.txt");
         System.out.println("Các entry có trong hashMap là: ");
         abc.forEach((a,b) -> System.out.println(a+ "value " + b ));
 

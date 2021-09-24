@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadAndWriteFile {
-
     public List<Integer> readFile(String filePath) {
          List<Integer> list = new ArrayList<>();
         try {

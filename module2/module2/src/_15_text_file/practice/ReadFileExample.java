@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class ReadFileExample {
     public void readfileText(String filePatch) {
+        File file = new File(filePatch);
         try {
-            File file = new File(filePatch);
-            if (!file.exists()) {
+            if (!file.exists()) { // kiểm tra tồn tại
                 throw new FileNotFoundException();
             }
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
@@ -28,7 +28,7 @@ public class ReadFileExample {
 //        Scanner scanner = new Scanner(System.in);
 //        String link = scanner.nextLine();
         ReadFileExample readFileEx = new ReadFileExample();
-        readFileEx.readfileText("src\\_15_text_file\\practice\\abc");  // tổng bằng 7 file text
+        readFileEx.readfileText("src\\_15_text_file\\practice\\abc");
         //nhập trực tiếp
         //     "src\_15_text_file\practice\file.text"
     }

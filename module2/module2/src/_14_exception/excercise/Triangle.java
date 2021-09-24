@@ -19,9 +19,9 @@ public class Triangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.println("nhập cạnh a ");
+            System.out.println("nhập cạnh a.txt ");
             int a = scanner.nextInt();
-            System.out.println("cạnh b ");
+            System.out.println("cạnh b.txt ");
             int b = scanner.nextInt();
             System.out.println("cạnh c");
             int c = scanner.nextInt();

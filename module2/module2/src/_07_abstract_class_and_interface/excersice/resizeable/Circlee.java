@@ -42,7 +42,7 @@ public class Circlee extends Shapee implements Resizeable {
     public String toString() {
         return "A Circle with radius="
                 + getRadius()
-                + ", which is a subclass of "
+                + ", which is a.txt subclass of "
                 + super.toString();
     }
 }

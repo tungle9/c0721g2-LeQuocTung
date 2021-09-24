@@ -29,7 +29,7 @@ public class Squaree extends Rectanglee implements Resizeable {
     @Override
     public String toString() {
         return "A Square with side="
-                + ", which is a subclass of "
+                + ", which is a.txt subclass of "
                 + super.toString();
     }
 

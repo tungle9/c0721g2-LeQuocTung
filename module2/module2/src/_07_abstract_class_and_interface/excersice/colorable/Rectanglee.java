@@ -56,7 +56,7 @@ public class Rectanglee extends Shapee  {
                 + getWidth()
                 + " and length="
                 + getLength()
-                + ", which is a subclass of "
+                + ", which is a.txt subclass of "
                 + super.toString();
     }
 }

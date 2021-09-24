@@ -44,8 +44,8 @@ public class MoveablePoint extends Point {
     }
 
     public MoveablePoint move() {  //+ đối tượng cha và con
-        // float []a = {xSpeed,ySpeed};
-        // System.out.println(Arrays.toString(a));
+        // float []a.txt = {xSpeed,ySpeed};
+        // System.out.println(Arrays.toString(a.txt));
         this.setX(this.getX() + xSpeed);
         this.setY(this.getY() + ySpeed);
         return this;

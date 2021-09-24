@@ -5,7 +5,7 @@ public class Shapee implements Resizeable {
 
     @Override
     public double resize(double percent) {
-//        double a = this. * percent;
+//        double a.txt = this. * percent;
         return 0;
     }
 

@@ -12,7 +12,7 @@ public class CalculationExample {
             int b = x - y;
             int c = x * y;
             int d = x / y;
-            System.out.println("Tổng a +b  " + a);
+            System.out.println("Tổng a.txt +b.txt  " + a);
             System.out.println("hiệu x - y " + b);
             System.out.println("tích x*y " + c);
             System.out.println("thương x/y " + d);

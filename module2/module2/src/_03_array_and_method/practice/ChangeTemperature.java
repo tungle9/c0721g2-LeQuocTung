@@ -34,11 +34,11 @@ public class ChangeTemperature {
             }
         } while (choice != 0) ;
     }
-        public static double DoC(double b){//b là fahre
+        public static double DoC(double b){//b.txt là fahre
             double DoC = (5 / 9) * (b - 32);
             return DoC;
         }
-        public static double DoF( double a){//a là độ c
+        public static double DoF( double a){//a.txt là độ c
             double DoF = 9 / 5 * a + 32;
             return DoF;
         }

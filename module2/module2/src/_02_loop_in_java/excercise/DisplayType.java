@@ -9,9 +9,9 @@ public class DisplayType {
         while(choice != 0){
             int i , j ;
             System.out.println("menu");
-            System.out.println("1. Draw a stairway");
-            System.out.println("2. Draw a square");
-            System.out.println("3. Draw a retangle");
+            System.out.println("1. Draw a.txt stairway");
+            System.out.println("2. Draw a.txt square");
+            System.out.println("3. Draw a.txt retangle");
             System.out.println("0. exit");
             System.out.println("your choice");
             choice = input.nextInt();

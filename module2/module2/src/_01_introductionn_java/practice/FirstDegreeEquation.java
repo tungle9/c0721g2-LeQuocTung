@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class FirstDegreeEquation {
     public static void main(String[] args) {
         System.out.println("Linear Equation Resolver");
-        System.out.println("Given a equation as 'a * x + b = c', please enter constants:");
+        System.out.println("Given a.txt equation as 'a.txt * x + b.txt = c', please enter constants:");
         Scanner result = new Scanner(System.in);
-        System.out.println("a: ");
+        System.out.println("a.txt: ");
         double a = result.nextDouble();
-        System.out.println("b: ");
+        System.out.println("b.txt: ");
         double b = result.nextDouble();
         System.out.println("c : ");
         double c = result.nextDouble();

@@ -55,12 +55,12 @@ public class Rectanglee extends Shapee implements Resizeable {
                 + getWidth()
                 + " and length="
                 + getLength()
-                + ", which is a subclass of ";
+                + ", which is a.txt subclass of ";
     }
 
 //    @Override
 //    public double resize(double percent) {
-//        double a = getArea()*percent;
-//        return  a;
+//        double a.txt = getArea()*percent;
+//        return  a.txt;
 //    }
 }

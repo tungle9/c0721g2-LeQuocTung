@@ -6,18 +6,18 @@ public class _20FirstNumPrime {
         int a = 2;
 //        for (int i = 1;i <= 20 ; ) {
 //            boolean check = true;
-//            for (int j = 2; j < a; j++) {
-//                if (a % j == 0) {
+//            for (int j = 2; j < a.txt; j++) {
+//                if (a.txt % j == 0) {
 //                    check = false;
 //                    break;
 //                }
 //            }
 //            if (check) {
-//                System.out.println(i+"số nguyên tố " + a);
+//                System.out.println(i+"số nguyên tố " + a.txt);
 //                i++;
 //            }
 //          count ++;
-//            a++;
+//            a.txt++;
 
 //        }
 

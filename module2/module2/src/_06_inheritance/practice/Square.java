@@ -14,7 +14,7 @@ public class Square extends Rectangle   {
     @Override
     public String toString() {
         return "A Square with side="
-                + ", which is a subclass of "
+                + ", which is a.txt subclass of "
                 + super.toString();
     }
     public static void main(String[] args) {
