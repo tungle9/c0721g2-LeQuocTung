@@ -3,19 +3,17 @@ package _16_binary_file_serialization.practice;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import java.util.Scanner;
-
 public class CopyFile {
-    private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
-        Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
-    }
+//    private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
+//        Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+//    }
 
     private static void copyFileUsingStream(File source, File dest) {
-        InputStream is = null;
-        OutputStream os = null;
+        InputStream is;
+        OutputStream os;
         try {
-            is = new FileInputStream(source);
-            os = new FileOutputStream(dest);
+            is = new FileInputStream(source); //đọc dữ liệu
+            os = new FileOutputStream(dest); // ghi dữ liệu
             byte[] buffer = new byte[1024];
             int length;
             while ((length = is.read(buffer)) > 0) {
@@ -29,16 +27,10 @@ public class CopyFile {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.printf("Enter source file:");
-        String sourcePath = in.nextLine();
-        System.out.printf("Enter destination file:");
-        String destPath = in.nextLine();
-
-        File sourceFile = new File(sourcePath);
-        File destFile = new File(destPath);
+        File sourceFile = new File("src\\_16_binary_file_serialization\\practice\\abc.text");
+        File destFile = new File("src\\_16_binary_file_serialization\\practice\\bca.text");
         try {
+//            copyFileUsingJava7Files(sourceFile, destFile);
             copyFileUsingStream(sourceFile, destFile);
         } catch (Exception e) {
             e.printStackTrace();

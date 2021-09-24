@@ -1,19 +1,21 @@
-package _15_text_file.excercise.Country;
+package _16_binary_file_serialization.practice.read_write_student;
 
 import java.io.Serializable;
 
-public class Country implements Serializable {
+public class Student implements Serializable {
     private int id;
-    private String code;
+
     private String name;
 
-    public Country() {
+    private String address;
+
+    public Student() {
     }
 
-    public Country(int id, String code, String name) {
+    public Student(int id, String name, String address) {
         this.id = id;
-        this.code = code;
         this.name = name;
+        this.address = address;
     }
 
     public int getId() {
@@ -24,14 +26,6 @@ public class Country implements Serializable {
         this.id = id;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
     public String getName() {
         return name;
     }
@@ -40,13 +34,20 @@ public class Country implements Serializable {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Country{" +
-                "id=" + id +
-                ", code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+    public String getAddress() {
+        return address;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
