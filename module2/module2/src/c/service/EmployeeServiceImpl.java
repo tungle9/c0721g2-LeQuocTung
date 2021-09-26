@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
     private static List<Employee> list = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
 
     static {
         list.add(new Employee("Thảo", 1998, "nữ", 123, 0712121, "thao@98",
@@ -17,9 +18,28 @@ public class EmployeeServiceImpl implements EmployeeService {
                 4445577, Employee.CAODANG, 64654654));
     }
 
-    Scanner scanner = new Scanner(System.in);
 
-    public static void add(Employee employee) {
+    public static void add() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Họ và tên");
+        String name = scanner.nextLine();
+        System.out.println("Trình độ");
+        String trinhDo = scanner.nextLine();
+        System.out.println("lương");
+        double luong = Integer.parseInt(scanner.nextLine());
+        System.out.println("mã nhân viên ");
+        int mnv = Integer.parseInt(scanner.nextLine());
+        System.out.println("năm sinh ");
+        int namSinh = Integer.parseInt(scanner.nextLine());
+        System.out.println("GIỚI TÍNH");
+        String gender = scanner.nextLine();
+        System.out.println("số điện thoại");
+        int cm = Integer.parseInt(scanner.nextLine());
+        System.out.println("cmnd");
+        int sdt = Integer.parseInt(scanner.nextLine());
+        System.out.println("email");
+        String email = scanner.nextLine();
+        Employee employee = new Employee(name, namSinh, gender, cm, sdt, email, mnv, trinhDo, luong);
         list.add(employee);
     }
 

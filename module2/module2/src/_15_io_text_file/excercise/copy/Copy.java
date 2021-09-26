@@ -1,4 +1,4 @@
-package _15_text_file.excercise.Copy;
+package _15_io_text_file.excercise.copy;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class Copy {
     }
 
     public static void main(String[] args) {
-        List<String> list = read("src\\_15_text_file\\excercise\\Copy\\a.txt");
-        writer("src\\_15_text_file\\excercise\\Copy\\b.txt", list);
+        List<String> list = read("src\\_15_io_text_file\\excercise\\copy\\a.txt");
+        writer("src\\_15_io_text_file\\excercise\\Copy\\b.txt", list);
     }
 }

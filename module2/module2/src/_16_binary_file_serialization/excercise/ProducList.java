@@ -8,31 +8,28 @@ import java.util.Scanner;
 public class ProducList {
     private static File file = new File("src\\_16_binary_file_serialization\\excercise\\product.txt");
     public static List<Product> list = new ArrayList<>();
-
     public static void write(List<Product> products) {
         try {
-            FileOutputStream fm = new FileOutputStream(file);
-            ObjectOutputStream om = new ObjectOutputStream(fm);
-            om.writeObject(products);
-            om.close();
+           FileOutputStream fm = new FileOutputStream(file,true);
+           ObjectOutputStream om = new ObjectOutputStream(fm);
+           om.writeObject(products);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
     public static List<Product> read() {
         List<Product> products = new ArrayList<>();
         try {
-            FileInputStream fm = new FileInputStream(file);
+            FileInputStream fm = new FileInputStream(file); // đọc dữ liệu
             ObjectInputStream om = new ObjectInputStream(fm);
             products = (List<Product>) om.readObject();
+            fm.close();
             om.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return products;
     }
-
     public static void add() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập mã");
@@ -50,7 +47,6 @@ public class ProducList {
         list.add(product);
         write(list);
     }
-
     public static void find(String name) {
         List<Product> products = read();
         for (Product product : products) {
@@ -59,11 +55,11 @@ public class ProducList {
             }
         }
     }
+
     public static void show() {
         List<Product> products = read();
         for (Product product : products) {
             System.out.println(product);
         }
     }
-
 }

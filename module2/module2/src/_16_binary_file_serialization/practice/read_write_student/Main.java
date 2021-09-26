@@ -5,20 +5,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void write(File path, List<Student> students) throws IOException {
+    public static void write(File path, List<Student> students) {
         try {
-            FileOutputStream fm = new FileOutputStream(path);
+            FileOutputStream fm = new FileOutputStream(path, true);
             ObjectOutputStream om = new ObjectOutputStream(fm);
             om.writeObject(students);
-            fm.close();
-            om.close();
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
-    public static List<Student> read(File path){
+
+    public static List<Student> read(File path) {
         List<Student> students = new ArrayList<>();
-        try{
+        try {
             FileInputStream fm = new FileInputStream(path);
             ObjectInputStream om = new ObjectInputStream(fm);
             students = (List<Student>) om.readObject();
@@ -30,16 +30,16 @@ public class Main {
         return students;
     }
     public static void main(String[] args) throws IOException {
-       List<Student> students = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
         students.add(new Student(1, "Vũ Kiều Anh", "Hà Nội"));
         students.add(new Student(2, "Nguyễn Minh Quân", "Hà Nội"));
         students.add(new Student(3, "Đặng Huy Hoà", "Đà Nẵng"));
         students.add(new Student(4, "Nguyễn Khánh Tùng", "Hà Nội"));
         students.add(new Student(5, "Nguyễn Khắc Nhật", "Hà Nội"));
         File file = new File("src\\_16_binary_file_serialization\\practice\\read_write_student\\student.txt");
-        write(file,students);
+        write(file, students);
         List<Student> studentList = read(file);
-        for(Student student : studentList){
+        for (Student student : studentList) {
             System.out.println(student);
         }
     }

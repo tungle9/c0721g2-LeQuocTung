@@ -1,8 +1,8 @@
-package _15_text_file.excercise.Country;
+package _15_io_text_file.excercise.country;
 
 import java.io.Serializable;
 
-public class Country implements Serializable {
+public class Country   {
     private int id;
     private String code;
     private String name;

@@ -12,12 +12,8 @@ public class FuramaController {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập chương trình");
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
-        int login = 0;
+        int login;
         int login1;
-//        boolean check= true ;
-//        while(check);
-//        check = false;
-//        try {
         do {
             System.out.println("1.\tEmployee Management");
             System.out.println("2.\tCustomer Management");
@@ -37,27 +33,8 @@ public class FuramaController {
                         case 1: // hiển thị
                             employeeService.show();
                             break;
-                        case 2:  // them đối tượng
-                            System.out.println("Họ và tên");
-                            String name = scanner.nextLine();
-                            System.out.println("Trình độ");
-                            String trinhDo = scanner.nextLine();
-                            System.out.println("lương");
-                            double luong = scanner.nextDouble();
-                            System.out.println("mã nhân viên ");
-                            int mnv = scanner.nextInt();
-                            System.out.println("năm sinh ");
-                            int namSinh = scanner.nextInt();
-                            System.out.println("GIỚI TÍNH");
-                            String gioiTinh = scanner.nextLine();
-                            System.out.println("cmnd");
-                            int cmnd = scanner.nextInt();
-                            System.out.println("số điện thoại");
-                            int sdt = scanner.nextInt();
-                            System.out.println("email");
-                            String email = scanner.nextLine();
-                            Employee employee = new Employee(name, namSinh, gioiTinh, cmnd, sdt, email, mnv, trinhDo, luong);
-                            employeeService.add(employee);
+                        case 2:  // thêm đối tượng
+                            employeeService.add();
                             break;
                         case 3:  // edit theo tên
                             String name1 = scanner.nextLine();

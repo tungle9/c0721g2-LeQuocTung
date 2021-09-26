@@ -3,10 +3,10 @@ package _16_binary_file_serialization.excercise;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-   private int code ;
-   private String name ;
-   private String maker;
-   private double price;
+    private int code;
+    private String name;
+    private String maker;
+    private double price;
 
     public Product(int code, String name, String maker, double price) {
         this.code = code;
@@ -14,7 +14,8 @@ public class Product implements Serializable {
         this.maker = maker;
         this.price = price;
     }
-    public Product(){
+
+    public Product() {
 
     }
 
