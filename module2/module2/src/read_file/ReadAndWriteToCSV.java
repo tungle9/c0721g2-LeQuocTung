@@ -1,10 +1,7 @@
 package read_file;
 
 
-import c.dichvu.Employee;
-
 import java.io.*;
-import java.util.List;
 
 public class ReadAndWriteToCSV {
 //    public static void write(List<Employee> employeeList, String pathFile ) {
