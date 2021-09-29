@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class ProducList {
     private static File file = new File("src\\_16_binary_file_serialization\\excercise\\product.txt");
     public static List<Product> list = new ArrayList<>();
+    static Scanner scanner = new Scanner(System.in);
     public static void write(List<Product> products) {
         try {
            FileOutputStream fm = new FileOutputStream(file,true);
@@ -31,7 +32,6 @@ public class ProducList {
         return products;
     }
     public static void add() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("nhập mã");
         int code = Integer.parseInt(scanner.nextLine());
         System.out.println("nhập tên");

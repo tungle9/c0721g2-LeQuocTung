@@ -1,6 +1,7 @@
 package case_study.controllers;
 
 
+import case_study.service.BookingServiceImpl;
 import case_study.service.CustomerServiceImpl;
 import case_study.service.EmployeeServiceImpl;
 import case_study.service.FacilityServiceImpl;
@@ -14,6 +15,7 @@ public class FuramaController {
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         CustomerServiceImpl customerService = new CustomerServiceImpl();
         FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        BookingServiceImpl bookingService = new BookingServiceImpl();
         int login;
         int login1;
         do {
@@ -92,6 +94,7 @@ public class FuramaController {
                             break;
                         case 3:
                             System.out.println("3\tDisplay list facility maintenance");
+                            facilityService.maintenance();
                             break;
 
                         case 4:
@@ -112,9 +115,9 @@ public class FuramaController {
                         case 1:
                             System.out.println("1.\tAdd new booking");
                             break;
-
                         case 2:
-                            System.out.println("2.\tDisplay list booking");
+                            // hiển thị
+                            bookingService.show();
                             break;
 
                         case 3:
@@ -123,6 +126,7 @@ public class FuramaController {
 
                         case 4:
                             System.out.println("4.\tDisplay list contracts");
+                            bookingService.setToqueue();
                             break;
                         case 5:
                             System.out.println("5.\tEdit contracts");

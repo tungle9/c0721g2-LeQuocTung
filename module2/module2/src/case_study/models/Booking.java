@@ -3,7 +3,6 @@ package case_study.models;
 import case_study.dichvu.Customer;
 import case_study.dichvu.Facility;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 
@@ -67,11 +66,20 @@ public class Booking implements Comparator<Booking> {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Booking{" +
+                "maBooking=" + maBooking +
+                ", batDau=" + batDau +
+                ", ketThuc=" + ketThuc +
+                ", customer=" + customer +
+                ", facility=" + facility +
+                '}';
     }
-
     @Override
     public int compare(Booking o1, Booking o2) {
-        return (int) (o1.getBatDau() - o2.getBatDau());
+        if (o1.batDau - o2.batDau == 0) {
+            return (int) (o1.ketThuc - o2.ketThuc);
+        } else {
+            return (int) (o1.batDau - o2.batDau);
+        }
     }
 }

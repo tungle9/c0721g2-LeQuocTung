@@ -9,6 +9,7 @@ import case_study.dichvu.Villa;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class FacilityServiceImpl implements FacilityService {
     protected static LinkedHashMap<Facility, Integer> list = new LinkedHashMap<Facility, Integer>();
@@ -104,5 +105,15 @@ public class FacilityServiceImpl implements FacilityService {
                     break;
             }
         } while (login != 4);
+    }
+    public static void maintenance(){
+        for (Map.Entry<Facility, Integer> map : list.entrySet()) {
+            if(map.getValue() >= 5){
+                System.out.println(map.getKey());
+            }
+            else {
+                System.out.println("Không có dịch vụ nào cần bảo trì");
+            }
+        }
     }
 }
