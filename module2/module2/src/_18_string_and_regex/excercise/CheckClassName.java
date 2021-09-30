@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 public class CheckClassName {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pattern p = Pattern.compile("^[CAP][0-9]{4}[GHIKLM]*$");
+        Pattern p = Pattern.compile("^[CAP][0-9]{4}[GHIKLM]+$"); //
+
         System.out.println("nhập tên lớp học");
         String text = scanner.nextLine();
         p.matcher(text).find();
