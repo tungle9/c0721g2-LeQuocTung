@@ -3,10 +3,8 @@ package paradise_cenima.read_write_file;
 import paradise_cenima.Film;
 import sun.nio.ch.FileKey;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,7 +17,7 @@ public class ReadWrite {
             FileWriter writer = new FileWriter(FILE);
             BufferedWriter br = new BufferedWriter(writer);
 
-            for(Film film : list){
+            for (Film film : list) {
                 br.write(film.film());
                 br.newLine();
             }
@@ -28,5 +26,39 @@ public class ReadWrite {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+//    public static List<Film> read() {
+//        List<Film> filmList = new ArrayList<>();
+//
+//        try {
+//            FileReader reader = new FileReader(FILE);
+//            BufferedReader br = new BufferedReader(reader);
+//            String line = "";
+//            while (true) {
+//                line = br.readLine();
+//                if (line == null) {
+//                    break;
+//                }
+//                String[] strings = line.split(",");
+//                String maPhim = strings[0];
+//                String tenPhim = strings[1];
+//                String ngayChieu = strings[2];
+//                int soVe = Integer.parseInt(strings[3]);
+//                Film film = new Film(maPhim, tenPhim, ngayChieu, soVe);
+//                filmList.add(film);
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return filmList;
+//    }
+
+    public static void main(String[] args) {
+        ReadWrite readWrite = new ReadWrite();
+//        List<Film> list = readWrite.read();
+//        for (Film film :list) {
+//            System.out.println(film);
+//        }
     }
 }

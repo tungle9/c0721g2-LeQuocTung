@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e5a8a9c-2e9e-4dbc-97b3-9a9bd7a6d776" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/TestPhim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/cenima.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paradise_cenima/read_write_file/ReadWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_file/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_file/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/BinObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/HexObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/Observer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/ObserverDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/OctObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/_21_behavioral_design_pattern/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/untitled/read_file/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/untitled/read_file/Country.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_clean_code_refactoring/excersice/TennisGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_clean_code_refactoring/excersice/TennisGameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/CylinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/CylinderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/FizzBuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_clean_code_refactoring/practice/FizzBuzzTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_11_java_collection_framework/excersice/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_java_collection_framework/excersice/Function.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_file/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/read_file/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Function.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/cenima.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/cenima.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/read_write_file/ReadWrite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/read_write_file/ReadWrite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paradise_cenima/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paradise_cenima/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paradise_cenima/cenima.csv" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/cenima.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paradise_cenima/read_write_file/ReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/read_write_file/ReadWrite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +61,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="paradise_cenima.read_write_file.ReadWrite" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="paradise_cenima.read_write_file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPhim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="paradise_cenima.TestPhim" />
       <module name="module2" />
@@ -90,6 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestPhim" />
+        <item itemvalue="Application.ReadWrite" />
         <item itemvalue="Application.CalculationExample" />
       </list>
     </recent_temporary>
@@ -112,7 +113,7 @@
       <workItem from="1633490662758" duration="1981000" />
       <workItem from="1633572581837" duration="7046000" />
       <workItem from="1633591312459" duration="11000" />
-      <workItem from="1633591911380" duration="484000" />
+      <workItem from="1633591911380" duration="3346000" />
     </task>
     <servers />
   </component>
@@ -128,26 +129,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633591321887" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1633580658100">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1633595215663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633580658100" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1633580658100">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633595215663" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1633595215663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633580658100" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1633580658100">
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633595215663" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1633595215663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633580658100" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1633580658100">
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633595215663" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1633595215663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633580658100" />
-    <state x="1038" y="0" width="656" height="1019" key="dock-window-1" timestamp="1633575861523">
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633595215663" />
+    <state x="953" y="0" width="974" height="1047" maximized="true" key="dock-window-1" timestamp="1633594959171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1038" y="0" width="656" height="1019" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1633575861523" />
+    <state x="953" y="0" width="974" height="1047" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1633594959171" />
     <state x="1016" y="0" width="600" height="712" key="dock-window-2" timestamp="1633575861523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

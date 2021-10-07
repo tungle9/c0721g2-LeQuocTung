@@ -54,7 +54,8 @@ public class Film {
                 ", soLuongVe=" + soLuongVe +
                 '}';
     }
-    public String film(){
-        return "tên phim "+ getTenPhim() +",mã phim" + getMaPhim() + ",ngày chiếu " +getNgayChieu()+ ",số lượng vé" + getSoLuongVe();
+
+    public String film() {
+        return getTenPhim() + "," + getMaPhim() + "," + getNgayChieu() + "," + getSoLuongVe();
     }
 }

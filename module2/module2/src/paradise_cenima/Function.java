@@ -10,12 +10,12 @@ public class Function {
     static Scanner scanner = new Scanner(System.in);
     private static List<Film> list = new ArrayList<>();
 
-    static {
-        Film film1 = new Film("5858","Batman","12/12/2012",100);
-        Film film2 = new Film("213123","Spiderman","15/12/2012",100);
-        list.add(film1);
-        list.add(film2);
-    }
+//    static {
+//        Film film1 = new Film("5858","Batman","12/12/2012",100);
+//        Film film2 = new Film("213123","Spiderman","15/12/2012",100);
+//        list.add(film1);
+//        list.add(film2);
+//    }
 
     public void add() {
         System.out.println("mã phim");
