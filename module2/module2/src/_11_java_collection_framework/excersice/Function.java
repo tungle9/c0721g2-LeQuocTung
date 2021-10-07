@@ -6,9 +6,6 @@ import java.util.Scanner;
 
 public class Function {
     private ArrayList<Product> list;
-//    public Function(ArrayList<Product> list) {
-//        this.list = list;
-//    }
     public Function() {
         this.list = new ArrayList<>();
     }
