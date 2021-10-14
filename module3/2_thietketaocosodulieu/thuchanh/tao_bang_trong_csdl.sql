@@ -1,8 +1,8 @@
+drop database if exists QuanLyDiemThi;
+
 create database QuanLyDiemThi;
 
-
 use QuanLyDiemThi;
-
 
 create table HocSinh(
 MaHS int(10) auto_increment,
