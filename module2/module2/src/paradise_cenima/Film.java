@@ -56,6 +56,6 @@ public class Film {
     }
 
     public String film() {
-        return getTenPhim() + "," + getMaPhim() + "," + getNgayChieu() + "," + getSoLuongVe();
+        return getMaPhim() + "," + getTenPhim() + "," + getNgayChieu() + "," + getSoLuongVe();
     }
 }

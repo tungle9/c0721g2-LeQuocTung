@@ -43,6 +43,7 @@ public class ProductManager {
                     function.show();
                     break;
                 case 3: // xóa
+                    function.show();
                     System.out.println("nhập id ");
                     int id1 = scanner.nextInt();
                     function.delete(id1);

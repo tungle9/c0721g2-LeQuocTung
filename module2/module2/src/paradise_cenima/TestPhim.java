@@ -13,7 +13,7 @@ public class TestPhim {
                     "2. Thêm mới suất chiếu \n" +
                     "3. Xóa suất chiếu theo mã \n" +
                     "4. Thoát chương trình  \n");
-            login = scanner.nextInt();
+            login = Integer.parseInt(scanner.nextLine());
             switch (login) {
                 case 1:
                     list.show();
@@ -23,19 +23,17 @@ public class TestPhim {
                     list.add();
                     break;
 
-                case 3 :
+                case 3:
                     list.show();
-                    System.out.println("nhập mã phim để xóa  ");
-                    String maChieu = scanner.nextLine();
-                    System.out.println(list.delete(maChieu));
+                    System.out.println("nhập mã phim để xóa ");
+                    String maPhim = scanner.nextLine();
+                    System.out.println(list.delete(maPhim));
                     break;
-
-                case 4 :
+                case 4:
                     System.out.println(" Đã thoát chương trình");
                     break;
 
             }
-
         }
         while (login != 4);
     }

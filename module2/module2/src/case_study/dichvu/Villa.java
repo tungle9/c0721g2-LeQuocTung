@@ -1,6 +1,6 @@
 package case_study.dichvu;
 
-public class Villa extends House{
+public class Villa extends House  {
     private double dienTichhoBoi;
 
     public Villa(String dichVu, double dienTichsuDung, double chiPhi, int soLuong, String kieuThue, String tieuChuan, int soTang, double dienTichhoBoi) {

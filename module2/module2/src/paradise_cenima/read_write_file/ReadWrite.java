@@ -28,37 +28,29 @@ public class ReadWrite {
         }
     }
 
-//    public static List<Film> read() {
-//        List<Film> filmList = new ArrayList<>();
-//
-//        try {
-//            FileReader reader = new FileReader(FILE);
-//            BufferedReader br = new BufferedReader(reader);
-//            String line = "";
-//            while (true) {
-//                line = br.readLine();
-//                if (line == null) {
-//                    break;
-//                }
-//                String[] strings = line.split(",");
-//                String maPhim = strings[0];
-//                String tenPhim = strings[1];
-//                String ngayChieu = strings[2];
-//                int soVe = Integer.parseInt(strings[3]);
-//                Film film = new Film(maPhim, tenPhim, ngayChieu, soVe);
-//                filmList.add(film);
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return filmList;
-//    }
+    public static List<Film> read() {
+        List<Film> filmList = new ArrayList<>();
 
-    public static void main(String[] args) {
-        ReadWrite readWrite = new ReadWrite();
-//        List<Film> list = readWrite.read();
-//        for (Film film :list) {
-//            System.out.println(film);
-//        }
+        try {
+            FileReader reader = new FileReader(FILE);
+            BufferedReader br = new BufferedReader(reader);
+            String line = "";
+            while (true) {
+                line = br.readLine();
+                if (line == null) {
+                    break;
+                }
+                String[] strings = line.split(",");
+                String maPhim = strings[0];
+                String tenPhim = strings[1];
+                String ngayChieu = strings[2];
+                int soVe = Integer.parseInt(strings[3]);
+                Film film = new Film(maPhim, tenPhim, ngayChieu, soVe);
+                filmList.add(film);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return filmList;
     }
 }

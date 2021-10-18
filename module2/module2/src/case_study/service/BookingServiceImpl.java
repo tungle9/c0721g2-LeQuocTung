@@ -5,7 +5,7 @@ import case_study.models.Booking;
 
 import java.util.*;
 
-public class BookingServiceImpl implements BookingService {
+public class BookingServiceImpl  implements BookingService {
     private static TreeSet<Booking> treeSet = new TreeSet<>(new Booking());
 //    protected static Queue<Booking> queue = new ArrayDeque<>();
 

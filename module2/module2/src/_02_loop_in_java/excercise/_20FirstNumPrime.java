@@ -1,31 +1,15 @@
 package _02_loop_in_java.excercise;
 
+
+import java.util.Scanner;
+
 public class _20FirstNumPrime {
     public static void main(String[] args) {
-        int count = 1;
-        int a = 2;
-//        for (int i = 1;i <= 20 ; ) {
-//            boolean check = true;
-//            for (int j = 2; j < a.txt; j++) {
-//                if (a.txt % j == 0) {
-//                    check = false;
-//                    break;
-//                }
-//            }
-//            if (check) {
-//                System.out.println(i+"số nguyên tố " + a.txt);
-//                i++;
-//            }
-//          count ++;
-//            a.txt++;
-
-//        }
-
-        while (count <= 20) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
             boolean check = true;
             if (a < 2) {
                 check = false;
-                break;
             } else {
                 for (int i = 2; i < a; i++) {
                     if (a % i == 0) {
@@ -35,12 +19,11 @@ public class _20FirstNumPrime {
                 }
             }
             if (check) {
-                System.out.println(count + "số nguyên tố là : " + a);
-                count++;
+                System.out.println( a + ": là số nguyên tố ");
             }
-            a++;
-
-        }
+            else {
+                System.out.println("không phải là số nguyên tố ");
+            }
     }
 }
 

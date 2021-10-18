@@ -1,7 +1,7 @@
 package case_study.dichvu;
 
 
-public abstract class Facility {
+public abstract class Facility  {
     private String dichVu;
     private double dienTichsuDung;
     private double chiPhi;
