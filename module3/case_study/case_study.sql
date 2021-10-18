@@ -187,6 +187,27 @@ select *
 from khachhang 
 where diachi in('da nang ' ,'quang tri') and timestampdiff(year,ngaysinh,curdate()) between 18 and 50  ; 
 
+-- task 4 
+select kh.idkhachhang,kh.ngaysinh,kh.hoten,kh.diachi,count(hd.idkhachhang),
+lk.tenloaikhach
+from khachhang kh join hopdong hd 
+on kh.idloaikhach = hd.idkhachhang join 
+loaikhach lk on lk.idloaikhach = kh.idloaikhach
+where kh.idloaikhach = 1
+group by hd.idkhachhang , lk.idloaikhach
+order by count(hd.idkhachhang);
+
+-- task 5
+select kh.idkhachhang , kh.hoten, lk.tenloaikhach
+,hd.idhopdong, dv.tendichvu , hd.ngaylamhopdong,
+hd.ngayketthuc,sum(dv.chiphithue+hdct.soluong + dvdk.gia ) as 'tổng tiền'
+from  khachhang kh  join loaikhach lk 
+on kh.idloaikhach = kh.idloaikhach 
+left join hopdong hd on kh.idkhachhang = hd.idkhachhang
+left join dichvu dv on dv.iddichvu = hd.iddichvu 
+left join hopdongchitiet hdct on hdct.idhopdong = hd.idhopdong 
+left join dichvudikem dvdk on dvdk.iddichvudikem = hdct.iddichvudikem 
+group by kh.hoten;
 
  
      
