@@ -1,5 +1,4 @@
 drop database if exists case_study;
-create database case_study ; 
 use case_study ;
 
 create table vi_tri (
@@ -209,9 +208,53 @@ left join hop_dong_chi_tiet hdct on hdct.id_hop_dong = hd.id_hop_dong
 left join dich_vu_di_kem dvdk on dvdk.id_dich_vu_di_kem = hdct.id_dich_vu_di_kem 
 group by kh.ho_ten;
 
+-- TASK 6  
+select dv.id_dich_vu, dv.ten_dich_vu , dv.dien_tich,dv.chi_phi_thue,
+dv.ten_dich_vu
+from dich_vu dv
+join hop_dong hd on dv.id_dich_vu = hd.id_dich_vu
+where (year(hd.ngay_lam_hop_dong) = 2019) and (month(hd.ngay_lam_hop_dong) between 1 and 3 );
+
+-- task 7 
+select dv.id_dich_vu, dv.ten_dich_vu , dv.dien_tich,dv.chi_phi_thue,
+dv.ten_dich_vu
+from dich_vu dv
+join hop_dong hd on dv.id_dich_vu = hd.id_dich_vu
+where (year(hd.ngay_lam_hop_dong) = 2020) and not (year(hd.ngay_lam_hop_dong) = 2019)  ;
+
+-- task 8 
+ select distinct ho_ten  
+ from khach_hang  ;
  
-     
-   
+ -- task 9 
+select hd.id_hop_dong,hd.ngay_lam_hop_dong,hd.ngay_ket_thuc, kh.ho_ten, kh.id_khach_hang,
+sum(dv.chi_phi_thue+hdct.so_luong + dvdk.gia ) as 'tổng tiền'
+from hop_dong hd join khach_hang kh 
+on hd.id_khach_hang = kh.id_khach_hang join hop_dong_chi_tiet hdct
+on hd.id_hop_dong = hdct.id_hop_dong join dich_vu_di_kem dvdk
+on dvdk.id_dich_vu_di_kem = hdct.id_dich_vu_di_kem join dich_vu dv 
+on dv.id_dich_vu = hd.id_dich_vu
+group by kh.ho_ten 
+ ; 
+ 
+-- task 10 
+select hd.id_hop_dong ,hd.ngay_lam_hop_dong , hd.ngay_ket_thuc,
+hd.tien_dat_coc ,count(hdct.id_hop_dong_chi_tiet) as 'số lượng đi kèm'
+from hop_dong hd join hop_dong_chi_tiet hdct on
+hd.id_hop_dong = hdct.id_hop_dong join dich_vu_di_kem dvdk
+on dvdk.id_dich_vu_di_kem = hdct.id_dich_vu_di_kem
+group by hd.id_hop_dong  ;
+
+-- task 11 
+select kh.ho_ten,kh.dia_chi ,dvdk.id_dich_vu_di_kem,dvdk.ten_dich_vu_di_kem
+,dvdk.id_dich_vu_di_kem,dvdk.Gia,kh.id_khach_hang
+from khach_hang kh join hop_dong hd
+on kh.id_khach_hang = hd.id_khach_hang join hop_dong_chi_tiet hdct
+on hd.id_hop_dong = hdct.id_hop_dong join dich_vu_di_kem dvdk
+on hdct.id_dich_vu_di_kem = dvdk.id_dich_vu_di_kem
+where kh.id_loai_khach = 1 and (kh.dia_chi = 'Vinh' or kh.dia_chi = 'Quang Ngai');
+
+  
   
  
  
