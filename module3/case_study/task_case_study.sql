@@ -42,5 +42,54 @@ from hop_dong hd join  hop_dong_chi_tiet hdct
  on hd.id_nhan_vien = nv.id_nhan_vien
  where year(hd.ngay_lam_hop_dong) between 2018 and 2019;
  
+ -- 16.	Xóa những Nhân viên chưa từng lập được hợp đồng
+  -- nào từ năm 2017 đến năm 2019.
+SET SQL_SAFE_UPDATES = 0;
+ delete 
+ from  nhan_vien nv
+ where nv.id_nhan_vien not in ( 
+ select hd.id_nhan_vien
+ from hop_dong hd
+ where hd.ngay_lam_hop_dong is null  or (hd.id_nhan_vien = nv.id_nhan_vien and year(hd.ngay_lam_hop_dong) between 2017 and 2019 ))
+ ;
+ 
+ -- task 17 
+ update khach_hang kh
+ set kh.id_loai_khach = 1  
+ where kh.id_khach_hang in (
+ select * 
+from( select kh.id_loai_khach
+ from khach_hang kh join hop_dong hd on hd.id_khach_hang = kh.id_khach_hang
+ where year(hd.ngay_lam_hop_dong) = 2019 and kh.id_loai_khach = 2 
+ having sum(hd.tong_tien) >= 10000000 )) ; 
+ 
+ -- task 18
+ SET SQL_SAFE_UPDATES = 0;
+ delete 
+ from khach_hang kh
+ where kh.id_khach_hang not in (
+ select hd.id_khach_hang
+ from hop_dong hd 
+ where year(hd.ngay_lam_hop_dong) >  2016 );
+ 
+ -- task 19 
+ -- 19.	Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
+ update dich_vu_di_kem dvdk
+ set dvdk.gia = dvdk.gia*2 
+ where dvdk.id_dich_vu_di_kem in (
+ select *
+ from (select dvdk.id_dich_vu_di_kem 
+ from hop_dong_chi_tiet hdct join dich_vu_di_kem dvdk
+on hdct.id_dich_vu_di_kem = dvdk.id_dich_vu_kem 
+where hdct.so_luong > 10 )); 
+
+-- task 20 
+select id_nhan_vien 'id' ,ho_ten,email,sdt,ngay_sinh,dia_chi
+from nhan_vien 
+union 
+select id_khach_hang 'id' ,ho_ten,email,sdt,ngay_sinh,dia_chi
+from khach_hang  ; 
+
+ 
  
  

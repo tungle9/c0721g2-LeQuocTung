@@ -1,4 +1,5 @@
 drop database if exists case_study;
+create database case_study ; 
 use case_study ;
 
 create table vi_tri (
@@ -69,8 +70,8 @@ chi_phi_thue varchar (45) ,
 id_kieu_thue int , 
 id_loai_dich_vu int , 
 trang_thai varchar (45) ,
-foreign key (id_kieu_thue) references kieu_thue(id_kieu_thue), 
-foreign key (id_loai_dich_vu) references loai_dich_vu(id_loai_dich_vu) 
+foreign key (id_kieu_thue) references kieu_thue(id_kieu_thue) on delete cascade  , 
+foreign key (id_loai_dich_vu) references loai_dich_vu(id_loai_dich_vu) on delete cascade 
 );
 
 
@@ -91,9 +92,9 @@ ngay_lam_hop_dong date ,
 ngay_ket_thuc date,
 tien_dat_coc int , 
 tong_tien int, 
-foreign key (id_nhan_vien) references nhan_vien( id_nhan_vien) ,
-foreign key (id_khach_hang) references khach_hang(id_khach_hang),
-foreign key ( id_dich_vu ) references dich_vu (id_dich_vu)
+foreign key (id_nhan_vien)  references nhan_vien( id_nhan_vien) on delete cascade ,
+foreign key (id_khach_hang) references khach_hang(id_khach_hang) on delete cascade  ,
+foreign key ( id_dich_vu ) references dich_vu (id_dich_vu) on delete cascade 
 );
 
 create table hop_dong_chi_tiet(
@@ -102,8 +103,8 @@ id_hop_dong int ,
 id_dich_vu_di_kem int ,
 so_luong int ,
 primary key (id_hop_dong_chi_tiet,id_hop_dong , id_dich_vu_di_kem), 
-foreign key (id_hop_dong) references hop_dong(id_hop_dong) , 
-foreign key  (id_dich_vu_di_kem) references dich_vu_di_kem(id_dich_vu_di_kem) 
+foreign key (id_hop_dong) references hop_dong(id_hop_dong) on delete cascade , 
+foreign key  (id_dich_vu_di_kem) references dich_vu_di_kem(id_dich_vu_di_kem) on delete cascade 
 );
 
 
@@ -208,12 +209,15 @@ left join hop_dong_chi_tiet hdct on hdct.id_hop_dong = hd.id_hop_dong
 left join dich_vu_di_kem dvdk on dvdk.id_dich_vu_di_kem = hdct.id_dich_vu_di_kem 
 group by kh.ho_ten;
 
+
 -- TASK 6  
 select dv.id_dich_vu, dv.ten_dich_vu , dv.dien_tich,dv.chi_phi_thue,
 dv.ten_dich_vu
 from dich_vu dv
-join hop_dong hd on dv.id_dich_vu = hd.id_dich_vu
-where (year(hd.ngay_lam_hop_dong) = 2019) and (month(hd.ngay_lam_hop_dong) between 1 and 3 );
+where dv.id_dich_vu not in (
+select id_dich_vu
+from hop_dong hd
+where (year(hd.ngay_lam_hop_dong) = 2019) and (month(hd.ngay_lam_hop_dong) between 1 and 3 ));
 
 -- task 7 
 select dv.id_dich_vu, dv.ten_dich_vu , dv.dien_tich,dv.chi_phi_thue,
