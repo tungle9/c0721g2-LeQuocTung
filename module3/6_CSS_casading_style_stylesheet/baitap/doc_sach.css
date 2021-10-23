@@ -1,8 +1,8 @@
 body{
     font-family: Arial;
-    font-size: 50px;
+    font-size: 40px;
     width: 100%;
-    margin : 0px auto
+    margin : 0px auto;
 }
 #menu{
     background: purple;
@@ -27,29 +27,26 @@ body{
     float:left;
     min-height: 50px;
 }
-
- ul{
+ul{
     margin: 0px;
-     padding: 0px;
 }
  li {
-     line-height: 100px;
-     padding: 0px 10px 0px 100px;
- }
+      line-height: 100px;
+      padding: 0px 10px 0px 100px;
+  }
 
 ul li {
-    list-style: none;
-    float: left;
-}
+     list-style: none;
+     float: left;
+ }
 
  ul li a {
-     display: block;
-     height: 140px;
      line-height: 140px;
-     padding: 0px 70px 0px 50px;
+     padding: 0px;
      color: aliceblue;
      text-decoration: none;
  }
+
  img{
      height: 500px;
      width: 100%;

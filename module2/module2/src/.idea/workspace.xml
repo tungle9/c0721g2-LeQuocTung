@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e5a8a9c-2e9e-4dbc-97b3-9a9bd7a6d776" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_02_loop_in_java/excercise/_20FirstNumPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_loop_in_java/excercise/_20FirstNumPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_array_and_method/practice/ReverseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_array_and_method/practice/ReverseArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_11_java_collection_framework/excersice/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_java_collection_framework/excersice/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/dichvu/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/dichvu/Facility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/dichvu/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/dichvu/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/service/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/_02_loop_in_java/excercise/_20FirstNumPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/_02_loop_in_java/excercise/_20FirstNumPrime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/_03_array_and_method/practice/ReverseArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/_03_array_and_method/practice/ReverseArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/_11_java_collection_framework/excersice/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/_11_java_collection_framework/excersice/ProductManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/out/production/module2/paradise_cenima/cenima.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/out/production/module2/paradise_cenima/cenima.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/Function.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/TestPhim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/TestPhim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/cenima.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/cenima.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/paradise_cenima/read_write_file/ReadWrite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/paradise_cenima/read_write_file/ReadWrite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/read_file/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/read_file/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paradise_cenima/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paradise_cenima/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/Function.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paradise_cenima/TestPhim.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/TestPhim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paradise_cenima/cenima.csv" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/cenima.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paradise_cenima/read_write_file/ReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/paradise_cenima/read_write_file/ReadWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_file/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/read_file/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_file/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/read_file/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/7_thiet_ke_bo_cuc_web/thuc_hanh/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/7_thiet_ke_bo_cuc_web/thuc_hanh/styles1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/7_thiet_ke_bo_cuc_web/thuc_hanh/tao_menu_doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/7_thiet_ke_bo_cuc_web/thuc_hanh/tao_menu_ngang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/dinh_dang_voi_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/dinh_dang_voi_css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/doc_sach.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/doc_sach.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/tao_trang_doc_truyen_ngan.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/6_CSS_casading_style_stylesheet/baitap/tao_trang_doc_truyen_ngan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +155,7 @@
       <workItem from="1634399105305" duration="230000" />
       <workItem from="1634399351206" duration="6000" />
       <workItem from="1634550978889" duration="45000" />
+      <workItem from="1634876393824" duration="7000" />
     </task>
     <servers />
   </component>
