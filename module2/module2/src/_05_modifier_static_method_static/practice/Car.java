@@ -10,6 +10,10 @@ public class Car {
         this.engine = engine;
         numberOfCars += 50; // mỗi lần gọi sẽ lưu lại
     }
+     static int a(int a ){
+        return a;
+    }
+
 
     public String getName() {
         return name;
@@ -26,4 +30,5 @@ public class Car {
     public void setEngine(String engine) {
         this.engine = engine;
     }
+
 }
