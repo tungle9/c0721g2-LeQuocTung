@@ -2,11 +2,13 @@ public class KhachHang {
     String Name ;
     String dateOfBirth;
     String address;
+    //String img
 
     public KhachHang(String name, String dateOfBirth, String address) {
         Name = name;
         this.dateOfBirth = dateOfBirth;
         this.address = address;
+
     }
 
     public String getName() {

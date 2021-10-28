@@ -19,13 +19,13 @@ public class TinhToanServlet extends HttpServlet {
         writer.println("<h1>Result:</h1>");
 
         double result = Caculator.caculator(num1,num2,operator);
-
-
-
+        writer.println(num1 + "" + operator + "" + num2 + "=" +result);
+        writer.println("<html>");
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("tinh_toan.jsp").forward(request,response);
 
     }
 }
