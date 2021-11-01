@@ -13,13 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "CustomerServlet", urlPatterns = "/customers")
+@WebServlet(name = "CustomerServlet", urlPatterns = {"","/customers"})
 public class CustomerServlet extends HttpServlet {
     private CustomerService customerService = new CustomerServiceImpl();
 
     private void listCustomers(HttpServletRequest request,HttpServletResponse response){
         List<Customer> customers = this.customerService.finAll();
-
         request.setAttribute("customers",customers);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
         try {
@@ -30,6 +29,7 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
         try {
@@ -40,6 +40,7 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
