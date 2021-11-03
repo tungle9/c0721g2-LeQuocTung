@@ -31,5 +31,11 @@ public interface IUserDao {
     // Thực thi SQL có sử dụng Transaction
 
      void insertUpdateUseTransaction();
+     
+     // update
+    void updateById(int id) throws SQLException ;
+
+    // delete
+    void deleteById(int id ) throws SQLException ;
 }
 

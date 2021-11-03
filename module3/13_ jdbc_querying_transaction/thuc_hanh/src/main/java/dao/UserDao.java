@@ -103,7 +103,9 @@ public class UserDao implements IUserDao {
     @Override
     public boolean deleteUser(int id) throws SQLException {
         boolean rowDeleted;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement("call delete_by_id(?)");)
+        {
             statement.setInt(1, id);
             rowDeleted = statement.executeUpdate() > 0;
         }
@@ -113,11 +115,12 @@ public class UserDao implements IUserDao {
     @Override
     public boolean updateUser(User user) throws SQLException {
         boolean rowUpdated;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
-            statement.setString(1, user.getName());
-            statement.setString(2, user.getEmail());
-            statement.setString(3, user.getCountry());
-            statement.setInt(4, user.getId());
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement("call update_by_id(?,?,?,?)");) {
+            statement.setInt(1, user.getId());
+            statement.setString(2, user.getName());
+            statement.setString(3, user.getEmail());
+            statement.setString(4, user.getCountry());
 
             rowUpdated = statement.executeUpdate() > 0;
         }
@@ -353,6 +356,16 @@ public class UserDao implements IUserDao {
             e.printStackTrace();
 
         }
+
+    }
+
+
+    @Override
+    public void updateById(int id) {
+    }
+
+    @Override
+    public void deleteById(int id) {
 
     }
 
