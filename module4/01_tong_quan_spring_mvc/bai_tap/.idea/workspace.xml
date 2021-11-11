@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e227358c-3403-4cc4-9d31-382629e8551e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/controller/ServiceServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/model/AbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/IServiceRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/ServiceRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/until/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/service/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/service/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/service/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/service/service.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module3/design.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuyen_doi_tien_te/src/main/java/codegym/controller/ControllerMoney.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuyen_doi_tien_te/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuyen_doi_tien_te/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuyen_doi_tien_te/src/main/webapp/WEB-INF/view/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuyen_doi_tien_te/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/java/codegym/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/java/codegym/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/java/codegym/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/java/codegym/ProvinceFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/quan_ly_khach_hang/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/main/java/codegym/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/main/webapp/WEB-INF/view/greeting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/build/libs/thuc_hanh-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/build/libs/thuc_hanh-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/12_jdbc_crud/thuc_hanh/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/classes/java/main/responsitory/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/classes/java/main/responsitory/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/classes/java/main/service/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/libs/case_study_jsp_servlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/build/libs/case_study_jsp_servlet-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/giao_dien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/giao_dien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/responsitory/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/java/model/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/case_study_jsp_servlet/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="20laAlgAEjnapjXJKLay7FWoqzq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e227358c-3403-4cc4-9d31-382629e8551e" name="Default Changelist" comment="" />
+      <created>1636621486084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636621486084</updated>
+      <workItem from="1636621487351" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1636621548253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636621548253" />
+    <state x="342" y="130" key="new project wizard" timestamp="1636621549976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1636621549976" />
+  </component>
+</project>

@@ -15,7 +15,7 @@
 <center>
     <h1>User Management</h1>
     <h2>
-        <a href="/customer?action=customer">List All customer</a>
+        <a href="customer?action=customer">List All customer</a>
     </h2>
 </center>
 <div align="center">
@@ -27,7 +27,7 @@
                 </h2>
             </caption>
             <c:if test="${customer != null}">
-                <input type="hidden" name="id" value="<c:out value='${Customer.id}' />"/>
+                <input type="hidden" name="id" value="<c:out value='${customer.id}' />"/>
             </c:if>
             <tr>
                 <th>Customer Name:</th>
@@ -57,7 +57,7 @@
                 <th>Customer number phone:</th>
                 <td>
                     <input type="text" name="phone" size="15"
-                           value="<c:out value='${customer.phone}' />"
+                           value="<c:out value='${customer.phone}'/>"
                     />
                 </td>
             </tr>
@@ -65,7 +65,7 @@
                 <th>Customer Id Card:</th>
                 <td>
                     <input type="text" name="idCard" size="15"
-                           value="<c:out value='${customer.idCard}' />"
+                           value="<c:out value='${customer.idCard}'/>"
                     />
                 </td>
             </tr>

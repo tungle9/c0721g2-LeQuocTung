@@ -2,6 +2,7 @@ package controller;
 
 import responsitory.CustomerRepository;
 import model.Customer;
+import until.Validate;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,9 +23,8 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
-        List<Customer> customers = listCustomers.findAll();
-        request.setAttribute("customer", customers);
-
+        List<Customer> listCustomer = listCustomers.findAll();
+        request.setAttribute("listCustomer", listCustomer);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
         try {
@@ -37,8 +37,19 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void insertCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+        boolean flag = false;
+
+        String nameError = "";
         int id = Integer.parseInt(request.getParameter("id"));
+
+
         String name = request.getParameter("name");
+        if(Validate.checkRegex(name,Validate.NAME_REGEX)){
+            flag = true ;
+            nameError = "Format name pls enter again VD Tung le.v.v.v.";
+        }
+
+
         String email = request.getParameter("email");
         String birthday = request.getParameter("birthday");
         int phone = Integer.parseInt(request.getParameter("phone"));
@@ -46,6 +57,14 @@ public class CustomerServlet extends HttpServlet {
 
         Customer customer = new Customer(id, name, email, birthday, phone, idCard);
         listCustomers.insertCustomer(customer);
+
+        if(flag){
+            request.setAttribute("nameError",nameError);
+            request.setAttribute("customer",customer);
+            showCreateForm(request,response);
+        }
+
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
         request.setAttribute("message", "New customer was created");
         try {
@@ -69,8 +88,8 @@ public class CustomerServlet extends HttpServlet {
 
     private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        listCustomers.deleteCustomer(id);
 
+        listCustomers.deleteCustomer(id);
         List<Customer> listCustomer = listCustomers.findAll();
         request.setAttribute("listCustomer", listCustomer);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
@@ -89,6 +108,7 @@ public class CustomerServlet extends HttpServlet {
         Customer customer = new Customer(id, name, email, birthday, phone, idCard);
         listCustomers.update(customer);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
+        request.setAttribute("message", "Updated complete");
         dispatcher.forward(request, response);
     }
 
@@ -116,8 +136,7 @@ public class CustomerServlet extends HttpServlet {
                     break;
                 case "edit":
                     updateCustomer(request, response);
-                    break;
-                case "delete":
+                    listCustomer(request, response);
                     break;
                 case "view":
                     break;

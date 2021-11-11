@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,15 +35,13 @@
             background: aliceblue;
         }
 
-        .col-9 {
-            background: cornflowerblue;
-
-        }
 
         .footer {
             background: lightskyblue;
-            height: 110px;
+            height: 100px;
             width: 100%;
+            text-align: center;
+            font-family: "Bauhaus 93";
         }
 
         .container-fluid {
@@ -54,12 +53,13 @@
 <div style="width: 100%">
     <div class="menu_top">
         <div class="col-2"><img style="width: 150px;height: 100% ;padding: 15px 10px 10px 10px ;margin-left:50px "
-                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51e2b2d8-39bd-4c3a-8d40-2c5228123156/dcp56ql-83ab9bca-3b88-4db5-a19d-1133f9a78e06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxZTJiMmQ4LTM5YmQtNGMzYS04ZDQwLTJjNTIyODEyMzE1NlwvZGNwNTZxbC04M2FiOWJjYS0zYjg4LTRkYjUtYTE5ZC0xMTMzZjlhNzhlMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vaXaCTu9BgQNUMLljbTw2JaZJg_o1Lnt2ySwy-X9KRc"></div>
+                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51e2b2d8-39bd-4c3a-8d40-2c5228123156/dcp56ql-83ab9bca-3b88-4db5-a19d-1133f9a78e06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxZTJiMmQ4LTM5YmQtNGMzYS04ZDQwLTJjNTIyODEyMzE1NlwvZGNwNTZxbC04M2FiOWJjYS0zYjg4LTRkYjUtYTE5ZC0xMTMzZjlhNzhlMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vaXaCTu9BgQNUMLljbTw2JaZJg_o1Lnt2ySwy-X9KRc">
+        </div>
     </div>
     <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="index.jsp">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -88,20 +88,24 @@
         </nav>
     </div>
     <div class="row">
-        <div class="col-3"><div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                The current link item
-            </a>
-            <a href="/customer" class="list-group-item list-group-item-action">Customer</a>
-            <a href="#" class="list-group-item list-group-item-action">Employee</a>
-            <a href="#" class="list-group-item list-group-item-action">Service</a>
-            <a class="list-group-item list-group-item-action disabled">Contract</a>
-        </div></div>
-        <div class="col-9">
+        <div class="col-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                </a>
+                <a href="/customer" class="list-group-item list-group-item-action">Customer</a>
+                <a href="#" class="list-group-item list-group-item-action">Employee</a>
+                <a href="/service" class="list-group-item list-group-item-action">Service</a>
+                <a class="list-group-item list-group-item-action disabled">Contract</a>
+            </div>
+        </div>
+        <div class="row">
         </div>
     </div>
-
-    <div class="footer">footer</div>
+    <div class="footer">
+        CodeGym Da Nang - Nguyen Tat Thanh Street
+        Mọi thông tin xin liên hệ SDT : 070356631
+    </div>
 </div>
 </body>
 </html>

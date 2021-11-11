@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
-    private String url = "jdbc:mysql://localhost:3306/furama_resort?useSSL=false";
+    private String url = "jdbc:mysql://localhost:3306/furama_resort?allowPublicKeyRetrieval=true&useSSL=false";
     private String userName = "root";
     private String passWord = "123123q";
     private static final String SELECT_ALL = "select * from customer";
-    private static final String UPDATE = "update customer set name = ?,customer_birthday= ?, customer_phone =? , customer_idCard  = ? where customer_id = ?;";
+    private static final String UPDATE = "update customer set customer_name = ? , customer_email = ? , customer_birthday= ?, customer_phone =? , customer_id_card  = ? where customer_id = ?;";
     private static final String SELECT_ID = "select * from customer where customer_id = ?;";
+    private static final String DELETE_ID = "delete from customer where customer_id =? ;";
+
 
 
 
@@ -79,11 +81,11 @@ public class CustomerRepository implements ICustomerRepository {
         boolean delete;
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(
-                     "delete from customer where id = ?");) {
+                     DELETE_ID);) {
             statement.setInt(1, id);
             delete = statement.executeUpdate() > 0;
         }
-        return false;
+        return delete;
     }
 
     @Override
@@ -95,6 +97,8 @@ public class CustomerRepository implements ICustomerRepository {
             statement.setString(3, customer.getBirthday());
             statement.setInt(4, customer.getPhone());
             statement.setString(5, customer.getIdCard());
+            statement.setInt(6,customer.getId());
+
 
             rowUpdated = statement.executeUpdate() > 0;
         }

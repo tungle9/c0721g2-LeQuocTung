@@ -48,7 +48,7 @@
                 <th>Country:</th>
                 <td>
                     <input type="text" name="country" size="15"
-                           value="<${user.country} />"
+                           value="${user.country}"
                     />
                 </td>
             </tr>
