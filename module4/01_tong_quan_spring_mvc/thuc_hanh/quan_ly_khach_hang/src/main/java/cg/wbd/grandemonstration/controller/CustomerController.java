@@ -25,6 +25,9 @@ public class CustomerController {
         return "list";
     }
 
+
+
+    
     @GetMapping("/customers")
     public String showList1(Model model) {
         List<Customer> customers = customerService.findAll();
