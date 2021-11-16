@@ -45,6 +45,6 @@
 <h2>Email : ${user.email} </h2>
 <h1>Dấu hiệu</h1>
 <h2>Dấu hiệu : ${user.sign} </h2>
-<h2>Lịch sử đi lại : ${user.situation} </h2>
+<h2>Lịch sử phơi nhiễm : ${user.situation} </h2>
 </body>
 </html>

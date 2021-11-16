@@ -15,14 +15,14 @@ public class Sandwich {
     }
 
     @PostMapping("/finish_sandwich")
-    public String save(@RequestParam String[] spice, Model model){
+    public String save(@RequestParam String spice, Model model){
     //    model.addAttribute("spice",spice);
 
 
       // kiểm tra dữ liệu
-     for (int i = 0 ; i < spice.length ; i ++){
-         System.out.println(spice[i]);
-     }
+//     for (int i = 0 ; i < spice.length ; i ++){
+//         System.out.println(spice[i]);
+//     }
         model.addAttribute("spice",spice);
         return "finish_sandwich";
     }

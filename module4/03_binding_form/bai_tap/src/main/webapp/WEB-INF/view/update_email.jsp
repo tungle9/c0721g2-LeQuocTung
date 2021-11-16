@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<h1 style="color:orchid;">Bridget jones 's diary</h1>
+<h1 style="color:orchid;">Bridget jones's diary</h1>
 ${email.languages}<br>
 ${email.page}<br>
 ${email.filler}<br>

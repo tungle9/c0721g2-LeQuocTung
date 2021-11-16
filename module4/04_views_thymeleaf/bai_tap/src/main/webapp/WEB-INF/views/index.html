@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<a th:href="@{/product}">Home</a>
+<h3>Product</h3>
+<p>
+    <a th:href="@{create}">
+        Add new product
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<div>
+    <form th:action="@{search}" method="post">
+        <p>Tìm kiếm </p>
+        <input type="text" name="name">
+
+        <button type="submit">Sumbit</button>
+    </form>
+</div>
+<table id="customers">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Manufacturer</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--/*@thymesVar id="product" type="codegym"*/-->
+    <tr th:each="row : ${product}">
+        <td th:text="${row.getId()}"></td>
+        <td th:text="${row.getName()}"></td>
+        <td th:text="${row.getPrice()}"></td>
+        <td th:text="${row.getDescription()}"></td>
+        <td th:text="${row.getManufacturer()}"></td>
+        <td><a th:href="@{{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

@@ -15,7 +15,8 @@
 </head>
 <body>
 <h1 style="color: darkslateblue;"> You added spice to the Sandwich :
-    <c:forEach items="${requestScope.spice}" var="show">${show}</c:forEach>;
+<%--    <c:forEach items="${requestScope.spice}" var="show">${show}</c:forEach>;--%>
+    ${spice}
 </h1>
 </body>
 </html>

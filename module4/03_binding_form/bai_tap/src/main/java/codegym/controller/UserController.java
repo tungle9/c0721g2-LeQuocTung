@@ -18,7 +18,7 @@ public class UserController {
         String[] gender = {"Male","Female"};
         model.addAttribute("gender",gender);
         String[] vehicle = {"Tau bay","Tau thuyen","O to","Khac"};
-        String[] sign = {"True","False"};
+        boolean[] sign = {true,false};
         String[] city ={"Da Nang","Hoi an","TP HO CHI MINH","Hue"};
         String[] situation = {"YES","NO"};
         model.addAttribute("sign",sign);

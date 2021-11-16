@@ -72,25 +72,24 @@
             <td>Không</td>
         </tr>
         <tr>
-            <td>Sot</td>
-            <td colspan="2"><form:radiobuttons path="sign" items="${sign}"/></td>
+            <td>Sốt</td>
+            <td colspan="2" style="text-align: center"><form:checkbox value="SOT" path="sign" items="${sign}"/></td>
         </tr>
         <tr>
             <td>Tiêu chảy</td>
-            <td colspan="2"><form:radiobuttons path="sign" items="${sign}"/></td>
+            <td colspan="2" style="text-align: center"><form:checkbox value="TIEU CHAY" path="sign" items="${sign}"/></td>
         </tr>
         <tr>
             <td>Đau bụng</td>
-            <td colspan="2"><form:radiobuttons path="sign" items="${sign}"/></td>
-
+            <td colspan="2" style="text-align: center"><form:checkbox value="Dau BUNG" path="sign" items="${sign}"/></td>
         </tr>
         <tr>
             <td>Buồn nôn</td>
-            <td colspan="2"><form:radiobuttons path="sign" items="${sign}"/></td>
+            <td colspan="2" style="text-align: center"><form:checkbox value="BUON NON" path="sign" items="${sign}"/></td>
         </tr>
         <tr>
             <td>Ho</td>
-            <td colspan="2"><form:radiobuttons path="sign" items="${sign}"/></td>
+            <td colspan="2" style="text-align: center"><form:checkbox value="Ho" path="sign" items="${sign}"/></td>
         </tr>
         </td>
         </tr>
@@ -106,15 +105,15 @@
         </tr>
         <tr>
             <td>Đến trang trại chăn nuôi/ chợ buôn bán vật sống /v,v,v,</td>
-            <td colspan="2"><form:radiobuttons path="situation" items="${situation}"/></td>
+            <td><form:radiobuttons path="situation" items="${situation}"/></td>
         </tr>
         <tr>
             <td>Tiếp xúc gần (<2m) với người mắc bệnh covid</td>
-            <td colspan="2"><form:radiobuttons path="situation" items="${situation}"/></td>
+            <td><form:radiobuttons path="situation" items="${situation}"/></td>
         </tr>
     </table>
     <h2 style="color: red">Dữ liệu bạn cung cấp hoàn toàn bảo mật và phục vụ cho việc phòng chống dịch
-    ,thuốc quản lý khi bạn nhấn gửi tức bạn đã hiểu và đồng ý </h2>
+        ,thuốc quản lý khi bạn nhấn gửi tức bạn đã hiểu và đồng ý </h2>
     <br>
     <button style="background: greenyellow; width: 100px  ; height:100px ;margin-left: 200px" type="submit">GỬI TỜ KHAI
     </button>
