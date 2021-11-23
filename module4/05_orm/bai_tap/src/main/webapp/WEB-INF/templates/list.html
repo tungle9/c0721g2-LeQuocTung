@@ -31,11 +31,12 @@ There are <span th:text="${music.size()}"></span> Music(s).
     </thead>
     <tbody>
     <tr th:each="c : ${music}">
-        <td th:text="${c.getId()}"></td>
+        <td th:text="${c.id}"></td>
         <td th:text="${c.name}"></td>
         <td th:text="${c.singer}"></td>
         <td th:text="${c.genre}"></td>
         <td th:text="${c.urlSong}"></td>
+        <td><a th:href="@{delete/{id}(id=${c.id})}">delete</a></td>
     </tr>
     </tbody>
 </table>

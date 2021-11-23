@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="create">Create new music app</a>
+<h1>Music App</h1>
+<h1 th:text="${msg}"></h1>
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>name</td>
+        <td>singer</td>
+        <td>genre</td>
+        <td>url</td>
+    </tr>
+    <th:block th:each="music : ${music}">
+        <tr>
+            <td th:text="${music.id}"></td>
+            <td th:text="${music.name}"></td>
+            <td th:text="${music.singer}"></td>
+            <td th:text="${music.genre}"></td>
+            <td th:text="${music.urlSong}"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
+<!--private int id;-->
+<!--@NotEmpty-->
+<!--private String name;-->
+<!--@NotEmpty-->
+<!--private String singer;-->
+<!--@NotEmpty-->
+<!--private String genre;-->
+<!--private String urlSong;-->

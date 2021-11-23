@@ -51,7 +51,7 @@ public class ProductController {
         productSer.update(product.getId(), product);
         return "redirect:/product";
     }
-
+//<td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>
     @GetMapping("{id}/delete")
     public String delete(@PathVariable int id, Model model) {
         model.addAttribute("product", productSer.findById(id));

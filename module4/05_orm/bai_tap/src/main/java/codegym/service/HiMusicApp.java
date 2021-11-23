@@ -49,8 +49,8 @@ public class HiMusicApp implements IMusic {
     }
 
     @Override
-    public MusicApp findOne(Long id) {
-        return null;
+    public MusicApp findOne(Integer id) {
+        return entityManager.find(MusicApp.class, id);
     }
 
     @Override
@@ -79,8 +79,11 @@ public class HiMusicApp implements IMusic {
     }
 
     @Override
-    public void delete(Long id) {
-
+    public void delete(Integer id) {
+        EntityTransaction entityTransaction = entityManager.getTransaction();
+        entityTransaction.begin();
+        entityManager.remove(findOne(id));
+        entityTransaction.commit();
     }
 
     @Override

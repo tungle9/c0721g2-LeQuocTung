@@ -2,13 +2,14 @@ package codegym.service;
 
 import codegym.model.MusicApp;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 public interface IMusic {
 
     List<MusicApp> findAll();
 
-    MusicApp findOne(Long id);
+    MusicApp findOne(Integer id);
 
     void save(MusicApp MusicApp);
 
@@ -19,7 +20,7 @@ public interface IMusic {
 
     long count();
 
-    void delete(Long id);
+    void delete(Integer id);
 
     void delete(MusicApp musicApps);
 

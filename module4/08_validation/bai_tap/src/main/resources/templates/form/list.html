@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/check}" th:object="${form}" method="post">
+    <table>
+        <tr>
+            <td>last name</td>
+            <td><input th:field="*{lastName}"></td>
+            <td th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Name Error</td>
+        </tr>
+        <tr>
+            <td>first name</td>
+            <td><input th:field="*{firstName}"></td>
+            <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Name Error</td>
+        </tr>
+        <tr>
+            <td>sdt</td>
+            <td><input th:field="*{sdt}"></td>
+            <td th:if="${#fields.hasErrors('sdt')}" th:errors="*{sdt}">Name Error</td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td><input th:field="*{age}"></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Name Error</td>
+        </tr>
+        <td>email</td>
+        <td><input th:field="*{email}"></td>
+        <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Name Error</td>
+        </tr>
+    </table>
+    <button type="submit">Confirm</button>
+</form>
+</body>
+</html>
