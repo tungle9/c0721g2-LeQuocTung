@@ -13,7 +13,6 @@ public class Province {
     private String name;
 
     @OneToMany(targetEntity = Customer.class, mappedBy="province")
-
      private List<Customer> customers;
 
     public Province() {

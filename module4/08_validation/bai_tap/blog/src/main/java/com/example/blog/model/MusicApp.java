@@ -7,20 +7,20 @@ import org.springframework.validation.Validator;
 
 
 import javax.validation.constraints.NotBlank;
-
+import javax.validation.constraints.NotNull;
 
 
 public class MusicApp implements Validator {
 
     private Integer id;
 
-    @NotBlank
+    @NotNull
     private String name;
 
-    @NotBlank
+    @NotNull
     private String singer;
 
-    @NotBlank
+    @NotNull
     private String genre;
 
 
@@ -47,13 +47,13 @@ public class MusicApp implements Validator {
         this.name = name;
     }
 
-    public MusicApp(Integer id, @NotBlank String name, @NotBlank String singer, @NotBlank String genre, String urlSong) {
-        this.id = id;
-        this.name = name;
-        this.singer = singer;
-        this.genre = genre;
-        this.urlSong = urlSong;
-    }
+//    public MusicApp(Integer id, @NotBlank String name, @NotBlank String singer, @NotBlank String genre, String urlSong) {
+//        this.id = id;
+//        this.name = name;
+//        this.singer = singer;
+//        this.genre = genre;
+//        this.urlSong = urlSong;
+//    }
 
     public String getSinger() {
         return singer;

@@ -85,11 +85,11 @@ public class CustomerController {
         Optional<Customer> customer = customerService.findById(id);
         if (customer.isPresent()) {
             ModelAndView modelAndView = new ModelAndView("/customer/delete");
-            modelAndView.addObject("customer", customer);
+            modelAndView.addObject("customer", customer.get());
             return modelAndView;
 
         } else {
-            ModelAndView modelAndView = new ModelAndView("/error.404");
+            ModelAndView modelAndView = new ModelAndView("customer/error.404");
             return modelAndView;
         }
     }

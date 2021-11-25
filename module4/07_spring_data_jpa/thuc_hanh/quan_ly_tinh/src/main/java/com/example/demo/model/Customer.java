@@ -35,10 +35,10 @@ public class Customer {
         this.province = province;
     }
 
-//    @Override
-//    public String toString() {
-//        return String.format("Customer[id=%d, firstName='%s', lastName='%s', province='%s']", id, firstName, lastName,province);
-//    }
+    @Override
+    public String toString() {
+        return String.format("Customer[id=%d, firstName='%s', lastName='%s', province='%s']", id, firstName, lastName,province);
+    }
 
     public Long getId() {
         return id;
