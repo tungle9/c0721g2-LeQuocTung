@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
-@SessionAttributes
+@SessionAttributes(names = "counter")
 public class CounterController {
 
     @ModelAttribute("counter")
@@ -21,5 +21,4 @@ public class CounterController {
         counter.increment();
         return "/index";
     }
-
 }
