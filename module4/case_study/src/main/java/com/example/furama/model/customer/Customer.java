@@ -1,8 +1,11 @@
 package com.example.furama.model.customer;
 
 
+import com.example.furama.model.Contract.Contract;
+
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Customer {
@@ -16,13 +19,15 @@ public class Customer {
     private CustomerType type_id;
 
     private String name;
-    private Date dateOfBirt;
+    private String dateOfBirt;
     private String gender;
     private String idCard;
     private String phoneNumber;
     private String email;
     private String address;
 
+    @OneToMany(targetEntity = Contract.class,mappedBy = "customer")
+    private List<Contract> contractList;
 
 
     public Customer() {
@@ -52,11 +57,11 @@ public class Customer {
         this.name = name;
     }
 
-    public Date getDateOfBirt() {
+    public String getDateOfBirt() {
         return dateOfBirt;
     }
 
-    public void setDateOfBirt(Date dateOfBirt) {
+    public void setDateOfBirt(String dateOfBirt) {
         this.dateOfBirt = dateOfBirt;
     }
 
@@ -98,5 +103,13 @@ public class Customer {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

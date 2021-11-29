@@ -72,6 +72,7 @@ public class ProductController {
         return "index";
     }
 
+
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
         model.addAttribute("product", productSer.findById(id));

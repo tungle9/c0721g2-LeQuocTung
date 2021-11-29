@@ -10,7 +10,7 @@ public interface IGeneralBlog<T> {
 
     Optional<T> findById(Integer id);
 
-    Blog save(T t);
+    void save(T t);
 
     void remove(Integer id);
 }

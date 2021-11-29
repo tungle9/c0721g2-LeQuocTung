@@ -1,7 +1,9 @@
 package com.example.furama.model.service;
 
-import javax.persistence.*;
+import com.example.furama.model.Contract.Contract;
 
+import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -28,12 +30,8 @@ public class Service {
     @JoinColumn(name="service_type_id")
     private ServiceType serviceType;
 
-
-
-
-
-
-
+    @OneToMany(targetEntity = Contract.class,mappedBy = "service")
+    private List<Contract> contractList;
 
     public Service() {
     }

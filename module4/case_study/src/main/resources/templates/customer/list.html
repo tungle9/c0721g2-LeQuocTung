@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="customer/layout :: head">
+</head>
+<body>
+<h3>Customers</h3>
+<a th:href="@{customer}"><h1>Home</h1></a>
+<p>
+    <a th:href="@{create}">
+        Add new customer
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<div>
+    <form id="form" th:action="@{search}" method="post">
+        <p>Tìm kiếm </p>
+        <input type="text" name="name">
+        <input type="submit" value="Search">
+    </form>
+</div>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>dateOfBirth</th>
+        <th>gender</th>
+        <th>idCard</th>
+        <th>phoneNumber</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Detail</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${customers}">
+        <td th:text="${row.name}"></td>
+        <td th:text="${row.dateOfBirt}"></td>
+        <td th:text="${row.gender}"></td>
+        <td th:text="${row.phoneNumber}"></td>
+        <td th:text="${row.email}"></td>
+        <td th:text="${row.address}"></td>
+        <td th:text="${row.type_id}"></td>
+        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="customer/layout :: footer"></footer>
+</body>
+</html>
+<!--private String name;-->
+<!--private Date dateOfBirt;-->
+<!--private String gender;-->
+<!--private String idCard;-->
+<!--private String phoneNumber;-->
+<!--private String email;-->
+<!--private String address;-->
+<!--CustomerType type_id-->

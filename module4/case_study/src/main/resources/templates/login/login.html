@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>facebook</title>
@@ -66,9 +67,22 @@
         padding: 5px;
         text-decoration: none;
     }
+
     .footer hr {
         margin-right: 60%;
     }
+
+    .mk {
+        border: 10px;
+        display: block;
+    }
+
+    .loginfb {
+        display: block;
+        border: none;
+
+    }
+
 </style>
 
 
@@ -81,11 +95,12 @@
     </div>
     <div class="right">
         <div class="login">
-            <input placeholder="tên đăng nhập" type="text">
+            <input placeholder="tên đăng nhập" type="text" class="loginfb" autofocus>
             <br>
-            <input placeholder="mật khẩu" type="password">
+            <input placeholder="mật khẩu" type="password" class="mk" autofocus>
             <Br>
-            <input style="background: dodgerblue;color: whitesmoke;" type="submit" value="đăng nhập">
+            <input border="none" style="background: dodgerblue;color: whitesmoke; border: none;display: block"
+                   type="submit" value="đăng nhập">
             <br>
             <a href=""> Quên mật khẩu</a>
             <hr>
@@ -109,18 +124,18 @@
     <a href="">Italiano</a>
     <hr>
     <a href="">Đăng ký</a>
-    <a href="">   Đăng nhập </a>
-    <a href="">  Messenger </a>
-    <a href="">    Facebook LiteWatch </a>
-    <a href="">   Địa điểm </a>
-    <a href="">    Trò chơi </a>
-    <a href="">    Marketplace </a>
+    <a href=""> Đăng nhập </a>
+    <a href=""> Messenger </a>
+    <a href=""> Facebook LiteWatch </a>
+    <a href=""> Địa điểm </a>
+    <a href=""> Trò chơi </a>
+    <a href=""> Marketplace </a>
     <a href=""> Facebook Pay </a>
-    <a href="">   Việc làm </a>
-    <a href="">  Oculus </a>
-    <a href="">  Portal </a>
-    <a href="">     Instagram </a>
-    <a href="">  Bulletin </a>
+    <a href=""> Việc làm </a>
+    <a href=""> Oculus </a>
+    <a href=""> Portal </a>
+    <a href=""> Instagram </a>
+    <a href=""> Bulletin </a>
 </div>
 </body>
 </html>

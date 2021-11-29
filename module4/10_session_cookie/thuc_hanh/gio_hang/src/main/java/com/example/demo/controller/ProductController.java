@@ -24,6 +24,7 @@ public class ProductController {
         return new Cart();
     }
 
+
     @GetMapping("/shop")
     public ModelAndView showShop() {
         ModelAndView modelAndView = new ModelAndView("/shop");

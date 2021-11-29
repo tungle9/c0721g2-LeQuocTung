@@ -26,8 +26,8 @@ public class BlogService implements IBlogService {
     }
 
     @Override
-    public Blog save(Blog blog) {
-      return  BlogRepository.save(blog);
+    public void save(Blog blog) {
+        BlogRepository.save(blog);
 
     }
 

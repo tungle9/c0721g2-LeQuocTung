@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit blog</title>
+</head>
+<h1><a href="/blog">HOME</a></h1>
+<body>
+<form th:action="@{/save}" th:object="${smartphone}" method="post">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" th:field="*{producer}"/></td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td><input type="text" th:field="*{model}"/></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" th:field="*{price}"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button name="click_save" type="button" th:onclick="'javascript:actionEdit(\'''\');'">update</button></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

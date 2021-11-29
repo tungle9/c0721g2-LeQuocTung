@@ -19,5 +19,6 @@
     <p>Discount Amount</p>
     <input type="submit" value="calculator">
 </form>
+<p>Kết quả là</p> <a name="result"></a>
 </body>
 </html>

@@ -1,7 +1,10 @@
 package com.example.furama.model.employee;
 
 
+import com.example.furama.model.Contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Employee {
@@ -33,6 +36,9 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name= "user_name")
     private User username;
+
+    @OneToMany(targetEntity = Contract.class,mappedBy = "employee")
+    private List<Contract> contractList;
 
 
     public Employee() {
