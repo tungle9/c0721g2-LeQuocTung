@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{login.title}"></title>
+</head>
+<body>
+
+<h1 th:text="#{login.title}"></h1>
+
+Language: <a href="?lang=en">English</a> | <a href="?lang=ja">Japan</a> | <a href="?lang=fr">France</a>
+<form th:action="@{/user}">
+    <select name="lang">
+  <option value="en">English</option>
+  <option value="ja">Japan</option>
+   <option value="fr">France</option>
+   <option value="vi">VietNamese</option>
+</select>
+    <button type="submit">submit</button>
+</form>
+
+
+<form th:object="${user}" th:action="@{/validateUser}" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input th:field="*{name}"></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input th:field="*{age}"></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Name Error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

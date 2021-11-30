@@ -46,10 +46,10 @@ public class SmartphoneController {
         return ("phones/edit");
     }
 
-    @PostMapping("save")
+    @PostMapping("/save")
     public String save(@ModelAttribute("smartphone") Smartphone smartphone,Model model){
         smartphoneService.save(smartphone);
         model.addAttribute("smartphone",new Smartphone());
-        return "phones/list";
+        return "redirect:/smartphones/list";
     }
 }

@@ -1,7 +1,8 @@
-package com.example.validate.controller;
+package com.example.ung_dung_dang_nhap.controller;
 
 
-import com.example.validate.model.User;
+
+import com.example.ung_dung_dang_nhap.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,6 +20,8 @@ public class UserController {
         model.addAttribute("user",new User());
         return ("user/list");
     }
+
+
 
     @PostMapping("/validateUser")
     public ModelAndView checkValidation(@Validated @ModelAttribute("user") User user, BindingResult bindingResult) {
