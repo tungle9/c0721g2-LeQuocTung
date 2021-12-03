@@ -12,8 +12,8 @@ public class ServiceType {
 
     private String typeName;
 
-    @OneToMany(targetEntity = Service.class,mappedBy = "serviceType")
-    private List<Service> services;
+    @OneToMany(targetEntity = Services.class,mappedBy = "serviceType")
+    private List<Services> services;
 
     public ServiceType() {
     }
@@ -34,11 +34,11 @@ public class ServiceType {
         this.typeName = typeName;
     }
 
-    public List<Service> getServices() {
+    public List<Services> getServices() {
         return services;
     }
 
-    public void setServices(List<Service> services) {
+    public void setServices(List<Services> services) {
         this.services = services;
     }
 }

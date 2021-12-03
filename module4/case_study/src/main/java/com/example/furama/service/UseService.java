@@ -1,0 +1,41 @@
+package com.example.furama.service;
+
+
+import com.example.furama.model.service.Services;
+import com.example.furama.reponsitory.ServiceReposi;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+import java.util.Optional;
+
+@org.springframework.stereotype.Service
+public class UseService implements IService {
+    @Autowired
+    ServiceReposi serviceReposi;
+
+
+    @Override
+    public Iterable<Services> findAll() {
+        return null;
+    }
+
+    @Override
+    public Optional<Services> findById(Integer id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public Object save(Services service) {
+        return null;
+    }
+
+    @Override
+    public void remove(Integer id) {
+
+    }
+
+    @Override
+    public List<Services> searchByName(String name) {
+        return null;
+    }
+}

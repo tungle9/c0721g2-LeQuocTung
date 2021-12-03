@@ -40,7 +40,7 @@ public class CustomerController {
         return provinceService.findAll();
     }
 
-    @PostMapping("/create-customer")
+    @PostMapping("/save")
     public ModelAndView saveCustomer(@ModelAttribute("customer") Customer customer) {
         customerService.save(customer);
         ModelAndView modelAndView = new ModelAndView("/customer/create");

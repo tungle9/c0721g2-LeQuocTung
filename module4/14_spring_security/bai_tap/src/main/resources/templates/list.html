@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div sec:authorize="isAuthenticated()">-->
+<!--    <b>Welcome!<span sec:authentication="principal.username"></span></b>-->
+<!--</div>-->
+<a href="create">Create new blog</a>
+<h1>Blog list</h1>
+<table border="1" class="list">
+    <tr>
+        <th>ID</th>
+        <th>Content</th>
+        <th>Description</th>
+        <th>ACTION</th>
+    </tr>
+    <th:block th:each="blog : ${blog}">
+        <tr>
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.content}"></td>
+            <td th:text="${blog.description}"></td>
+            <td><a th:href="@{delete/{id}(id=${blog.id})}">delete</a></td>
+            <td><a th:href="@{edit/{id}(id=${blog.id})}">edit</a></td>
+<!--            <td><a th:href="@{detail/{id}(id=${blog.id})}">detail</a></td>-->
+            <!--            //ajax-->
+            <td>
+                <button class="detail_ajax">DetailByAjax</button>
+                <input type="hidden" th:value="${blog.id}">
+            </td>
+        </tr>
+
+    </th:block>
+</table>
+<div class="show_ajax"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $(".detail_ajax").click(function () {
+            console.log($(this).next().val())
+
+            $.ajax({
+                    type: "GET",
+                    url: "/detail/" + $(this).next().val(),
+                    dataType: "HTML",
+                    success: function (data) {
+                        $(".show_ajax").html(data)
+                    }
+                }
+            )
+        })
+
+    })
+
+
+</script>
+</body>
+</html>

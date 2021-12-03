@@ -3,7 +3,7 @@ package com.example.furama.model.Contract;
 
 import com.example.furama.model.customer.Customer;
 import com.example.furama.model.employee.Employee;
-import com.example.furama.model.service.Service;
+import com.example.furama.model.service.Services;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -32,7 +32,7 @@ public class Contract {
 
     @ManyToOne
     @JoinColumn(name = "service_id")
-    private Service service;
+    private Services service;
 
     @OneToMany(targetEntity = ContractDetail.class,mappedBy = "contracts")
     private List<ContractDetail> contractDetail;

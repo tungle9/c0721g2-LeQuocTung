@@ -5,7 +5,6 @@ import com.example.furama.reponsitory.CustomerReponsi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,6 +23,7 @@ public class CustomerService implements ICustomerService {
         return customerReponsi.findById(id);
     }
 
+
     @Override
     public Customer save(Customer customer) {
         return customerReponsi.save(customer);
@@ -34,15 +34,22 @@ public class CustomerService implements ICustomerService {
         customerReponsi.deleteById(id);
     }
 
+
     @Override
     public List<Customer> searchByName(String name) {
-       List<Customer> customers;
-        customers = (ArrayList<Customer>) customerReponsi;
-        for (Customer customer : customers) {
-            if (customer.getName().contains(name)) {
-            }
-            return customers;
-        }
-        return null;
+        return customerReponsi.findByNameContaining(name);
     }
+
+
+//    @Override
+//    public List<Customer> searchByName(String name) {
+//       List<Customer> customers;
+//        customers = (ArrayList<Customer>) customerReponsi;
+//        for (Customer customer : customers) {
+//            if (customer.getName().contains(name)) {
+//            }
+//            return customers;
+//        }
+//        return null;
+//    }
 }

@@ -10,11 +10,11 @@
         Add new customer
     </a>
 </p>
-<div class="notify">
-    <div th:if="${success}">
-        <span th:text="${success}"></span>
-    </div>
-</div>
+<!--<div class="notify">-->
+<!--    <div th:if="${success}">-->
+<!--        <span th:text="${success}"></span>-->
+<!--    </div>-->
+<!--</div>-->
 <div>
     <form id="form" th:action="@{search}" method="post">
         <p>Tìm kiếm </p>
@@ -31,6 +31,7 @@
         <th>idCard</th>
         <th>phoneNumber</th>
         <th>Address</th>
+        <th>Customer Type</th>
         <th>Edit</th>
         <th>Delete</th>
         <th>Detail</th>
@@ -44,10 +45,11 @@
         <td th:text="${row.phoneNumber}"></td>
         <td th:text="${row.email}"></td>
         <td th:text="${row.address}"></td>
-        <td th:text="${row.type_id}"></td>
+        <td th:if="${row.type_id}" th:text="${row.type_id.type_name}"></td>
+        <td th:unless="${row.type_id}"></td>
         <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
         <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
-        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>
+        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">Detail</a></td>
     </tr>
     </tbody>
 </table>

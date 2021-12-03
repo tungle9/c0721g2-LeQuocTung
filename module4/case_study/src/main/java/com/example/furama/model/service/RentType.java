@@ -17,8 +17,8 @@ public class RentType {
 
 
 
-    @OneToMany(targetEntity = Service.class,mappedBy = "rentType")
-    private List<Service> service;
+    @OneToMany(targetEntity = Services.class,mappedBy = "rentType")
+    private List<Services> service;
 
 
     public RentType() {
@@ -48,11 +48,11 @@ public class RentType {
         this.rent_cost = rent_cost;
     }
 
-    public List<Service> getService() {
+    public List<Services> getService() {
         return service;
     }
 
-    public void setService(List<Service> service) {
+    public void setService(List<Services> service) {
         this.service = service;
     }
 }

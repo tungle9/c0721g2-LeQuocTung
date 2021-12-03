@@ -1,6 +1,5 @@
 package com.example.furama;
 
-import com.example.furama.model.customer.Customer;
 
 import java.util.List;
 import java.util.Optional;

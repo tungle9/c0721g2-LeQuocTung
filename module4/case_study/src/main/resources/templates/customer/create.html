@@ -50,9 +50,7 @@
         <div>
             <label>Type </label>
             <select th:field="*{type_id}">
-                <option value=""></option>
-<!--                <option th:each="${}"></option>-->
-                <option value=""></option>
+                <option th:each="p : ${customerType}" th:value="${p.type_id}" th:text="${p.type_name}"></option>
             </select>
         </div>
         <input type="submit" value="Save"/>

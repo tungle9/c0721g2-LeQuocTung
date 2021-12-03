@@ -7,7 +7,7 @@ import java.util.List;
 
 
 @Entity
-public class Service {
+public class Services {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -33,7 +33,7 @@ public class Service {
     @OneToMany(targetEntity = Contract.class,mappedBy = "service")
     private List<Contract> contractList;
 
-    public Service() {
+    public Services() {
     }
 
     public Integer getId() {

@@ -61,10 +61,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Employee</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{#}">Employee</a>
                         </li>
                         <li>
-                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                        <a class="nav-link active" aria-current="page" th:href="@{/customer}">Customer</a>
                         </li>
                         <li>
                             <a class="nav-link active" aria-current="page" href="#">Service</a>
@@ -87,9 +87,9 @@
                 <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
                     The current link item
                 </a>
-                <a href="/customer/list" th:action="@{/customer}" class="list-group-item list-group-item-action">Customer</a>
+                <a href="#" class="list-group-item list-group-item-action">Customer</a>
                 <a href="#" class="list-group-item list-group-item-action">Employee</a>
-                <a href="/service" class="list-group-item list-group-item-action">Service</a>
+                <a href="#" class="list-group-item list-group-item-action">Service</a>
                 <a class="list-group-item list-group-item-action disabled">Contract</a>
             </div>
         </div>
