@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="customer/layout :: head"></head>
+<meta charset="UTF-8">
 <body>
-<h3>Remove Customer</h3>
-<p>
-    <a th:href="@{/customer}">
-        Back to customer list
-    </a>
-</p>
-<div id="form">
-    <form action="#" th:action="@{/delete}" th:object="${customer}"
-          method="POST" novalidate="novalidate">
-        <input type="hidden" th:field="*{id}"/>
+<!--<p>-->
+<!--    <a th:href="@{/customer}">-->
+<!--        Back to customer list-->
+<!--    </a>-->
+<!--</p>-->
+<div>
+    <h3>Bạn có muốn xóa </h3>
+
+    <form th:action="@{/delete/employee}" method="POST" th:object="${employee}">
+        <input type="hidden" th:field="*{employeeId}">
         <div>
-            <label>Name</label>
-            <label  type="text" th:text="${name}"/>
+            <label class="label-text" th:text="${employee.name}"></label>
         </div>
-        <div>
-            <label>Email</label>
-            <label   th:text="${email}"/>
-        </div>
-        <div>
-            <label>Address</label>
-            <label  type="text"  th:text="${address}"/>
-        </div>
-        <div>
-            <label>Type</label>
-            <label  type="text"   th:text="${type_id.getType_name()}"/>
-        </div>
+
         <input type="submit" value="Remove"/>
     </form>
 </div>
-<footer th:replace="customer/layout :: footer"></footer>
+<!--<input type="hidden" th:field="*{employeeId}"/>-->
+<!--<div>-->
+<!--    <label class="label-text" th:text="${employee.name}"></label>-->
+<!--</div>-->
+<!--<button type="button"><a th:href="@{/delete/{idEmployee}/employee(idEmployee=${employee.getEmployeeId()})}"></a>Delete-->
+<!--</button>-->
 </body>
 </html>

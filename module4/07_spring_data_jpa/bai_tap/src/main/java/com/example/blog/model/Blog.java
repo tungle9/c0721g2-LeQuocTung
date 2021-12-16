@@ -11,6 +11,8 @@ public class Blog {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
+
+
     private String content;
     private String description;
 
@@ -19,10 +21,6 @@ public class Blog {
     }
 
 
-//    @Override
-//    public String toString() {
-//        return String.format("Blog[id=%d, content='%s', description='%s']", id, content, description);
-//    }
 
 
 

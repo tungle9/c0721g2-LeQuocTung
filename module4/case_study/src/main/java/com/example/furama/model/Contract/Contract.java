@@ -34,8 +34,7 @@ public class Contract {
     @JoinColumn(name = "service_id")
     private Services service;
 
-    @OneToMany(targetEntity = ContractDetail.class,mappedBy = "contracts")
+    @OneToMany(targetEntity = ContractDetail.class,mappedBy = "contracts",cascade = CascadeType.REMOVE)
     private List<ContractDetail> contractDetail;
-
 
 }

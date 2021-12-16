@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="customer/layout :: head"></head>
 <style>
-    #form{
+    #form {
         margin-left: 650px;
     }
 
@@ -11,7 +11,7 @@
 <h3>Add Customer</h3>
 <h2>
     <a th:href="@{/customer}">
-     HOME
+        HOME
     </a>
 </h2>
 <div id="form">
@@ -20,7 +20,7 @@
         <input type="hidden" th:field="*{id}"/>
         <div>
             <label>Name</label>
-            <input type="text" th:field="*{name}"/>
+            <input type="text"  th:field="*{name}"/>
         </div>
         <div>
             <label>Date Of Birth</label>
@@ -29,13 +29,20 @@
         </div>
         <div>
             <label>gender</label>
-            <input type="text" th:field="*{gender}"/>
+            <input type="radio" value="male" th:field="*{gender}"/>Male
+            <input type="radio" value="female" th:field="*{gender}"/>Female
         </div>
         <div>
+            <div class="regex_color">
+                <td th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}"></td>
+            </div>
             <label>idCard</label>
             <input type="text" th:field="*{idCard}"/>
         </div>
         <div>
+            <div class="regex_color">
+                <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>
+            </div>
             <label>Email</label>
             <input type="email" th:field="*{email}"/>
         </div>
@@ -44,6 +51,9 @@
             <input type="text" th:field="*{address}"/>
         </div>
         <div>
+            <div class="regex_color">
+                <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></td>
+            </div>
             <label>Phone Number</label>
             <input type="text" th:field="*{phoneNumber}"/>
         </div>

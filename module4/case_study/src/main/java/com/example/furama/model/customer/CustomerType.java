@@ -15,7 +15,7 @@ public class CustomerType {
     private String type_name;
 
 
-    @OneToMany(targetEntity = Customer.class,mappedBy = "type_id")
+    @OneToMany(targetEntity = Customer.class,mappedBy = "type_id",cascade = CascadeType.DETACH)
     private List<Customer> customers;
 
 

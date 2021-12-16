@@ -2,26 +2,48 @@ package com.example.furama.model.employee;
 
 
 import com.example.furama.model.Contract.Contract;
+import org.springframework.data.relational.core.mapping.Embedded;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.util.List;
 
 @Entity
-public class Employee {
+public class Employee implements Validator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer employeeId;
+
+    @NotEmpty
     private String name;
+
+
+    @NotBlank
+    @DateTimeFormat(pattern = "dd/mm/yyyy")
     private String birthday;
+
+
     private String idCard;
+
+
     private double salary;
+
+
+    @NotNull
     private int phoneNumber;
+
+
+    @Email(message = "pls enter right format")
+    @NotBlank(message = "không được bỏ trống")
     private String email;
 
 
     @ManyToOne
-    @JoinColumn(name="division_id")
+    @JoinColumn(name = "division_id")
     private Division division;
 
 
@@ -34,10 +56,10 @@ public class Employee {
     private Position position;
 
     @ManyToOne
-    @JoinColumn(name= "user_name")
+    @JoinColumn(name = "user_name")
     private User username;
 
-    @OneToMany(targetEntity = Contract.class,mappedBy = "employee")
+    @OneToMany(targetEntity = Contract.class, mappedBy = "employee",cascade = CascadeType.REMOVE)
     private List<Contract> contractList;
 
 
@@ -122,5 +144,23 @@ public class Employee {
 
     public void setPosition(Position position) {
         this.position = position;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return false;
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+//        Employee employee = (Employee) target;
+//       int phoneNumber = employee.getPhoneNumber();
+//
+//       String phoneNumberString = String.valueOf(phoneNumber);
+//
+//
+//       if(!phoneNumberString.matches("[0-9]{4,}")){
+//           errors.rejectValue("phoneNumber","phoneNumber.matches");
+//       }
     }
 }

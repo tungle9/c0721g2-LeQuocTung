@@ -16,21 +16,22 @@ public class UseService implements IService {
 
     @Override
     public Iterable<Services> findAll() {
-        return null;
+       return serviceReposi.findAll();
     }
 
     @Override
     public Optional<Services> findById(Integer id) {
-        return Optional.empty();
+        return serviceReposi.findById(id);
     }
 
     @Override
     public Object save(Services service) {
-        return null;
+     return serviceReposi.save(service);
     }
 
     @Override
     public void remove(Integer id) {
+        serviceReposi.deleteById(id);
 
     }
 

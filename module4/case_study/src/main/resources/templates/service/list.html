@@ -2,21 +2,30 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="customer/layout :: head">
 </head>
+
+<style>
+    h1{
+        text-align: center;
+        color: royalblue;
+        text-align: center;
+        font-family: "Arial Narrow";
+    }
+
+
+</style>
 <body>
-<h3>Customers</h3>
-<a th:href="@{customer}"><h1>Home</h1></a>
+<h3>Service</h3>
+<h1>Welcome to cac' friends </h1>
+<a th:href="@{/sign}"><h1>Home</h1></a>
+<a th:href="@{/service}"><h1>List Service</h1></a>
 <p>
-    <a th:href="@{create}">
-        Add new customer
+    <a th:href="@{service/create}">
+        Add new service
     </a>
 </p>
-<!--<div class="notify">-->
-<!--    <div th:if="${success}">-->
-<!--        <span th:text="${success}"></span>-->
-<!--    </div>-->
-<!--</div>-->
+
 <div>
-    <form id="form" th:action="@{search}" method="POST">
+    <form id="form" th:action="@{service/search}" method="POST">
         <p>Tìm kiếm </p>
         <input type="text" name="name">
         <input type="submit" value="Search">
@@ -25,42 +34,217 @@
 <table id = "customers">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>dateOfBirth</th>
-        <th>gender</th>
-        <th>idCard</th>
-        <th>phoneNumber</th>
-        <th>Address</th>
-        <th>Customer Type</th>
-        <th>Edit</th>
+        <th>Name Service</th>
+        <th>Area</th>
+        <th>Cost</th>
+        <th>People</th>
+        <th>Standard Room</th>
+<!--        <th>Description</th>-->
+        <th>Pool Area</th>
+        <th> floor</th>
         <th>Delete</th>
         <th>Detail</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="row : ${customers}">
-        <td th:text="${row.name}"></td>
-        <td th:text="${row.dateOfBirt}"></td>
-        <td th:text="${row.gender}"></td>
-        <td th:text="${row.phoneNumber}"></td>
-        <td th:text="${row.email}"></td>
-        <td th:text="${row.address}"></td>
-        <td th:if="${row.type_id}" th:text="${row.type_id.type_name}"></td>
-        <td th:unless="${row.type_id}"></td>
-        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
-        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">Detail</a></td>
+    <tr th:each="row : ${service}">
+        <td th:text="${row.serviceName}"></td>
+        <td th:text="${row.area}"></td>
+        <td th:text="${row.cost}"></td>
+        <td th:text="${row.maxPeople}"></td>
+        <td th:text="${row.standardRoom}"></td>
+<!--        <td>-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <img th:src="@{{img}(img = ${row.description})}"-->
+<!--                     class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <p class="card-text"> Hình ảnh minh họa</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </td>-->
+        <td th:text="${row.poolArea}"></td>
+        <td th:text="${row.floor}"></td>
+<!--        <td th:if="${row.type_id}" th:text="${row.type_id.type_name}"></td>-->
+<!--        <td th:unless="${row.type_id}"></td>-->
+        <td><a th:href="@{/service/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a action="#">Detail</a></td>
     </tr>
     </tbody>
 </table>
+
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/278915289.jpg?k=31724bcc238fb8ac11f5084e7f2afa87ebc83dfae8cb4df9d197bb70e811442e&o=" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://pix10.agoda.net/hotelImages/2094023/-1/4c62f3bf94564ec4242b2c5fcfaa00f7.jpg?s=1024x768" class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect img="https://pix10.agoda.net/hotelImages/2094023/-1/4c62f3bf94564ec4242b2c5fcfaa00f7.jpg?s=1024x768" width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="data:image/jpeg;base64,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" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/235/235837265.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/40/89/40892_v3.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://exp.cdn-hotels.com/hotels/19000000/18420000/18416900/18416870/fb257b5b_z.jpg?impolicy=fcrop&w=500&h=333&q=medium" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <footer th:replace="customer/layout :: footer"></footer>
 </body>
 </html>
-<!--private String name;-->
-<!--private Date dateOfBirt;-->
-<!--private String gender;-->
-<!--private String idCard;-->
-<!--private String phoneNumber;-->
-<!--private String email;-->
-<!--private String address;-->
-<!--CustomerType type_id-->
+<!--private String serviceName;-->
+<!--private int area;-->
+<!--private double cost;-->
+<!--private int maxPeople;-->
+<!--private String standardRoom;-->
+<!--private String description;-->
+<!--private double poolArea;-->
+<!--private int floor;-->

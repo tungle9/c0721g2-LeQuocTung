@@ -1,4 +1,8 @@
 package com.example.furama.reponsitory;
 
-public interface PositionReposi {
+import com.example.furama.model.employee.Position;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+
+public interface PositionReposi extends PagingAndSortingRepository<Position,Integer> {
 }

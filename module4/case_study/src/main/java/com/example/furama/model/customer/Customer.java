@@ -2,32 +2,59 @@ package com.example.furama.model.customer;
 
 
 import com.example.furama.model.Contract.Contract;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
 
 import javax.persistence.*;
-import java.util.Date;
 import java.util.List;
+import javax.validation.constraints.*;
+
 
 @Entity
-public class Customer {
+public class Customer implements Validator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name="customer_type_id")
+    @JoinColumn(name = "customer_type_id")
     private CustomerType type_id;
 
+
     private String name;
+
+
+    @DateTimeFormat
     private String dateOfBirt;
+
     private String gender;
+
+
+    //    KH-XXXX (X là số từ 0-9)
+    @NotBlank(message = "không được bỏ trống")
     private String idCard;
+
+
+
+    @NotBlank(message = "không được bỏ trống")
     private String phoneNumber;
+
+
+    @NotBlank(message = "không được bỏ trống")
+    @Email(message = "nhập đúng format email")
     private String email;
+
+
+
     private String address;
 
-    @OneToMany(targetEntity = Contract.class,mappedBy = "customer")
+
+
+    @OneToMany(targetEntity = Contract.class, mappedBy = "customer",cascade = CascadeType.REMOVE)
     private List<Contract> contractList;
+
 
 
     public Customer() {
@@ -111,5 +138,28 @@ public class Customer {
 
     public void setContractList(List<Contract> contractList) {
         this.contractList = contractList;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return false;
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        Customer customer = (Customer) target;
+
+        String idCard = customer.getIdCard();
+        String phoneNumber = customer.getPhoneNumber();
+
+        if (!idCard.matches("K[H][-]+[0-9]{9}")) {
+            errors.rejectValue("idCard", "idCard.matches");
+        }
+        if (!phoneNumber.matches("[0]9+[0-9]{5,}")) {
+            errors.rejectValue("phoneNumber", "phoneNumber.matches");
+        }
+//        if (!email.matches("([A-Za-z0-9]+@[.][a-z]{2,})")) {
+//            errors.rejectValue("email", "email.matches");
+//        }
     }
 }

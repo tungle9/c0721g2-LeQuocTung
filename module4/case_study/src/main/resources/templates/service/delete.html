@@ -9,25 +9,21 @@
     </a>
 </p>
 <div id="form">
-    <form action="#" th:action="@{/delete}" th:object="${customer}"
+    <form action="#" th:action="@{/service/delete}" th:object="${service}"
           method="POST" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>
             <label>Name</label>
-            <label  type="text" th:text="${name}"/>
+            <label  type="text" th:text="${serviceName}"/>
         </div>
         <div>
-            <label>Email</label>
-            <label   th:text="${email}"/>
+            <label>standardRoom</label>
+            <label   th:text="${standardRoom}"/>
         </div>
-        <div>
-            <label>Address</label>
-            <label  type="text"  th:text="${address}"/>
-        </div>
-        <div>
-            <label>Type</label>
-            <label  type="text"   th:text="${type_id.getType_name()}"/>
-        </div>
+<!--        <div>-->
+<!--            <label>Type</label>-->
+<!--            <label  type="text"   th:text="${type_id.getType_name()}"/>-->
+<!--        </div>-->
         <input type="submit" value="Remove"/>
     </form>
 </div>

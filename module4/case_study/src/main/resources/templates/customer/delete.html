@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="customer/layout :: head"></head>
+<head th:replace="customer/layout :: head">
+    <meta charset="UTF-8">
+    <style>
+        /*label{*/
+        /*    color: blueviolet;*/
+        /*    content: revert;*/
+        /*}*/
+    </style>
+</head>
 <body>
-<h3>Remove Customer</h3>
-<p>
-    <a th:href="@{/customer}">
-        Back to customer list
-    </a>
-</p>
+<!--<h3>Remove Customer</h3>-->
+<!--<p>-->
+<!--    <a th:href="@{/customer}">-->
+<!--        Back to customer list-->
+<!--    </a>-->
+<!--</p>-->
 <div id="form">
-    <form action="#" th:action="@{/delete}"
-          method="POST" novalidate="novalidate">
+    <h1>Bạn có muốn xóa</h1>
+    <form  th:action="@{/delete}" th:object="${customer}"
+          method="POST">
         <input type="hidden" th:field="*{id}"/>
         <div>
-            <label>Name</label>
-            <label   th:text="${customer.name}"/>
+            <label class="label-text" th:text="${customer.name}"></label>
+<!--            <label th:text="${customer.name}"/>-->
         </div>
-        <div>
-            <label>Email</label>
-            <label    th:text="${customer.email}"/>
-        </div>
-        <div>
-            <label>Address</label>
-            <label  th:text="${customer.address}"/>
-        </div>
+<!--            <label>Email</label>-->
+<!--            <label   th:text="${customer.email}"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <label>Address</label>-->
+<!--            <label  type="text"  th:text="${customer.address}"/>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <label>Type</label>-->
+<!--            <label  type="text"   th:text="${customer.type_id.type_name}"/>-->
+<!--        </div>-->
         <input type="submit" value="Remove"/>
     </form>
 </div>
-<footer th:replace="customer/layout :: footer"></footer>
+<!--<footer th:replace="customer/layout :: footer"></footer>-->
 </body>
 </html>

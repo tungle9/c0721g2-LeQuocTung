@@ -34,24 +34,6 @@ public class CustomerRepository implements ICustomerRepository {
     }
 
 
-    @Override
-    public void insertCustomer(Customer customer) throws SQLException {
-        String query = "{call insert_customer(?,?,?,?,?,?)}";
-
-        try (Connection connection = getConnection();
-             CallableStatement callableStatement = connection.prepareCall(query);) {
-            callableStatement.setInt(1, customer.getId());
-            callableStatement.setString(2, customer.getName());
-            callableStatement.setString(3, customer.getEmail());
-            callableStatement.setString(4, customer.getBirthday());
-            callableStatement.setInt(5, customer.getPhone());
-            callableStatement.setString(6, customer.getIdCard());
-            System.out.println(callableStatement);
-            callableStatement.executeUpdate();
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
-    }
 
     @Override
     public List<Customer> findAll() {
@@ -75,6 +57,28 @@ public class CustomerRepository implements ICustomerRepository {
         }
         return customers;
     }
+
+
+
+    @Override
+    public void insertCustomer(Customer customer) throws SQLException {
+        String query = "{call insert_customer(?,?,?,?,?,?)}";
+
+        try (Connection connection = getConnection();
+             CallableStatement callableStatement = connection.prepareCall(query);) {
+            callableStatement.setInt(1, customer.getId());
+            callableStatement.setString(2, customer.getName());
+            callableStatement.setString(3, customer.getEmail());
+            callableStatement.setString(4, customer.getBirthday());
+            callableStatement.setInt(5, customer.getPhone());
+            callableStatement.setString(6, customer.getIdCard());
+            System.out.println(callableStatement);
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
 
     @Override
     public boolean deleteCustomer(int id) throws SQLException {

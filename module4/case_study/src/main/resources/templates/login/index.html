@@ -15,16 +15,20 @@
     </div>
 </h3>
 <div sec:authorize="isAnonymous()">
-    Login blog by  <a th:href="@{/blog}">User</a> or <a th:href="@{/blog}">Admin</a>
+    Login blog by  <a th:href="@{/customer}">User</a> or <a th:href="@{/employee}">Admin</a>
 </div>
+<h1>M?i b?n ??ng nh?p ?? ti?p t?c </h1>
 <div sec:authorize="isAuthenticated()">
+    <h1>M?i b?n ??ng nh?p ?? ti?p t?c </h1>
     <div sec:authorize="hasRole('USER')">
-        <a th:href="@{/blog}">CLICK GO TO BLOG</a>
+        <a th:href="@{/customer}">CLICK GO TO BLOG</a>
     </div>
+    <h1>M?i b?n ??ng nh?p ?? ti?p t?c </h1>
+
     <div sec:authorize="hasRole('ADMIN')">
-        <a th:href="@{/blog}"> CLICK GO TO BLOG</a>
+        <a th:href="@{/employee}"> CLICK GO TO BLOG</a>
     </div>
-    <a th:href="@{/logout}">Logout</a>
+    <a th:href="@{/login}">Logout</a>
 </div>
 </body>
 </html>

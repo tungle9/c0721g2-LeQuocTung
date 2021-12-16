@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>facebook</title>
@@ -95,12 +95,24 @@
     </div>
     <div class="right">
         <div class="login">
-            <input placeholder="tên đăng nhập" type="text" class="loginfb" autofocus>
-            <br>
-            <input placeholder="mật khẩu" type="password" class="mk" autofocus>
-            <Br>
-            <input border="none" style="background: dodgerblue;color: whitesmoke; border: none;display: block"
-                   type="submit" value="đăng nhập">
+            <div sec:authorize="isAnonymous()">
+                Login blog by  <a th:href="@{/customer}">User</a> or <a th:href="@{/sign}">Admin</a>
+            </div>
+            <div sec:authorize="isAuthenticated()">
+                <div sec:authorize="hasRole('USER')">
+                    <a th:href="@{/customer}">CLICK GO TO BLOG</a>
+                </div>
+                <div sec:authorize="hasRole('ADMIN')">
+                    <a th:href="@{/employee}"> CLICK GO TO BLOG</a>
+                </div>
+            </div>
+<!--            <input placeholder="tên đăng nhập" type="text" class="loginfb" autofocus>-->
+<!--            <br>-->
+
+<!--            <input placeholder="mật khẩu" type="password" class="mk" autofocus>-->
+<!--            <Br>-->
+<!--            <input border="none" style="background: dodgerblue;color: whitesmoke; border: none;display: block"-->
+<!--                   type="submit" value="đăng nhập">-->
             <br>
             <a href=""> Quên mật khẩu</a>
             <hr>

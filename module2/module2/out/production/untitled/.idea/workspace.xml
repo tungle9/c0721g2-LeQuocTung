@@ -1,7 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e5a8a9c-2e9e-4dbc-97b3-9a9bd7a6d776" name="Default Changelist" comment="" />
+    <list default="true" id="8e5a8a9c-2e9e-4dbc-97b3-9a9bd7a6d776" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/08_bootstrap_co_ban/bai_tap/christmas.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/ABOUT THIS TEMPLATE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/css/owl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/css/tooplate-main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/about-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/contact-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/full-bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/full-bg-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/full-bg-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/gallery-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/icon-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/item-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/thumb-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/thumb-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/images/thumb-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/js/accordations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/assets/js/owl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/img/av.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/img/screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/assets/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/author.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/docs/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/img/av.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/img/screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/js/vendors/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/js/vendors/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/js/vendors/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/scss/_bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/scss/_custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/scss/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/assets/scss/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/layouts/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/pages/author.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/pages/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/partials/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/template-pintereso-bootstrap-html-master/src/partials/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/dto/Dto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/regex/FormValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/ContractCustomerReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/ContractReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/DivisionReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/EducationReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/EmployeeReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/PositionReposi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/DivisonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/EducationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer_and_contract/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/employee/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/employee/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/christmas.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/service/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/service/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/service/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/service/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/validation-message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/08_bootstrap_co_ban/bai_tap/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/08_bootstrap_co_ban/bai_tap/landing_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/build/libs/case_study_jsp_servlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/case_study_jsp_servlet/build/libs/case_study_jsp_servlet-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/12_jquery_ajax/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/12_jquery_ajax/bai_tap/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/12_jquery_ajax/thuc_hanh/quan_ly_dien_thoai/src/main/resources/templates/phones/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/12_jquery_ajax/thuc_hanh/quan_ly_dien_thoai/src/main/resources/templates/phones/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/IGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/IGeneral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/Contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/Contract/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/customer/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/customer/CustomerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/CustomerReponsi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/CustomerReponsi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/CustomerTypeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/reponsitory/CustomerTypeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/UseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/java/com/example/furama/service/UseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/giaodien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/giaodien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study/src/main/resources/templates/login/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +156,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="ProjectId" id="1yqf3Pchl78Wg24nApHNzJxOT4i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,7 +169,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../module3/9_tong_quan_ung_dung_web/thuc_hanh" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -149,6 +290,9 @@
       <workItem from="1634550978889" duration="45000" />
       <workItem from="1634876393824" duration="7000" />
       <workItem from="1635178027424" duration="72000" />
+      <workItem from="1639051491253" duration="130000" />
+      <workItem from="1639051637429" duration="380000" />
+      <workItem from="1639062036603" duration="194000" />
     </task>
     <servers />
   </component>
@@ -160,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="320" y="209" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1634126483614" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1635178099296">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1639062226913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1635178099296" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1639062226913" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1634300656136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -204,9 +348,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1016" y="0" width="600" height="712" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1633575861523" />
-    <state x="342" y="140" key="new project wizard" timestamp="1635178071416">
+    <state x="342" y="140" key="new project wizard" timestamp="1639062228826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1635178071416" />
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1639062228826" />
   </component>
 </project>

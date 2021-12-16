@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="customer/layout :: head">
+
 </head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
 <body>
-$END$
+<table id="customers">
+    <tr>
+        <th>Customer Id</th>
+            <th>Customer Name</th>
+        <th>Id Card</th>
+        <th>Attach name</th>
+        <th>Attach cost</th>
+        <th>Attach status</th>
+        <th>Quantity</th>
+    </tr>
+
+    <th:block th:each="row : ${dto.content}">
+        <tr>
+            <td th:text=" ${row.id}"></td>
+            <td th:text=" ${row.name}"></td>
+            <td th:text=" ${row.id_card}"></td>
+            <td th:text=" ${row.attach_names}"></td>
+            <td th:text=" ${row.attach_cost}"></td>
+            <td th:text=" ${row.attach_status}"></td>
+            <td th:text=" ${row.quantity}"></td>
+            <!--            <td th:text=" ${row.id_card}"></td>-->
+        </tr>
+    </th:block>
+
+</table>
+
+
 </body>
+<footer th:replace="customer/layout :: footer"></footer>
+
+
+
+
+
+
 </html>
+
+
+<!--//    @Query-->
+<!--//            (value = " select c.id, c.name, c.id_card, att.attach_names, att.attach_cost, att.attach_status, cd.quantity\n" +-->
+<!--//                    "from customer c\n" +-->
+<!--//                    "join contract ct on ct.customer_id = c.id\n" +-->
+<!--//                    "join contract_detail cd on cd.contract_id = ct.contract_id\n" +-->
+<!--//                    "join attach_service att on att.attach_id = cd.attach_service_id", nativeQuery = true)-->
+<!--//    Page<Customer> CustomerContract(Pageable pageable);-->

@@ -11,26 +11,27 @@ import java.util.Optional;
 @Service
 public class BlogService implements IBlogService {
     @Autowired
-    private IBlogRepository blogRepository;
+    IBlogRepository iBlogRepository;
+
 
 
     @Override
     public Iterable<Blog> findAll() {
-        return blogRepository.findAll();
+        return iBlogRepository.findAll();
     }
 
     @Override
     public Optional<Blog> findById(Integer id) {
-        return blogRepository.findById(id);
+        return iBlogRepository.findById(id);
     }
 
     @Override
     public void save(Blog blog) {
-        blogRepository.save(blog);
+        iBlogRepository.save(blog);
     }
 
     @Override
     public void remove(Integer id) {
-        blogRepository.deleteById(id);
+        iBlogRepository.deleteById(id);
     }
 }

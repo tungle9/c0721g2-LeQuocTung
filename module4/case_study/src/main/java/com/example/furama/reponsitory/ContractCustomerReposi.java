@@ -1,4 +1,6 @@
-package com.example.furama.reponsitory;
-
-public interface ContractCustomerReposi {
-}
+//package com.example.furama.reponsitory;
+//
+//import org.springframework.data.repository.PagingAndSortingRepository;
+//
+//public interface ContractCustomerReposi extends PagingAndSortingRepository<> {
+//}

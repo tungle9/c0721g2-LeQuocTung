@@ -30,25 +30,46 @@
 
 
         .footer {
-            background: lightskyblue;
-            height: 100px;
+            background: #fff;
+            height: 150px;
             width: 100%;
             text-align: center;
             font-family: "Bauhaus 93";
+            margin-top: 30px;
+        }
+
+
+
+        .footer  a{
+         margin: 20px;
+            text-decoration: none;
+            font-family: "Open Sans", sans-serif;
+
+
         }
 
         .container-fluid {
         }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+
 
     </style>
 </head>
 <body>
+<audio  controls>
+    <source src="christmas.mp3" type="audio/mp3" autofocus>
+</audio>
+
+</audio>
 <div style="width: 100%">
-    <div class="menu_top">
-        <div class="col-2"><img style="width: 150px;height: 100% ;padding: 15px 10px 10px 10px ;margin-left:50px "
-                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51e2b2d8-39bd-4c3a-8d40-2c5228123156/dcp56ql-83ab9bca-3b88-4db5-a19d-1133f9a78e06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxZTJiMmQ4LTM5YmQtNGMzYS04ZDQwLTJjNTIyODEyMzE1NlwvZGNwNTZxbC04M2FiOWJjYS0zYjg4LTRkYjUtYTE5ZC0xMTMzZjlhNzhlMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vaXaCTu9BgQNUMLljbTw2JaZJg_o1Lnt2ySwy-X9KRc">
+        <div class="menu_top">
+            <div><img style="width: 150px;height: 100% ;padding: 15px 10px 10px 10px ;margin-left:50px "
+                                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51e2b2d8-39bd-4c3a-8d40-2c5228123156/dcp56ql-83ab9bca-3b88-4db5-a19d-1133f9a78e06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxZTJiMmQ4LTM5YmQtNGMzYS04ZDQwLTJjNTIyODEyMzE1NlwvZGNwNTZxbC04M2FiOWJjYS0zYjg4LTRkYjUtYTE5ZC0xMTMzZjlhNzhlMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vaXaCTu9BgQNUMLljbTw2JaZJg_o1Lnt2ySwy-X9KRc"></div>
         </div>
-    </div>
     <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -61,13 +82,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" th:href="@{#}">Employee</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{/employee}">Employee</a>
                         </li>
                         <li>
                         <a class="nav-link active" aria-current="page" th:href="@{/customer}">Customer</a>
                         </li>
                         <li>
-                            <a class="nav-link active" aria-current="page" href="#">Service</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{/service}">Service</a>
                         </li>
                         </li>
                         <a class="nav-link active" aria-current="page" href="#">Contract</a>
@@ -93,13 +114,63 @@
                 <a class="list-group-item list-group-item-action disabled">Contract</a>
             </div>
         </div>
-        <div class="row">
+        <div class="col-9">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item ">
+                        <img src="https://lh5.googleusercontent.com/proxy/DZ37byDQbo1PUbgLo4ovShNoPLdDLhPc8jRRKo_tNfyl_B054R3AMtOhT4wQB4BDYnXqOxdPj-ROIqf-Sm6tzBBoHwgU3FgpAfhSw2tMbE6QYJQJi01lemQ=s0-d">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://3evlzmko7591que7cpvox4ta-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/Christmas-New-York-City-James-Kirkikis-Dreamstime-1600x800-1.jpg" >
+                    </div>
+                    <div class="carousel-item">
+<!--                        <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/35/1472825678-05-mean-girls-christmasw750h5602x.jpg">-->
+                        <img src="https://fusionhotelgroup.com/wp-content/uploads/2019/04/Fusion-Resort-Quang-Binh-Dong-Hoi-outdoor-1.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        CodeGym Da Nang - Nguyen Tat Thanh Street
-        Mọi thông tin xin liên hệ SDT : 070356631
-    </div>
+</div>
+<div class="footer">
+        <a>Tiếng Việt : </a>
+        <a href="">English (UK)</a>
+        <a href="">中文(台灣)</a>
+        <a href="">한국어</a>
+        <a href="">日本語</a>
+        <a href="">Français (France)</a>
+        <a href="">ภาษาไทย </a>
+        <a href="">Español </a>
+        <a href="">Português (Brasil) </a>
+        <a href="">Deutsch </a>
+        <a href="">Italiano</a>
+        <hr>
+        <a href="">Đăng ký</a>
+        <a href=""> Đăng nhập </a>
+        <a href=""> Messenger </a>
+        <a href=""> Facebook LiteWatch </a>
+        <a href=""> Địa điểm </a>
+        <a href=""> Trò chơi </a>
+        <a href=""> Marketplace </a>
+        <a href=""> Facebook Pay </a>
+        <a href=""> Việc làm </a>
+        <a href=""> Oculus </a>
+        <a href=""> Portal </a>
+        <a href=""> Instagram </a>
+        <a href=""> Bulletin </a>
 </div>
 </body>
 </html>

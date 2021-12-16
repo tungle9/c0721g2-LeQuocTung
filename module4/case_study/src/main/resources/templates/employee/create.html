@@ -2,55 +2,76 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="customer/layout :: head"></head>
 <style>
-    #form{
-        margin-left: 650px;
-    }
+
 
 </style>
 <body>
-<h3>Add Customer</h3>
+<h3>Add Employee</h3>
 <h2>
-    <a th:href="@{/customer}">
+    <a th:href="@{/}">
      HOME
     </a>
 </h2>
 <div id="form">
-    <form th:action="@{save}" th:object="${customer}"
+    <form th:action="@{/employee/save}" th:object="${employee}"
           method="POST" novalidate="novalidate">
-        <input type="hidden" th:field="*{id}"/>
+        <input type="hidden" th:field="*{employeeId}"/>
         <div>
             <label>Name</label>
-            <input type="text" th:field="*{name}"/>
+            <div class="regex_color">
+                <td th:errors="*{name}"></td>
+            </div>
+            <input path="name" type="text" th:field="*{name}"/>
+
         </div>
         <div>
             <label>Date Of Birth</label>
-            <br>
-            <input type="date" th:field="*{dateOfBirt}"/>
+     <div class="regex_color">
+         <td th:errors="*{birthday}"></td>
+     </div>
+            <input type="date" th:field="*{birthday}"/>
         </div>
         <div>
-            <label>gender</label>
-            <input type="text" th:field="*{gender}"/>
-        </div>
-        <div>
-            <label>idCard</label>
+            <label>Id card</label>
             <input type="text" th:field="*{idCard}"/>
         </div>
         <div>
-            <label>Email</label>
-            <input type="email" th:field="*{email}"/>
-        </div>
-        <div>
-            <label>Address</label>
-            <input type="text" th:field="*{address}"/>
+            <label>Salary</label>
+            <input type="text" th:field="*{salary}"/>
         </div>
         <div>
             <label>Phone Number</label>
-            <input type="text" th:field="*{phoneNumber}"/>
+            <div class="regex_color">
+                <td th:errors="*{phoneNumber}"></td>
+            </div>
+            <input type="number" th:field="*{phoneNumber}"/>
         </div>
         <div>
-            <label>Type </label>
-            <select th:field="*{type_id}">
-                <option th:each="p : ${customerType}" th:value="${p.type_id}" th:text="${p.type_name}"></option>
+<!--                <div class="regex_color">-->
+<!--                    <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>-->
+<!--                </div>-->
+                <label>Email</label>
+            <div class="regex_color">
+                <td th:errors="*{email}"></td>
+            </div>
+                <input type="email" th:field="*{email}"/>
+        </div>
+        <div>
+            <label>Division</label>
+            <select th:field="*{division}">
+                <option th:each="p : ${divisionService}" th:value="${p.divisionId}" th:text="${p.name}"></option>
+            </select>
+        </div>
+        <div>
+            <label>Education</label>
+            <select th:field="*{educationDegree}">
+                <option th:each="p : ${educationService}" th:value="${p.educationId}" th:text="${p.educationName}"></option>
+            </select>
+        </div>
+        <div>
+            <label>Position</label>
+            <select th:field="*{position}">
+                <option th:each="p : ${positionService}" th:value="${p.positionId}" th:text="${p.positionName}"></option>
             </select>
         </div>
         <input type="submit" value="Save"/>
@@ -59,11 +80,15 @@
 <footer th:replace="customer/layout :: footer"></footer>
 </body>
 </html>
+<!--private Integer employeeId;-->
 <!--private String name;-->
-<!--private Date dateOfBirt;-->
-<!--private String gender;-->
+<!--private String birthday;-->
 <!--private String idCard;-->
-<!--private String phoneNumber;-->
+<!--private double salary;-->
+<!--private int phoneNumber;-->
 <!--private String email;-->
-<!--private String address;-->
-<!--CustomerType type_id-->
+<!--private Division division;-->
+<!--@JoinColumn(name = "education_id")-->
+<!--private EducationDegree educationDegree;-->
+<!--@JoinColumn(name = "position_id")-->
+<!--private Position position;-->
