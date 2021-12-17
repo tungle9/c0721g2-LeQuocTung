@@ -1,0 +1,13 @@
+<h1>calculator works!</h1>
+<input type="number" placeholder="number 1" [value]="numberA" (change)="onFirstChange($event.target.value)">
+<input type="number" placeholder="number 2" [value]="numberB" (change)="onSecondChange($event.target.value)">
+
+<select [value]="operator" (change)="onSelectChange($event.target.value)">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<button (click)="calculate()">Enter</button>
+<p>kết quả là {{output}}</p>
+
