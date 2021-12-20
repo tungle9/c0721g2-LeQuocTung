@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<h2>Today's article</h2>
+<hr>
+<div>
+<div>
+  <a href="{{article.title}}">{{article.title}}</a>
+</div>
+
+<div *ngFor="let index of articles">
+  <a href="{{index.url}}" target="_parent">{{index.title}}</a>
+</div>
+<div>
+  <h2>Article Information</h2>
+  <table border="1px">
+    <tr>
+      <td class="col">Title:</td>
+      <td><textarea [(ngModel)]="article.title" cols="70"></textarea></td>
+    </tr>
+    <tr>
+      <td class="col">Url:</td>
+      <td>
+        <textarea [(ngModel)]="article.url" cols="70"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button style="float: right;width: 100%" (click)="addNewArticle()">Add</button></td>
+    </tr>
+  </table>
+</div>
+<div *ngFor="let art of articles">
+  <a href="{{art.url}}" target="_blank">{{art.title}}</a>:<app-like></app-like>
+</div>
+</div>
+<app-footer></app-footer>
