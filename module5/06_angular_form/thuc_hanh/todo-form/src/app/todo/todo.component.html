@@ -1,0 +1,25 @@
+<h2 class="text-center">
+  Todo app
+</h2>
+
+<!--<div class="form-group">-->
+<!--  <label for="">2323123</label>-->
+<!--  <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">-->
+<!--</div>-->
+
+
+
+
+
+<div class="col-md-8 offset-md-2">
+  <input type="text" class="form-control" [formControl]="content" (change)="change()">
+  <ul>
+    <li (click)="toggleTodo(i)"
+        [class.complete]="todo.complete"
+        *ngFor="let todo of todos; index as i">
+      {{todo.content}}
+    </li>
+  </ul>
+</div>
+
+

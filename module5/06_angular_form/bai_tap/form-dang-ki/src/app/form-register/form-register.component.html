@@ -1,0 +1,43 @@
+<div style="margin-left: 800px">
+  <h2>Form đăng kí</h2>
+  <form #formElement="ngForm" [formGroup]="register" (ngSubmit)="clickSubmit(formElement)">
+    <table>
+      <div class="form-group">
+        <div class="col">
+          <label>Email</label>
+        </div>
+                <input required="required" type="email" formControlName="txtEmail" class="form-control" placeholder="" aria-describedby="helpId">
+        <span *ngIf="register.controls.txtEmail.touched && register.controls.txtEmail?.invalid" style="color: red">pls enter right format</span>
+        <div class="col">
+          <label>nhập password</label>
+          <input type="text" name="" class="form-control" formControlName="txtPassword">
+          <span *ngIf="register.controls.txtPassword.touched && register.controls.txtPassword?.invalid" style="color: red">required and 6 words</span>
+        </div>
+        <div class="col">
+          <label>Country </label>
+          <input type="text"   minlength="5" class="form-control" formControlName="txtCountry">
+        </div>
+        <div class="col">
+          <label>Age</label>
+          <input type="text" name="" class="form-control" formControlName="txtAge">
+        </div>
+        <div class="col">
+          <label>Gender </label>
+          <input type="text" name="" class="form-control" formControlName="txtGender">
+        </div>
+        <div class="col">
+          <label>Phone number </label>
+          <input type="text" name="" class="form-control" formControlName="txtPhoneNumber">
+        </div>
+      </div>
+      <button types="submit" class="btn bg-success">Create</button>
+    </table>
+  </form>
+</div>
+
+<!--email?: string;-->
+<!--password?: number|string;-->
+<!--country?: string;-->
+<!--age?: number;-->
+<!--gender?: number;-->
+<!--phoneNumber?: number;-->
