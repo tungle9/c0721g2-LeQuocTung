@@ -1,0 +1,91 @@
+<h1>Edit</h1>
+<form  [formGroup]="editEmployee" (ngSubmit)="edit()">
+  <div class="row">
+    <div style="width: 1500px" class="col-7">
+      <h3 class="card-header" style="background: dodgerblue">Add new employee</h3>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Name</h4>
+            <input class="input-group card-text" type="text" formControlName="name">
+            <span class="text-error" *ngIf="editEmployee.controls.name.touched && editEmployee.controls.name?.hasError('required')">not required</span>
+            <span class="text-error" *ngIf="editEmployee.controls.name?.hasError('pattern')">12345687</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">position</h4>
+            <span class="text-error"
+                  *ngIf="editEmployee.controls.position.touched && editEmployee.controls.position?.invalid ">not required</span>
+            <input class="input-group card-text" type="text" formControlName="position">
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">degree</h4>
+            <span class="text-error"
+                  *ngIf="editEmployee.controls.degree.touched && editEmployee.controls.degree?.invalid ">not required</span>
+            <input class="input-group card-text" type="text" formControlName="degree">
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">email</h4>
+            <input class="input-group" type="text" formControlName="email">
+            <span class="text-error"
+                  *ngIf="editEmployee.controls.email.touched && editEmployee.controls.email?.invalid">Format email</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Phone number</h4>
+            <input class="input-group" type="number" formControlName="phoneNumber">
+            <span class="text-error"
+                  *ngIf="editEmployee.controls.phoneNumber.touched && editEmployee.controls.phoneNumber?.invalid">pls enter right format </span>
+            <span class="text-error"
+                  *ngIf=" editEmployee.controls.phoneNumber.touched && editEmployee.controls.phoneNumber.invalid">12354 </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Address</h4>
+            <span class="text-error"
+                  *ngIf="editEmployee.controls.address.touched && editEmployee.controls.address?.invalid">not empty</span>
+            <p class="card-text"><input class="input-group" type="text" formControlName="address"></p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <h4 class="card-title">Date of birth</h4>
+        <span class="text-error"
+              *ngIf="editEmployee.controls.dateOfBirth.touched && editEmployee.controls.dateOfBirth?.invalid">not empty </span>
+        <input type="date" formControlName="dateOfBirth" class="form-control">
+      </div>
+      <div class="pt-3">
+        <h4 class="card-title">User</h4>
+        <select formControlName="employeeUser" class="form-control">
+          <option> -- Choose your user -- </option>
+          <option *ngFor="let j of user">{{j.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary mt-3">OKE</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+

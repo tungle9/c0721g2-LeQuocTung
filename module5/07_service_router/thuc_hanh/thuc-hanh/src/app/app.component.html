@@ -1,0 +1,16 @@
+<a routerLink="/timelines">Ứng dụng tính thời gian sống</a>
+<router-outlet></router-outlet>
+
+<hr>
+
+
+
+<h2>Youtube playlist</h2>
+<a routerLink="/youtube">Youtube</a>
+<router-outlet></router-outlet>
+<ul>
+  <li *ngFor="let song of playlist">
+    <a [routerLink]="['/youtube', song.id]">{{song.name}}</a>
+  </li>
+</ul>
+

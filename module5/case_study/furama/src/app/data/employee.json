@@ -1,0 +1,150 @@
+{
+  "employee": [
+    {
+      "name": "nanm-edit",
+      "email": "lequoctung9@gmail.com",
+      "position": "fgdfgh",
+      "degree": "gdfgdfg",
+      "phoneNumber": 12313434,
+      "address": "ád",
+      "dateOfBirth": "2021-12-17",
+      "employeeUser": "Ti nà",
+      "id": 10
+    },
+    {
+      "name": "123",
+      "email": "lequoctung9@gmail.com",
+      "position": "dfgdf",
+      "degree": "scdsfsdfds",
+      "phoneNumber": 12313434,
+      "address": "ád",
+      "dateOfBirth": "2021-12-13",
+      "employeeUser": "Toom mỳ",
+      "id": 11
+    },
+    {
+      "name": "quangteo 16/10/1998 Male",
+      "email": "lequoctung9@gmail.com",
+      "position": "ccc",
+      "degree": "zzzzz",
+      "phoneNumber": 12313434,
+      "address": "ád",
+      "dateOfBirth": "2021-12-17",
+      "employeeUser": "Ti nà",
+      "id": 12
+    },
+    {
+      "name": "quangteo 16/10/1998 Male",
+      "email": "lequoctung9@gmail.com",
+      "position": "sdfsdfsdfsdf",
+      "degree": "sdfsdfsdf",
+      "phoneNumber": 12313434,
+      "address": "ád",
+      "dateOfBirth": "2021-12-24",
+      "employeeUser": "Ti nà",
+      "id": 13
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "naruto",
+      "address": "takoy",
+      "phoneNumber": "859825",
+      "age": "18",
+      "gender": "nam",
+      "type": "Member"
+    },
+    {
+      "id": 2,
+      "name": "susuke",
+      "address": "takoy",
+      "phoneNumber": "859825",
+      "age": "18",
+      "gender": "nam",
+      "type": "Diamond"
+    },
+    {
+      "name": null,
+      "address": null,
+      "phoneNumber": null,
+      "age": null,
+      "gender": "male",
+      "type": null,
+      "id": 3
+    },
+    {
+      "name": "12",
+      "address": null,
+      "phoneNumber": null,
+      "age": null,
+      "gender": "female",
+      "type": null,
+      "id": 4
+    },
+    {
+      "name": null,
+      "address": null,
+      "phoneNumber": null,
+      "age": null,
+      "gender": "female",
+      "type": null,
+      "id": 5
+    },
+    {
+      "name": null,
+      "address": null,
+      "phoneNumber": null,
+      "age": null,
+      "gender": "LGT",
+      "type": null,
+      "id": 6
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "Toom mỳ"
+    },
+    {
+      "id": 2,
+      "name": "Ti nà"
+    },
+    {
+      "id": 3,
+      "name": "Chuck"
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "typeName": "Member"
+    },
+    {
+      "id": 1,
+      "typeName": "Gold"
+    },
+    {
+      "id": 1,
+      "typeName": "Diamond"
+    },
+    {
+      "id": 1,
+      "typeName": "Silver"
+    }
+  ]
+}

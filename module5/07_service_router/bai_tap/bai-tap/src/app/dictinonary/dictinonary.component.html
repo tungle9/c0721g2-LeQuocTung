@@ -1,0 +1,16 @@
+<h2>Dictionary</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">English</th>
+    <th scope="col">Vietnamese</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <tr *ngFor="let a of dictionary">
+    <td>{{a.word}}</td>
+    <td><a routerLink="detail" >xem chi tiết</a></td>
+  </tr>
+  </tbody>
+</table>

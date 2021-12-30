@@ -1,0 +1,88 @@
+<form [formGroup]="createCustomer" (ngSubmit)="submit()">
+  <div class="row">
+    <div style="width: 1500px" class="col-7">
+      <h3 class="card-header" style="background: dodgerblue">Add new employee</h3>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Name</h4>
+            <input class="input-group card-text" type="text" formControlName="name">
+            <!--            <span class="text-error" *ngIf="createCustomer.controls.name.touched && createCustomer.controls.name?.hasError('required')">not required</span>-->
+            <!--            <span class="text-error" *ngIf="createCustomer.controls.name?.hasError('pattern')">12345687</span>-->
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Address</h4>
+            <!--            <span class="text-error"-->
+            <!--                  *ngIf="createCustomer.controls.position.touched && createCustomer.controls.position?.invalid ">not required</span>-->
+            <input class="input-group card-text" type="text" formControlName="address">
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Phone Number</h4>
+            <!--            <span class="text-error" *ngIf="createCustomer.controls.degree.touched && createCustomer.controls.degree?.invalid ">not required</span>-->
+            <input class="input-group card-text" type="text" formControlName="phoneNumber">
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Age</h4>
+            <input class="input-group" type="text" formControlName="age">
+            <!--            <span class="text-error" *ngIf="createCustomer.controls.email.touched && createCustomer.controls.email?.invalid">Format email</span>-->
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Gender</h4>
+
+              <label class="radio-label">
+                <input  type="radio" value="male" formControlName="gender"/>male
+              </label>
+              <br>
+              <label class="radio-label">
+                <input  type="radio" value="female" formControlName="gender"/>female
+              </label>
+            <label>
+              <input type="radio" value="LGT" formControlName="gender"/>LGBT
+            </label>
+            </div>
+
+        </div>
+      </div>
+      <div class="pt-3">
+        <h4 class="card-title">User</h4>
+        <select formControlName="type" class="form-control">
+          <option> -- Choose your user --</option>
+          <option *ngFor="let j of customerType">{{j.typeName}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary mt-3">OKE</button>
+</form>
+<!--// id?: number;-->
+<!--// name?: string;-->
+<!--// address?: string;-->
+<!--// phoneNumber?: number;-->
+<!--// age?: number;-->
+<!--// gender?: string;-->
+<!--// type?: any;-->
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<h3 class="card-header" style="background: dodgerblue">List all employee</h3>
+
+<div class="d-flex col-3" style="padding: 20px 0px 20px">
+  <input style="width: 500px" class="form-control me-2" type="text" placeholder="Search by name" aria-label="Search"
+         [(ngModel)]="term">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</div>
+<button class="btn-group btn-primary" routerLink='/employee/create'>create new employee</button>
+
+<!--<div class="alert alert-success" *ngIf="">-->
+<!--  <strong>Lưu đơn hàng thành công!</strong> Cảm ơn bạn đã mua hàng.-->
+<!--</div>-->
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>User</th>
+    <th>Date of birth</th>
+    <th>Degree</th>
+    <th>Email</th>
+    <th>Phone number</th>
+    <th>Address</th>
+    <th>User</th>
+    <th>Delete</th>
+    <th>Edit</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let i of employee |filter: term | paginate: { itemsPerPage: 4, currentPage: p }">
+    <!--    <td scope="row"></td>-->
+    <td><a [routerLink]="['/employee/detail',i.id]">{{i.id}}</a></td>
+    <!--    [router-link]= "['link', id]"-->
+    <td scope="row">{{i.name}}</td>
+    <td scope="row">{{i.position}}</td>
+    <td scope="row">{{i.dateOfBirth}}</td>
+    <td scope="row">{{i.degree}}</td>
+    <td scope="row">{{i.email}}</td>
+    <td scope="row">{{i.phoneNumber}}</td>
+    <td scope="row">{{i.address}}</td>
+    <td scope="row">{{i.employeeUser}}</td>
+    <td>
+      <!--      <button class="btn-primary btn-danger" (click)="delete(i)">Delete</button>-->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+              [attr.data-bs-target]="'#exampleModal'+ i.id ">
+  Delete
+      </button>
+
+    </td>
+    <td><button type="button" class="btn btn-primary" [routerLink]="['/employee/edit',i.id]">Edit</button></td>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal{{i.id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Bạn có muốn xóa {{i.name}} không ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"  (click)="delete(i)">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </tr>
+  </tbody>
+</table>
+<!--<div>jdflgkjdfg</div>-->
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
+<!--<div>-->
+<!--  <div *ngFor="let j of user">-->
+<!--    <a>{{j.id}}</a>-->
+<!--    <a>{{j.name}}</a>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
