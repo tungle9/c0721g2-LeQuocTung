@@ -1,0 +1,67 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1"></h5>
+        <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+      </div>
+      <div class="modal-body">
+        <!--        form-->
+        <form [formGroup]="createCustomer" (ngSubmit)="submit()">
+          <div class="container">
+            <h1>Form Đăng Ký</h1>
+            <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+            <hr>
+            <label><h3>Thông tin cá nhân</h3></label>
+            <div class="input-form">
+              <input type="text" placeholder="Họ và tên" class="form-control" required="">
+              <input type="number" class="form-control" placeholder="Số điện thoại">
+              <input type="email" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" placeholder="Chứng minh nhân dân">
+              <div class="input-group">
+                <input type="date" placeholder="Ngày sinh" class="form-control">
+                <input type="text" placeholder="Địa chỉ" class="form-control" style="margin-left: 10px">
+              </div>
+              <div>
+                <input type="radio" value="genderCustomer" name="ab">
+                <label>Nam</label>
+                <input type="radio" value="genderCustomer" name="ab" style="margin-left: 100px">
+                <label>Nữ</label>
+              </div>
+            </div>
+            <br>
+            <label><h3>Thông tin tài khoản</h3></label>
+            <hr>
+            <input class="name-login" type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật Khẩu" formControlName="password" required>
+            <div class="text-error"
+                 *ngIf="createCustomer.controls.password.touched  && createCustomer.controls.password.hasError('required')">
+              *Bạn chưa nhập mật khẩu.
+            </div>
+            <input type="password" placeholder="Nhập Lại Mật Khẩu" name="confirmPassword"
+                   formControlName="confirmPassword">
+            <span class="text-error"
+                  *ngIf="createCustomer.controls.confirmPassword.touched && createCustomer.controls.confirmPassword.hasError('checkPassword')">*Mật khẩu xác thật chưa giống nhau.</span>
+            <span class="text-error"
+                  *ngIf="createCustomer.controls.confirmPassword.touched && createCustomer.controls.confirmPassword.hasError('required')">*Bạn chưa nhập mật khẩu</span>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="signupbtn">Đăng kí</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div style="padding-left: 500px">
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+          [attr.data-bs-target]="'#exampleModal'">Đăng kí
+  </button>
+</div>
+
+
+
+
